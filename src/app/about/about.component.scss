@@ -1,0 +1,101 @@
+
+
+.about {
+    padding : 120px 120px 50px;
+    color: #fff;
+}
+.lead {
+    font-size: 15px;
+}
+.about img {
+    height: 500px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.about .title {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.about .col-1 {
+  width: 35%;
+}
+.about .col-2 {
+    width: 60%;
+}
+
+.about .nav-tabs {
+    margin: 20px 0 40px;
+    display: flex;
+}
+
+.about .nav-link {
+    margin-right: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tabs .nav-link::after {
+    content: '';
+    height: 3px;
+    background:  #7cf03d;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+}
+
+// .about .nav-link#active::after {
+//     width: 50%;
+// }
+
+
+
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0;
+}
+
+.nav-tabs .nav-link {
+    background-color: transparent;
+    color: #fff;
+}
+
+.nav-tabs .nav-link::after {
+    content: '';
+    height: 3px;
+    background:  #7cf03d;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+}
+
+.nav-tabs .nav-link.active::after {
+    background-color: #7cf03d;
+        width: 100%;
+    }
+
+    .nav-link  {
+        padding: 0;
+    }
+
+
+
+    .tab-pane ul {
+
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .tab-title {
+        color : chartreuse;
+        font-size: 15px;
+    }
+
+
+
+

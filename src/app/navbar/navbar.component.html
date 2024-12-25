@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md sticky-top">
-    <div class="container-fluid">
+    <div class="container-fluid service">
         <a class="navbar-brand" href="#">
             <img src="../../assets/images/logo.png" alt="" height="40">
         </a>
@@ -8,22 +8,24 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#carouselExampleIndicators">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" routerLink="/about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">Services</a>
+                    <a class="nav-link" routerLink="/service">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a class="nav-link" routerLink="/portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a class="nav-link" routerLink="/contact">Contact</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<router-outlet></router-outlet>
