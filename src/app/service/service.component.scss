@@ -1,19 +1,22 @@
 .service {
-    padding: 100px 120px 0 ;
+    padding: 80px 120px 0 ;
 }
 
 .service .title h2 {
     font-size: 60px;
+    margin: 50px auto 40px;
 }
 
 .service .text {
     padding: 30px;
     margin: 10px;
-    min-height: 390px;
+    min-height: 400px;
     background-color: #262626;
     border-radius: 10px;
     text-align: justify;
-    transition: .5s;
+    transition: .8s;
+    box-shadow: #00abf0 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   
 }
 
 .service .text a {
@@ -21,9 +24,15 @@
     color: #fff;
 }
 
+.service .text:hover a {
+    text-decoration: none;
+    color: #000;
+}
+
 .service .text:hover {
-    background-color: green;
-    transform: translateY(-20px);
+    background-color: #00abf0;;
+    transform: translateY(-10px);
+    color: #000
 }
 
 .service-title {

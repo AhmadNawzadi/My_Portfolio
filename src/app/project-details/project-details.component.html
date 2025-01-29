@@ -1,0 +1,345 @@
+<div class="project-details">
+
+    <div class="project-management" *ngIf="projectManagement">
+        <div>
+            <p class="main-title">Project Management Tool</p>
+        </div>
+        <p>
+            Ce projet a été réalisé dans le cadre de ma formation, dans le but de mettre en pratique les compétences techniques et les méthodes de gestion de projet acquises. L'objectif principal était de développer une application web permettant de gérer des projets, des tâches et des utilisateurs de manière intuitive et efficace. Cette application cible les équipes de travail qui souhaitent organiser leurs activités et suivre l'avancement de leurs projets.
+        </p>
+        <br>
+        <div>
+            <h5>Problème résolu</h5>
+            <p>
+                L'application vise à résoudre le problème de manque de visibilité et d'organisation dans la gestion quotidienne des projets. Elle propose une solution centralisée pour créer des projets, assigner des tâches aux membres d’équipe, suivre leur avancement et gérer les priorités.
+            </p>
+        </div>
+        <br>
+
+        <div>
+            <h5>Mon rôle</h5>  
+            <p>Dans ce projet, j'ai occupé plusieurs rôles :</p>
+            <ul>
+                <li>
+                    Conception : Identification des entités principales (utilisateurs, projets, tâches) et création d'une architecture modulaire.
+                </li>
+                <li>
+                    Développement : Implémentation de l'interface utilisateur en Angular, développement des API REST avec Spring Boot et mise en place d'une base de données relationnelle.
+                </li>
+                <li>
+                    Tests et Industrialisation : Réalisation de tests automatisés (frontend et backend), dockerisation des composants, et mise en place d'une chaîne CI/CD pour garantir une livraison continue.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Objectifs atteints</h5>  
+            <ul>
+                <li>
+                    Conception et modélisation d'une base de données relationnelle robuste.
+                </li>
+                <li>
+                    Développement complet d'une application web avec une interface intuitive et des fonctionnalités backend performantes.
+                </li>
+                <li>
+                    Mise en place d'un processus de tests automatisés avec une couverture de code à hauteur de 60% pour les instructions et les branches.
+                </li>
+                <li>
+                    Intégration et déploiement continu (CI/CD) avec Docker et GitHub Acti
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Détails Techniques</h5>  
+            <p>Choix technologiques :</p>
+            <ul>
+                <li>
+                    Frontend : Angular a été choisi pour sa capacité à construire des interfaces utilisateur dynamiques et modérnes. Son architecture basée sur les composants facilite la maintenance et l'évolutivité.
+                </li>
+                <li>
+                    Backend : Spring Boot a été utilisé pour sa robustesse et son écosystème complet, permettant une gestion facile des API REST.
+                </li>
+                <li>
+                    Base de données : Une base relationnelle (PostgreSQL) a été choisie pour sa fiabilité et sa capacité à gérer des données structurées.
+                </li>
+                <li>
+                    Tests : Utilisation de Jasmine/Karma pour le frontend et JUnit pour le backend.
+                </li>
+                <li>
+                    Industrialisation : Docker pour la conteneurisation, GitHub Actions pour l'automatisation des tests et du déploiement.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Défis rencontrés</h5>  
+            <ul>
+                <li>
+                    Gestion des relations complexes dans la base de données (ex. : relations utilisateur-tâches, tâches-projets) :
+                </li>
+                <li>
+                    Solution : Conception d'un schéma de base de données bien normalisé et utilisation de JPA/Hibernate pour la gestion des relations.
+                </li>
+                <li>
+                    Synchronisation des données entre le frontend et le backend :
+                </li>
+                <li>
+                    Solution : Mise en place de services Angular avec gestion des observables (à l'aide de RxJS) pour un transfert de données fluide.
+                </li>
+                <li>
+                    Automatisation des tests et couverture de code :
+                </li>
+                <li>
+                    Solution : Configuration de pipelines CI/CD avec GitHub Actions pour l'exécution des tests automatisés et génération de rapports de couverture via Jacoco et Istanbul.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Solutions apportées</h5>  
+            <ul>
+                <li>
+                    Une documentation claire du processus de déploiement dans un fichier README.md.
+                </li>
+                <li>
+                    Dockerisation complète des services pour garantir un déploiement rapide et cohérent.
+                </li>
+                <li>
+                    Mise à disposition des images Docker sur Docker Hub pour un accès public.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Résultats finaux</h5>  
+            <ul>
+                <li>
+                    Une application fonctionnelle avec des fonctionnalités clés telles que la gestion des utilisateurs, la création de projets et la supervision des tâches.
+                </li>
+                <li>
+                    Un processus industrialisé permettant un déploiement rapide et fiable, tout en garantissant la stabilité du code grâce aux tests automatisés.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Block pour le projet Game Up  -->
+    <div class="game-up" *ngIf="gameUp">
+        <div>
+            <p class="main-title">Game Up</p>
+        </div>
+        <p>
+            Ce projet a été réalisé dans le cadre de mes fonctions en tant que développeur pour la plateforme GamesUP, une plateforme de vente de jeux de société en ligne. L'objectif était de remédier à des problèmes critiques de performances et de fiabilité de l'API backend, qui impactaient directement les ventes. Le projet comportait plusieurs volets : refonte de l'API backend, mise en place de la sécurité, tests, et intégration d'un système de recommandation basé sur le Machine Learning.        </p>
+        <br>
+        <div>
+            <h5>Problème résolu</h5>
+            <p>
+                Le site était confronté à des bugs récurrents liés à un backend obsolète et mal conçu par un stagiaire. Ces problèmes rendaient la plateforme instable et faisaient perdre des ventes. Par ailleurs, le système de recommandations était aléatoire et inefficace, ce qui réduisait l'engagement des utilisateurs. Ce projet visait à redéfinir complètement l'architecture de l'API backend tout en intégrant un système de recommandation basé sur le Machine Learning.            </p>
+        </div>
+        <br>
+
+        <div>
+            <h5>Mon rôle</h5>  
+            <p>En tant que développeur principal, j'ai été en charge des tâches suivantes :
+            </p>
+            <ul>
+                <li>
+                    Refonte de l'API backend : Analyse et restructuration du code existant, mise en place d'une architecture REST modulable, et respect des principes SOLID.
+                </li>
+                <li>
+                    Sécurité : Implémentation de Spring Security pour garantir l'intégrité des données.
+                </li>
+                <li>
+                    Tests : Conception et exécution de tests unitaires et d'intégration pour assurer la stabilité et la fiabilité de l'API.
+                </li>
+                <li>
+                    Système de recommandation : Finalisation d'une API Python avec FastAPI pour gérer les recommandations basées sur un algorithme KNN.
+                </li>
+                <li>
+                    Documentation : Rédaction de documents techniques incluant les diagrammes d'architecture, de classes, de composants, et de séquences.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Objectifs atteints</h5>  
+            <ul>
+                <li>
+                    Révision complète de l'API backend pour garantir sa fiabilité et sa performance.
+                </li>
+                <li>
+                    Intégration d'un système de sécurité robuste avec Spring Security.
+                </li>
+                <li>
+                    Mise en place d'un système de recommandation efficace connectant l'API Spring à une API Python.
+                </li>
+                <li>
+                    Livraison de tests unitaires et d'intégration avec des rapports de couverture.
+                </li>
+                <li>
+                    Documentation complète et précise pour assurer une compréhension globale du projet.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Détails Techniques</h5>  
+            <p>Choix technologiques :</p>
+            <ul>
+                <li>
+                    Backend : Spring Boot a été choisi pour sa robustesse, sa flexibilité et sa compatibilité avec Hibernate pour la gestion des bases de données.
+                </li>
+                <li>
+                    Sécurité : Spring Security a été utilisé pour la gestion des rôles (client et administrateur) et la protection des endpoints sensibles.
+                </li>
+                <li>
+                    Recommandations : FastAPI a été préféré pour sa légèreté et sa facilité d’intégration avec des bibliothèques de Machine Learning telles que scikit-learn.
+                </li>
+                <li>
+                    Tests : Utilisation de JUnit pour les tests backend et Pytest pour les tests Python.
+                </li>
+                <li>
+                    Communication entre APIs : Mise en place de RESTful services pour la communication entre l’API Spring et l’API Python.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Défis rencontrés</h5>  
+            <ul>
+                <p>Code existant mal conçu :</p>
+                <li>
+                    Solution : Refactorisation complète pour respecter les principes SOLID et adoption d'une architecture modulaire.
+                </li>
+                <p>Système de recommandation sans données fiables :</p>
+                <li>
+                    Solution : Génération de données synthétiques pour tester et valider le modèle KNN, en attendant des données réelles.
+                </li>
+                <p>Intégration API Spring et FastAPI :</p>
+                <li>
+                    Solution : Mise en place de endpoints REST clairs pour échanger les données utilisateur entre les deux APIs.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Solutions apportées</h5>  
+            <ul>
+                <li>
+                    Implémentation des opérations CRUD pour les entités principales (client, jeu, éditeur, commande).
+                </li>
+                <li>
+                    Mise en place d'un système de rôles avec accès restreint pour les administrateurs.
+                </li>
+                <li>
+                    Dockerisation des deux APIs (Spring et FastAPI) pour garantir un déploiement rapide et sans conflit.
+                </li>
+                <li>
+                    Tests approfondis pour assurer la stabilité et identifier les régressions.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Résultats finaux</h5>  
+            <ul>
+                <li>
+                    Une API Spring robuste, modulable et conforme aux standards REST.
+                </li>
+                <li>
+                    Un système de recommandation fonctionnel basé sur l'algorithme KNN, prêt à être amélioré avec des données réelles.
+                </li>
+                <li>
+                    Une documentation technique complète avec des diagrammes d'architecture, de classes, de composants et de séquences.
+                </li>
+                <li>
+                    Une couverture de tests élevée et des rapports de qualité logicielle.
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Block pour le projet Electricity Billing System  -->
+    <div class="game-up" *ngIf="electricitySystem">
+        <div>
+            <p class="main-title">Electricity Billing System</p>
+        </div>
+        <p>
+            Ce projet a été réalisé dans un cadre personnel afin de renforcer mes compétences en développement logiciel. L'objectif principal était de mettre en pratique mes connaissances en Java, MySQL et Swing en développant une application complète avec une interface utilisateur et une base de données.
+        </p>
+        <br>
+        <div>
+            <h5>Problème résolu</h5>
+            <p>
+                Le projet vise à résoudre un problème spécifique : la gestion efficace des données et leur affichage sous une interface conviviale. Il permet d'organiser et de manipuler des informations de manière structurée tout en offrant une interaction fluide avec l'utilisateur.  
+            </div>
+        <br>
+
+        <div>
+            <h5>Mon rôle</h5> 
+            <p>
+                Mon rôle dans ce projet était à la fois celui du développeur et du concepteur. Les objectifs atteints incluent la mise en place d'une application fonctionnelle, la connexion réussie entre l'interface utilisateur et la base de données, ainsi que la gestion des opérations CRUD (Create, Read, Update, Delete).
+            </p> 
+            <ul>
+                <li>J'ai assuré la conception de la base de données</li>
+                <li>le développement du code en Java, ainsi que l'intégration de l'interface graphique avec Swing</li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Objectifs atteints</h5>  
+            <ul>
+                <li>la mise en place d'une application fonctionnelle</li>
+                <li>la connexion réussie entre l'interface utilisateur et la base de données,                </li>
+                <li>la gestion des opérations CRUD (Create, Read, Update, Delete).</li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Détails Techniques</h5>  
+            <p>        
+                L'application a été développée en utilisant les technologies suivantes :
+            </p>
+            <ul>
+                <li>
+                    Java pour la logique métier et la gestion des événements.
+                </li>
+                <li>
+                    Swing pour la conception de l'interface graphique.
+                </li>
+                <li>
+                    MySQL pour le stockage des données, avec JDBC pour assurer la connexion entre la base de données et l'application.
+                </li>
+            </ul>
+        </div>
+
+        <br>
+        <div>
+            <h5>Défis rencontrés et Solutions apportées</h5>  
+            <ul>
+                <li>
+                    Connexion à la base de données : Au début, j'ai rencontré des difficultés pour établir la connexion entre l'application et MySQL. Ce problème a été résolu en configurant correctement le driver JDBC et en optimisant les requêtes SQL.
+                </li>
+                <li>
+                    Gestion des performances : Certains affichages étaient lents à cause du traitement des données. J'ai optimisé les requêtes et mis en place des index dans la base de données pour accélérer l'exécution des requêtes.
+                </li>
+                <li>
+                    Interface utilisateur dynamique : L'utilisation de Swing demandait une gestion précise des événements et des mises à jour dynamiques de l'affichage. J'ai utilisé des modèles de conception comme MVC (Modèle-Vue-Contrôleur) pour améliorer la structure du code et faciliter la maintenance.
+                </li>
+            </ul>
+        </div>
+        <br>
+        
+    </div>
+
+</div>

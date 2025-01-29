@@ -1,67 +1,55 @@
 <div class="container-fluid about" id="about">
     <div class="row">
-        <div class="col-lg-6 col-1">
-            <img src="../../assets/images/dev3.jpg" class="img-fluid" alt="">
-        </div>
-
-        <div class="col-lg-6 col-2">
-            <h2 class="title">About me</h2>
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 left"> <img src="../../assets/images/me.jpg" class="img-fluid rounded" alt="My Photo"> </div>
+        <div class="col-lg-7 col-md-12 right">
+            <h2 class="title">À propos</h2>
             <p class="lead">Je m'appelle Ahmad et j'ai 33 ans. Diplômé d'un Bac + 5 en Ingénierie Logicielle et j'ai 2 ans d'expériences professionnelles.</p>
-            <br>
-
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-
                 <li class="nav-item" role="presentation">
-                    <p class="nav-link active"  data-bs-toggle="tab" data-bs-target="#home">Expériences</p>
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Expériences</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <p class="nav-link"  data-bs-toggle="tab" data-bs-target="#contact">Formations</p>
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Formations</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <p class="nav-link " data-bs-toggle="tab" data-bs-target="#profile">Compétences</p>
-                  </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Compétences</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <ul class="" id="">
-                        <li class=""><span class="tab-title">Développeur Informatique</span><br>GroupeFBO : 2024 - Présent</li>
+                    <ul class="list-unstyled">
+                        <li><span class="tab-title">Développeur Informatique</span><br>GroupeFBO : 2024 - Présent</li>
                         <br>
-                        <li class=""><span class="tab-title">Développeur Informatique</span><br>Liqtrade Sas : 2021 - 2023 </li>
+                        <li><span class="tab-title">Développeur Informatique</span><br>Liqtrade Sas : 2021 - 2023 </li>
+                        <br>
+                        <li><span class="tab-title">Auto Entrepreneur</span><br>2019 - 2021 </li>
                     </ul>
                 </div>
-
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="profile-tab">
-                    <ul class="" id="">
-                        <li class=""><span class="tab-title">Master en Ingénierie Logicielle</span><br>Visiplus Academy : 2024 - Présent</li>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <ul class="list-unstyled">
+                        <li><span class="tab-title">Master en Ingénierie Logicielle</span><br>Visiplus Academy : 2024 - Présent</li>
                         <br>
-                        <li class=""><span class="tab-title">Licence en Intelligence Artificielle</span><br>École Numérique de Simplon : 2021 - 2023</li>
+                        <li><span class="tab-title">Licence en Intelligence Artificielle</span><br>École Numérique de Simplon : 2021 - 2023</li>
                         <br>
-                        <li class=""><span class="tab-title">Master en Économie </span><br>Université d'Aksaray : 2017 - 2019</li>
+                        <li><span class="tab-title">Master en Économie </span><br>Université d'Aksaray : 2017 - 2019</li>
                     </ul>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="contact-tab">
-                    <ul class="" id="">
-                        <li class=""><span class="tab-title">Développement Backend</span></li>
-                        <ul>
-                            <li>Java</li>
-                            <li>Spring</li>
-                            <li>SQL</li>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div>
+                        <ul class="skills">
+                            <li class="skill"><span class="s">Développement Backend</span></li>
+                            <li class="skill"><span class="s">Développement Frontend</span></li>
+                            <li class="skill"><span class="s">Développement IA</span></li>
                         </ul>
-                        <br>
-                        <li class=""><span class="tab-title">Développement Frontend</span></li>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Angular</li>
-                        </ul>
-                        <br>
-                        <li class=""><span class="tab-title">Développement IA</span></li>
-                        <ul>
-                            <li>Python</li>
-                       
-                        </ul>
-                    </ul>
+                        <button type="button" class="btn btn-outline-light more">
+                            <a routerLink="/skills" >En savoir plus</a>
+                        </button> 
+                    </div>
+                   
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 </div>
+
+<router-outlet></router-outlet>

@@ -3,39 +3,56 @@
         <div class="row">
             <div class="col-12 text-center title">
                 <h2><span>P</span>ortfolio</h2>
-                <p>Les projets sur lesquels j'ai travaillé</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-4">
                 <div class="card">
-                    <img src="../../assets/images/1.jpg" class="card-img-top" alt="...">  
+                    <img src="../../assets/images/pr1.jpg"  alt="...">  
                     <div class="card-body text-center">
-                        <h5 class="card-title">Nature</h5>
+                        <h5 class="card-title">Project Management Tool</h5>
                         <p class="card-text">C'est un site statique réalise avec HTML5, CSS3 et Javascript</p>
-                        <a href="./portfolio.bluewater-web.com" class="btn btn-primary">Learn More</a>
+                        <div class="p-icon">
+                         <a routerLink="/details" (click)="selectProject(1)"><fa-icon [icon]="faExternalLinkAlt" style="font-size: 20px;"> </fa-icon></a>   
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card">
-                    <img src="../../assets/images/2.jpg" class="card-img-top" alt="...">  
+                    <img src="../../assets/images/game3.jpg"  alt="...">  
                     <div class="card-body text-center">
-                        <h5 class="card-title">My Cave</h5>
+                        <h5 class="card-title">Game Up</h5>
                         <p class="card-text">C'est un site dynamique réalise avec HTML5, CSS3, Javascript, PHP et MySQL</p>
-                        <a href="./mycave.bluewater-web.com" class="btn btn-primary">Learn More</a>
+                        <div class="p-icon">
+                            <a routerLink="/details" (click)="selectProject(2)"><fa-icon [icon]="faExternalLinkAlt" style="font-size: 20px;"> </fa-icon></a>   
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4">
                 <div class="card">
-                    <img src="../../assets/images/3.jpg" class="card-img-top" alt="...">  
+                    <img src="../../assets/images/elec6.jpg" alt="...">  
                     <div class="card-body text-center">
-                        <h5 class="card-title">My Resturant</h5>
+                        <h5 class="card-title">Electricity Billing System</h5>
                         <p class="card-text">C'est un site statique réalise avec HTML5, CSS3 et Javascript</p>
-                        <a href="./myresto.bluewater-web.com" class="btn btn-primary">Learn More</a>
+                        <div class="p-icon">
+                            <a routerLink="/details" (click)="selectProject(3)"><fa-icon [icon]="faExternalLinkAlt" style="font-size: 20px;"> </fa-icon></a>   
+                        </div>
+                        
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <div class="row">
+            <div class="more-project">
+                <button type="button" class="btn btn-outline-light btn-lg"><a href="https://github.com/AhmadNawzadi?tab=repositories" target="_blank" >En savoir plus</a></button>
+            </div>
+        </div>
     </div>
+
+    <router-outlet></router-outlet>
+
+
+

@@ -1,56 +1,57 @@
 <div class="container- contact" id="contact">
-    <div class="row">
+    <div class="row text-center">
         <div class="col-12 title">
             <h2><span>C</span>ontact</h2>
         </div>
     </div>
 
     <div class="row">
-        
-
-        <div class="col-md-6 address">
-            <h5>Téléphone / WhatsApp</h5>
-            <p>
-                <a href="tel:+919090909090"><i class="fa fa-phone"></i> +33 (0) 758825745 </a><br>
-            </p>
-            <h5>Email</h5>
-            <p>
-                <a href="mailto:simplesnippetsinfo@gmail.com"><i class="fa fa-envelope"></i> blu</a><br>
-            </p>
-            <h5>Horaire</h5>
-            <p>Mon - Fri : 9am - 6pm(IST)</p>
-            <h5>Adresse</h5>
-            <p>La Roche Sur Yon, France</p>
+        <div class="col-md-5 address">
+            <p><fa-icon [icon]="faEnvelope" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">contactgmail.com</span></p>
+            <p><fa-icon [icon]="faPhone" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">+33 (0) 758825745</span></p>
+            <p><fa-icon [icon]="faMapPin" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">La Roche Sur Yon, France</span></p>
+            <br>
+            <div class="btn-sci">
+                <div class="sci">
+                    <a href="https://github.com/AhmadNawzadi?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/ahmad-f-n-97743417a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class='bx bxl-gitlab'></i></a>
+                </div>
+            </div>
+            <br>
+            <div class="btn-sci">
+                <a href="../../assets/images/cv.pdf" download class="btn">Download CV</a>
+            </div>
+            <br>
+            <br>
         </div>
 
-        <div class="col-md-6">
-            <form action="">
+        <div class="col-md-7">
+            <form action="https://api.web3forms.com/submit" method="POST">
                 <div class="form-row">
+                    <input type="hidden" name="access_key" value="44c84307-7afa-448a-862b-ccd6208d6ae8">
                     <div class="form-group col-md-12">
-                    <input type="text" class="form-control" placeholder="Nom Prénom *">
-
+                        <input type="text" class="form-control field" placeholder="Nom Prénom *" name="name" required>
                     </div>
+                    <br>
                     <div class="form-group col-md-12">
-                    <input type="email" class="form-control" placeholder="Email *">
+                        <input type="email" class="form-control field" placeholder="Email *" name="email" required>
                     </div>
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                    <input type="text" class="form-control" placeholder="Sujet *">
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <textarea class="form-control" rows="3" name="message" required></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-12">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Envoyer</button>
+                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <button type="submit" class="btn btn-light submit"><i class="fa fa-paper-plane"></i> Envoyer</button>
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
+

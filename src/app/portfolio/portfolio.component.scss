@@ -1,21 +1,88 @@
 .portfolio {
-    padding: 100px 120px 0 ;
+    padding: 150px 120px 0 ;
 }
 
-.card {
+.card  {
     border-radius: 10px;
+    overflow: hidden;
+    transition: 2s;
+    margin-bottom: 20px;
+}
+
+.portfolio .title h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+// .portfolio .title span {
+//     color: #00abf0;
+// }
+a {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    color: #00abf0;
+}
+
+.card-text {
+    font-size: 14px;
+}
+
+.card img {
+    transition: 1s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
+    opacity: 0;
+    visibility: visible; /* Prevent taking up space */
+    transition: opacity 1s;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(0,0,0,0.3), #00abf0);
     border-radius: 10px;
     color: #fff;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
+.card:hover .card-body {
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-icon {
+    padding-top: 8px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+.more-project {
+    text-align: center;
+    transform: background 1s;
+}
+.more-project button:hover{
+    background-color: #00abf0;
+}
+
+.more-project button {
+    background-color: #00abf0;
+    border: 1px solid #00abf0;
+}
+
+.more-project button:hover  {
+    color: #00abf0;;
+    background: #1f242d;
+    box-shadow: 0 0 10px #00abf0;
 }

@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { ServiceComponent } from './service/service.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { SkillsComponent } from './skills/skills.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 export const routes: Routes = [
     {
@@ -20,6 +22,12 @@ export const routes: Routes = [
     },
     {
         path: 'contact', component : ContactComponent
+    },
+    {
+        path: 'skills', component : SkillsComponent
+    },
+    {
+        path: 'details', component : ProjectDetailsComponent
     },
 
  
