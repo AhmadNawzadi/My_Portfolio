@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CircularProgressComponent } from "../circular-progress/circular-progress.component";
+import { CircularProgressComponent } from "../components/circular-progress/circular-progress.component";
 import { ProjectService } from '../services/project.service';
 
 @Component({

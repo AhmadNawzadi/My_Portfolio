@@ -5,17 +5,17 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { ProjectService } from '../services/project.service';
 
 @Component({
-  selector: 'app-portfolio',
+  selector: 'app-project',
   standalone: true,
   imports: [
     FontAwesomeModule,
     RouterLink,
     RouterModule
   ],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss'
+  templateUrl: './project.component.html',
+  styleUrl: './project.component.scss'
 })
-export class PortfolioComponent {
+export class ProjectComponent {
 
   constructor(private data: ProjectService) {}
 

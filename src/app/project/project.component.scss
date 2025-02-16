@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 150px 120px 0 ;
+    padding: 120px 100px 100px ;
 }
 
 .card  {
@@ -10,7 +10,7 @@
 }
 
 .portfolio .title h2 {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 50px;
 }
 
@@ -85,4 +85,19 @@ a:hover {
     color: #00abf0;;
     background: #1f242d;
     box-shadow: 0 0 10px #00abf0;
+}
+
+@media (max-width: 1024px) { 
+
+}
+
+@media (max-width: 768px) { 
+
+}
+
+@media (max-width: 425px) { 
+
+    .portfolio {
+        padding: 100px 50px 100px;
+    }
 }

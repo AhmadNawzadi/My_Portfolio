@@ -1,15 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
+import { ContactComponent } from './pages/contact/contact.component';
 import { ServiceComponent } from './service/service.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
 import { SkillsComponent } from './skills/skills.component';
+import { ProjectComponent } from './project/project.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 export const routes: Routes = [
     {
-        path: 'home', component : HomeComponent
+        path: '', component : HomeComponent
     },
     {
         path: 'about', component : AboutComponent
@@ -18,7 +18,7 @@ export const routes: Routes = [
         path: 'service', component : ServiceComponent
     },
     {
-        path: 'portfolio', component : PortfolioComponent
+        path: 'projects', component : ProjectComponent
     },
     {
         path: 'contact', component : ContactComponent
@@ -29,6 +29,4 @@ export const routes: Routes = [
     {
         path: 'details', component : ProjectDetailsComponent
     },
-
- 
 ];

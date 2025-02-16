@@ -31,3 +31,15 @@
 }
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+@media (max-width: 768px) { 
+    .right-skills {
+        padding-left: 12px;
+    }  
+}
+
+@media (max-width: 425px) { 
+    .right-skills {
+        padding-left: 12px;
+    }  
+}

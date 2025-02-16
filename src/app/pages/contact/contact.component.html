@@ -7,20 +7,20 @@
 
     <div class="row">
         <div class="col-md-5 address">
-            <p><fa-icon [icon]="faEnvelope" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">contactgmail.com</span></p>
-            <p><fa-icon [icon]="faPhone" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">+33 (0) 758825745</span></p>
-            <p><fa-icon [icon]="faMapPin" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">La Roche Sur Yon, France</span></p>
+            <p><fa-icon [icon]="faEnvelope" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">{{ email }}</span></p>
+            <p><fa-icon [icon]="faPhone" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">{{ phone }}</span></p>
+            <p><fa-icon [icon]="faMapPin" style="font-size: 20px; color:#00abf0;"></fa-icon><span class="content">{{ address }}</span></p>
             <br>
             <div class="btn-sci">
                 <div class="sci">
                     <a href="https://github.com/AhmadNawzadi?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a>
                     <a href="https://www.linkedin.com/in/ahmad-f-n-97743417a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://x.com/?lang=en" target="_blank"><i class='bx bxl-gitlab'></i></a>
+                    <a href="https://x.com/?lang=en" target="_blank"><i class='bx bxl-twitter'></i></a>
                 </div>
             </div>
             <br>
             <div class="btn-sci">
-                <a href="../../assets/images/cv.pdf" download class="btn">Download CV</a>
+                <a href="../../assets/images/cv.pdf" download class="btn">Télécharger CV</a>
             </div>
             <br>
             <br>
@@ -30,6 +30,9 @@
             <form action="https://api.web3forms.com/submit" method="POST">
                 <div class="form-row">
                     <input type="hidden" name="access_key" value="44c84307-7afa-448a-862b-ccd6208d6ae8">
+                    <input type="hidden" name="from_name" value="Mon portfolio">
+                    <input type="hidden" name="subject" value="Nouveau Message">
+                    <input type="hidden" name="redirect" value="https://github.com/jonasschmedtmann/ultimate-react-course" >
                     <div class="form-group col-md-12">
                         <input type="text" class="form-control field" placeholder="Nom Prénom *" name="name" required>
                     </div>
@@ -40,7 +43,7 @@
                     <br>
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <textarea class="form-control" rows="3" name="message" required></textarea>
+                            <textarea class="form-control" rows="4" name="message" placeholder="Message *" required></textarea>
                         </div>
                     </div>
                     <br>
@@ -54,4 +57,5 @@
         </div>
     </div>
 </div>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 

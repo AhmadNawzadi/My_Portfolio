@@ -1,5 +1,5 @@
 .contact {
-    padding : 150px 150px 50px;
+    padding : 120px 150px 100px;
 }
 
 .contact .title h2 {
@@ -73,4 +73,24 @@ a {
     color: #00abf0;;
     background: #1f242d;
     box-shadow: 0 0 10px #00abf0;
+}
+
+@media (max-width: 768px) { 
+    .contact {
+        padding : 120px 100px 50px;
+    }
+    .contact .title h2 {
+        font-size: 40px;
+    }
+    
+}
+
+@media (max-width: 425px) { 
+    .contact {
+        padding : 120px 50px 100px;
+    }
+    .contact .title h2 {
+        font-size: 40px;
+    }
+    
 }
