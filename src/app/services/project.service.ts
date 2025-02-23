@@ -12,19 +12,17 @@ export class ProjectService {
   electricitySystem : boolean = false
 
   selectProject(id : number){
+    this.gameUp = false
+    this.electricitySystem = false
+    this.projectManagement = false
+
     if(id == 1){
       this.projectManagement = true
-      this.gameUp = false
-      this.electricitySystem = false
     }
     else if(id == 2){
-      this.projectManagement = false
-      this.electricitySystem = false
       this.gameUp = true
     }
     else {
-      this.projectManagement = false
-      this.gameUp = false
       this.electricitySystem = true
     }
   }
