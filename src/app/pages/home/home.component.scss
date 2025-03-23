@@ -1,46 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 // =============================================================================
 .home-page {
-    //background-color: #080808;
     height: 100vh;
 }
 
 a {
     text-decoration: none;
 }
-
 .home {
     display: flex;
     align-items: center;
     height: 100vh;
     background-color: #080808;
-    padding: 60px 9% 0;
-    color: #fff;
+    padding: 30px 5% 0;
 }
 
 .home-info h1 {
-    font-size: 55px;
+    font-size: 44px;
 }
 
 .home-info h2 {
     display: inline-block;
-    font-size: 32px;
-    margin-top: -10px;
+    font-size: 24px; 
+    margin-top: -6px; 
 }
 
 .home-info h2 span {
     position: relative;
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .7px #00abf0;;
+    -webkit-text-stroke: 0.5px #00abf0; 
     animation: display-text 15s linear infinite;
     animation-delay: 10s;
 }
 
 @keyframes display-text {
     50%,
-    100% {  
+    100% {
     }
 }
 
@@ -48,7 +43,7 @@ a {
     content: attr(data-text);
     position: absolute;
     width: 0;
-    border-right: 2px solid #00abf0;
+    border-right: 1px solid #00abf0;
     color: #00abf0;
     white-space: nowrap;
     overflow: hidden;
@@ -56,12 +51,10 @@ a {
 }
 
 @keyframes fill-text {
-
     10%,
     100% {
         width: 0;
     }
-
     70%,
     90% {
         width: 100%;
@@ -69,22 +62,21 @@ a {
 }
 
 .home-info p {
-    font-size: 16px;
-    margin: 10px 0 25px;
+    font-size: 14px; 
+    margin: 6px 0 15px; 
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 30px;
-    //background: #7cf03d;
+    padding: 6px 20px; 
     background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #00abf0;
-    font-size: 16px;
+    border: 1.5px solid #00abf0; 
+    border-radius: 3px; 
+    box-shadow: 0 0 6px #00abf0; 
+    font-size: 14px; 
     color: #1f242d;
     font-weight: 600;
-    transition: .5s;
+    transition: .3s; 
 }
 
 .btn:hover {
@@ -95,10 +87,10 @@ a {
 
 .home-img .img-box {
     position: relative;
-    width: 26vw;
-    height: 26vw;
+    width: 22vw; 
+    height: 22vw; 
     border-radius: 50%;
-    padding: 5px;
+    padding: 3px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,8 +101,8 @@ a {
 .home-img .img-box::after {
     content: '';
     position: absolute;
-    width: 500px;
-    height: 500px;
+    width: 400px; 
+    height: 400px;
     background: conic-gradient(transparent, transparent, transparent, #00abf0);
     transform: rotate(0deg);
     animation: rotate-border 10s linear infinite;
@@ -132,7 +124,7 @@ a {
     height: 100%;
     background: #1f242d;
     border-radius: 50%;
-    border: .1px solid #1f242d;
+    border: 0.1px solid #1f242d;
     display: flex;
     justify-content: center;
     z-index: 1;
@@ -146,53 +138,59 @@ a {
 
 .home-img .img-box .img-item img {
     position: absolute;
-    top: 30px;
+    top: 20px; 
     display: block;
-    width: 85%;
+    width: 75%; 
     object-fit: cover;
     mix-blend-mode: lighten;
-    padding-left: 40px;
+    padding-left: 30px
 }
 
-// @media (min-width: 992px) {
-//     .col-lg-6 {
-//         flex: 0 0 auto;
-//         width: 45%;
-//     }
-// }
-
-@media (max-width: 768px) { 
-
+@media (max-width: 768px) {
     .home-img .img-box {
-        width: 35vw;
-        height: 35vw;
+        width: 28vw; 
+        height: 28vw
     }
     .home-img {
         display: flex;
         justify-content: right;
     }
     .home-info h1 {
-        font-size: 40px;
+        font-size: 40px
     }
     .home-info h2 {
         display: inline-block;
-        font-size: 22px;
+        font-size: 22px
     }
     .home {
-        height: 88vh;
+        height: 80vh; 
+        padding: 20px 3% 0
     }
-
 }
 
-@media (max-width: 425px) { 
+@media (max-width: 425px) {
     .home-img .img-box {
-        width: 50vw;
-        height: 50vw;
+        width: 40vw; 
+        height: 40vw; 
     }
     .home-img {
         display: flex;
         justify-content: center;
     }
+    .home-info h1 {
+        font-size: 30px; 
+    }
+    .home-info h2 {
+        font-size: 16px; 
+    }
+    .home-info p {
+        font-size: 13px; 
+    }
+    .btn {
+        padding: 5px 15px; 
+        font-size: 13px; 
+    }
+    .home {
+        padding: 15px 2% 0; 
+    }
 }
-
-

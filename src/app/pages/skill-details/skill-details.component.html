@@ -1,7 +1,17 @@
 
-<div>
-    <p>
-        Lorsque j'ai commencé mon contrat d'alternance chez Liqtrade en octobre 2021, je n'avais aucune connaissance de Java. 
-        Étant donné que le coeur du travail concernait le développement backend en Java, Spring, il était essentiel que je me forme rapidement pour être opérationnel dans mon rôle de développeur full-stack. 
-    </p>
+<div class="skill-details container">
+    <div class="content">
+        <div>
+            <h1>{{selectedSkill.name}}</h1>
+        </div>
+        <div *ngFor="let paragraph of selectedSkill.description">
+            <p [innerHTML]>{{paragraph}}</p>
+        </div>
+        <div class="skills-info">
+            <img [src]="selectedSkill.img" alt="java-logo" class="skill-logos">
+        </div>
+        <div>
+            <p>{{selectedSkill.details}}</p>
+        </div>
+    </div>
 </div>

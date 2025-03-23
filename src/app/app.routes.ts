@@ -3,9 +3,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ServiceComponent } from './service/service.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ProjectComponent } from './project/project.component';
-import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { SkillsComponent } from '../app/pages/skills/skills.component'
+import { ProjectComponent } from '../app/pages/project/project.component';
+import { ProjectDetailsComponent } from '../app/pages/project-details/project-details.component';
+import { SkillDetailsComponent } from './pages/skill-details/skill-details.component';
 
 export const routes: Routes = [
     {
@@ -29,4 +30,7 @@ export const routes: Routes = [
     {
         path: 'details', component : ProjectDetailsComponent
     },
+    {
+        path: 'skills/:id', component : SkillDetailsComponent 
+    }
 ];
