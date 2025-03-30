@@ -7,56 +7,67 @@
     <div class="row">
 
         <div class="col-lg-6 col-md-12 ">
-            <div onclick="selectSkill(1)">
-                <img src="../../assets/skills/java.png" alt="java-logo" class="skill-logos">
-                <p class="skill-name">Java</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
+            <div >
+                <a [routerLink]="['/skills', 1]">
+                    <img src="assets/images/skills/java.png" alt="java-logo" class="skill-logos">
+                    <p class="skill-name">Java</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </a>
             </div>
 
             <br>
             <div>
-                <img src="../../assets/skills/spring.png" alt="java-logo" class="skill-logos">
-                <p class="skill-name">Spring et Hibernate</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
+                <a [routerLink]="['/skills', 2]">
+                    <img src="assets/images/skills/spring.png" alt="java-logo" class="skill-logos">
+                    <p class="skill-name">Spring et Hibernate</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                </a>
             </div>
             <br>
             <div>
-                <img src="../../assets/skills/cicd.png" alt="java-logo" class="skill-logos">
-                <p class="skill-name">CI / CD</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">55%</div>
-                </div>
+                <a [routerLink]="['/skills', 3]">
+                    <img src="assets/images/skills/cicd.png" alt="java-logo" class="skill-logos">
+                    <p class="skill-name">CI / CD</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">55 %</div>
+                    </div>
+                </a>
             </div>
-
         </div>
 
         <div class="col-lg-6 col-md-12 right-skills">
             <div>
-                <img src="../../assets/skills/angular.png" alt="java-logo" class="skill-logos">
-                <p class="skill-name">Angular</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65%</div>
-                </div>
+                <a [routerLink]="['/skills', 5]">
+                    <img src="assets/images/skills/JavaScript.png" alt="java-logo" class="skill-logos">
+                    <p class="skill-name">JavaScript</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60 %</div>
+                    </div>
+                </a>
             </div>
             <br>
             <div>
-                <img src="../../assets/skills/JavaScript.png" alt="java-logo" class="skill-logos">
-                <p class="skill-name">JavaScript</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-                </div>
+                <a [routerLink]="['/skills', 4]">
+                    <img src="assets/images/skills/angular.png" alt="java-logo" class="skill-logos">
+                    <p class="skill-name">Angular</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">65 %</div>
+                    </div>
+                </a>
             </div>
             <br>
             <div>
-                <img src="../../assets/skills/typescript.png" alt="java-logo" class="skill-logos">
-                <p class="skill-name">TypeScript</p>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
-                </div>
+                <a [routerLink]="['/skills', 6]">
+                    <img src="assets/images/skills/react.png" alt="java-logo" class="skill-logos">
+                    <p class="skill-name">React</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60 %</div>
+                    </div>
+                </a>
             </div>
 
         </div>
@@ -65,23 +76,31 @@
 <br>
     <div class="row">
         <div class="col-lg-3 col-md-6 skill-content">
-            <app-circular-progress [finaleValue]="70"></app-circular-progress>
-            <p>Gestion de projet</p>
+            <a [routerLink]="['/skills', 7]">
+                <app-circular-progress [finaleValue]="70"></app-circular-progress>
+                <p>Gestion de projet</p>
+            </a>
         </div>
         <div class="col-lg-3 col-md-6 skill-content">
-            <app-circular-progress [finaleValue]="70"></app-circular-progress>
-            <p>Communication</p>
+            <a [routerLink]="['/skills', 8]">
+                <app-circular-progress [finaleValue]="70"></app-circular-progress>
+                <p>Communication</p>
+            </a>
         </div>
 
         <div class="col-lg-3 col-md-6 skill-content">
-            <app-circular-progress [finaleValue]="75"></app-circular-progress>
-            <p>Esprit d'analyse</p>
+            <a [routerLink]="['/skills', 9]">
+                <app-circular-progress [finaleValue]="75"></app-circular-progress>
+                <p>Esprit d'analyse</p>
+            </a>
         </div>
         <div class="col-lg-3 col-md-6 skill-content">
-            <app-circular-progress [finaleValue]="75"></app-circular-progress>
-            <p>Méthodes agiles</p>
+            <a [routerLink]="['/skills', 10]">
+                <app-circular-progress [finaleValue]="75"></app-circular-progress>
+                <p>Méthodes agiles</p>
+            </a>
         </div> 
     </div>
-      <br>
+    <br>
 
 </div>

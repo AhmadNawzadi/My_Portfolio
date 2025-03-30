@@ -6,6 +6,7 @@ import { ServiceComponent } from './service/service.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
+import { SkillDetailsComponent } from './pages/skill-details/skill-details.component';
 
 export const routes: Routes = [
     {
@@ -29,4 +30,7 @@ export const routes: Routes = [
     {
         path: 'details', component : ProjectDetailsComponent
     },
+    {
+        path: 'skills/:id', component : SkillDetailsComponent 
+    }
 ];
