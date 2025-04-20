@@ -12,5 +12,9 @@ import { RouterOutlet, RouterModule } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-
+  closeMenu(navbarResponsive: HTMLElement) {
+    if (navbarResponsive.classList.contains('show')) {
+      navbarResponsive.classList.remove('show');
+    }
+  }
 }

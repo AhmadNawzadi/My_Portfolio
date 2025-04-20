@@ -1,5 +1,5 @@
 .about {
-    padding : 150px 120px 50px;
+    padding : 160px 150px 50px;
     color: #fff;
 }
 .lead {
@@ -11,15 +11,22 @@
     margin: 50px auto 40px;
 }
 .about img {
-    height: 570px;
+    height: 420px;
     width: 400px;
     border-radius: 15px;
 }
 
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+}
 .about .title {
     color: #fff;
     font-size: 50px;
     font-weight: 600;
+    margin-bottom: 35px;
 }
 
 .list-unstyled li {
@@ -130,10 +137,14 @@ padding: 0;
     color: #00abf0;;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 1024px) { 
 
- 
-
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 50px;
+    }
 }
 
 @media (max-width: 425px) { 
@@ -155,6 +166,11 @@ padding: 0;
 
     .tab-title span {
         font-size: 15px;
+    }
+    .about img {
+        height: 350px;
+        width: 400px;
+        border-radius: 15px;
     }
     
 }
