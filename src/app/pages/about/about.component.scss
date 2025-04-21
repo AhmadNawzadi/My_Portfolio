@@ -1,6 +1,5 @@
 .about {
     padding : 160px 150px 50px;
-    color: #fff;
 }
 .lead {
     font-size: 15px;
@@ -23,7 +22,6 @@
     gap: 80px;
 }
 .about .title {
-    color: #fff;
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 35px;
@@ -64,7 +62,6 @@
 
 .nav-tabs .nav-link {
     background-color: transparent;
-    color: #fff;
 }
 
 .nav-tabs .nav-link::after {
@@ -106,7 +103,6 @@ padding: 0;
     position: absolute;
     left: -0.8em;         
     font-size: 1.1em;     
-    color: #fff;
     padding-right: 5px;
 }
 
@@ -124,7 +120,6 @@ padding: 0;
 }
 .more  a {
     text-decoration: none;
-    color: black;
 }
 
 .more:hover {
@@ -150,7 +145,6 @@ padding: 0;
 @media (max-width: 425px) { 
     .about {
         padding : 100px 50px 50px;
-        color: #fff;
     }
     .about .title {
         font-size: 35px;

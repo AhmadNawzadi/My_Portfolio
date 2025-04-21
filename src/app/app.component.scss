@@ -1,13 +1,83 @@
-.app-container {
-    background-color: #080808;
-    //background-color: #081b29;
+// .app-container {
+//     background-color: #080808;
+//     //background-color: #ecf1f4;
+//     min-height: 100vh;
+//     color: #fff;
+//     padding: 0;
+//     margin: 0; 
+//     box-sizing: border-box;
+
+// }
+
+// .app-container2 {
+//     //background-color: #080808;
+//     background-color: #ecf1f4;
+//     min-height: 100vh;
+//     color: #fff;
+//     padding: 0;
+//     margin: 0; 
+//     box-sizing: border-box;
+// }
+
+body.dark-mode {
+    --bg-color: #080808;
+    --text-color: #ffffff;
     min-height: 100vh;
-    color: #fff;
     padding: 0;
     margin: 0; 
     box-sizing: border-box;
+  }
 
-}
+  body.dark-mode .nav-link.active {
+    color: #ffffff;
+  }
+
+  body.dark-mode .circular-bar::before {
+    background: #080808;
+
+  }
+
+  body.dark-mode a {
+    color: #ffffff;
+  }
+  
+  //   LIGHT MODE
+  body.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #080808;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+  }
+
+  body.light-mode .circular-bar::before {
+    background: #ffffff;
+  }
+
+  body.light-mode a {
+    color: #080808;
+  }
+  body.light-mode  .footer {
+    background: #ffffff;
+  }
+
+  body.light-mode  .navbar {
+    background: #ffffff;
+  }
+  body.light-mode .nav-item a {
+    color: #080808;
+  }
+
+  
+  /* Apply global variables inside component classes */
+  .content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 0;
+    margin: 0; 
+    min-height: 100vh;
+  }
 
 a {
     text-decoration: none;
