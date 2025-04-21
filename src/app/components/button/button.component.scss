@@ -3,7 +3,7 @@ label{
     width: 100px;
     height: 40px;
     display: block;
-    background:#242424;
+    background: #d9d9d9;
     border-radius: 100px;
     cursor: pointer;
     box-shadow: inset 0px 5px 15px rgba(0,0,0,0.3), inset 0px -5px 15px rgba(255,255,255,0.3);
@@ -26,7 +26,7 @@ label{
     background: linear-gradient(180deg,#777,#3a3a3a);
   }
   input:checked ~ label{
-    background: #d9d9d9;
+    background:  #242424;
   }
   .background{
     position: absolute;
