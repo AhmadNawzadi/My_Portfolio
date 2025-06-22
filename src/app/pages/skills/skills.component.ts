@@ -14,6 +14,4 @@ import { RouterModule } from '@angular/router';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
-
-
 }

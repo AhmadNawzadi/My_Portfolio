@@ -4,14 +4,14 @@
         <div>
             <p class="main-title">Project Management Tool</p>
         </div>
-        <p>
+        <p class="project-description">
             Ce projet a été réalisé dans le cadre de ma formation, dans le but de mettre en pratique les compétences techniques et les méthodes de gestion de projet acquises. L'objectif principal était de développer une application web permettant de gérer des projets, des tâches et des utilisateurs de manière intuitive et efficace. Cette application cible les équipes de travail qui souhaitent organiser leurs activités et suivre l'avancement de leurs projets.
         </p>
         <br>
         <div>
             <h5>Problème résolu</h5>
             <p>
-                L'application vise à résoudre le problème de manque de visibilité et d'organisation dans la gestion quotidienne des projets. Elle propose une solution centralisée pour créer des projets, assigner des tâches aux membres d’équipe, suivre leur avancement et gérer les priorités.
+                L'application vise à résoudre le problème de manque de visibilité et d'organisation dans la gestion quotidienne des projets. Elle propose une solution centralisée pour créer des projets, assigner des tâches aux membres d'équipe, suivre leur avancement et gérer les priorités.
             </p>
         </div>
         <br>
@@ -94,7 +94,7 @@
                     Automatisation des tests et couverture de code :
                 </li>
                 <li>
-                    Solution : Configuration de pipelines CI/CD avec GitHub Actions pour l'exécution des tests automatisés et génération de rapports de couverture via Jacoco et Istanbul.
+                    Solution : Configuration de pipelines CI/CD avec GitHub Actions pour l'exécution des tests automatisés et génération de rapports de couverture via Jacoco.
                 </li>
             </ul>
         </div>
@@ -127,6 +127,15 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <h5 class="skills">Compétences associées</h5>
+            <div>
+                <app-custom-button name="Spring" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="Angular" [routerLink]="['/skills', 4]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
+                <app-custom-button name="CI / CD" [routerLink]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="PostgreSQL" [routerLink]="['/skills', 4]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+            </div>
+        </div>
     </div>
 
     <!-- Block pour le projet Game Up  -->
@@ -134,7 +143,7 @@
         <div>
             <p class="main-title">Game Up</p>
         </div>
-        <p>
+        <p class="project-description">
             Ce projet a été réalisé dans le cadre de mes fonctions en tant que développeur pour la plateforme GamesUP, une plateforme de vente de jeux de société en ligne. L'objectif était de remédier à des problèmes critiques de performances et de fiabilité de l'API backend, qui impactaient directement les ventes. Le projet comportait plusieurs volets : refonte de l'API backend, mise en place de la sécurité, tests, et intégration d'un système de recommandation basé sur le Machine Learning.        </p>
         <br>
         <div>
@@ -266,6 +275,15 @@
                 </li>
             </ul>
         </div>
+        <div>
+            <h5 class="skills">Compétences associées</h5>
+            <div>
+                <app-custom-button name="Spring" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="Angular" [routerLink]="['/skills', 2]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
+                <app-custom-button name="CI / CD" [routerLink]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="PostgreSQL" [routerLink]="['/skills', 4]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+            </div>
+        </div>
     </div>
 
     <!-- Block pour le projet Electricity Billing System  -->
@@ -273,7 +291,7 @@
         <div>
             <p class="main-title">Electricity Billing System</p>
         </div>
-        <p>
+        <p class="project-description">
             Ce projet a été réalisé dans un cadre personnel afin de renforcer mes compétences en développement logiciel. L'objectif principal était de mettre en pratique mes connaissances en Java, MySQL et Swing en développant une application complète avec une interface utilisateur et une base de données.
         </p>
         <br>
@@ -337,7 +355,17 @@
                 </li>
             </ul>
         </div>
-        <br> 
+        <div>
+            <h5 class="skills">Compétences associées</h5>
+            <div>
+                <app-custom-button name="Spring" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="Angular" [routerLink]="['/skills', 2]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
+                <app-custom-button name="CI / CD" [routerLink]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="PostgreSQL" [routerLink]="['/skills', 4]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+            </div>
+        </div>
     </div>
 
 </div>
+
+<router-outlet></router-outlet>

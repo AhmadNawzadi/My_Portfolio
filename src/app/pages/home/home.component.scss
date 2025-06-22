@@ -7,6 +7,9 @@
 a {
     text-decoration: none;
 }
+.intro {
+    padding-bottom: 20px;
+}
 
 .home {
     display: flex;
@@ -16,7 +19,7 @@ a {
 }
 
 .home-info h1 {
-    font-size: 55px;
+    font-size: 50px;
 }
 
 .home-info h2 {
@@ -142,12 +145,11 @@ a {
 
 .home-img .img-box .img-item img {
     position: absolute;
-    top: 30px;
     display: block;
-    width: 85%;
+    width: 100%;
     object-fit: cover;
     mix-blend-mode: lighten;
-    padding-left: 40px;
+    //padding-left: 40px;
 }
 
 // @media (min-width: 992px) {
@@ -189,6 +191,15 @@ a {
         display: flex;
         justify-content: center;
     }
+    .btn {
+        padding: 5px;
+        font-size: 12px;
+    }
+    .home-info h1 {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+
 }
 
 

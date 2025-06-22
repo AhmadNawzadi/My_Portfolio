@@ -5,7 +5,7 @@
             <h1>{{selectedSkill.name}}</h1>
         </div>
         <div *ngFor="let paragraph of selectedSkill.description">
-            <p [innerHTML]>{{paragraph}}</p>
+            <p class="paragraph" [innerHTML]>{{paragraph}}</p>
         </div>
         <div class="skills-info">
             <img [src]="selectedSkill.img" alt="java-logo" class="skill-logos">

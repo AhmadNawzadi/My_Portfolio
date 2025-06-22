@@ -4,7 +4,6 @@
 .lead {
     font-size: 15px;
 }
-
 .about .title h2 {
     font-size: 60px;
     margin: 50px auto 40px;
@@ -14,7 +13,6 @@
     width: 400px;
     border-radius: 15px;
 }
-
 .about-content {
     display: flex;
     flex-direction: row;
@@ -26,18 +24,15 @@
     font-weight: 600;
     margin-bottom: 35px;
 }
-
 .list-unstyled li {
     text-decoration: none;
     padding: 0;
     margin: 0;
 }
-
 .about .nav-tabs {
     margin: 20px 0 40px;
     display: flex;
 }
-
 .about .nav-link {
     margin-right: 40px;
     font-weight: 500;
@@ -45,7 +40,6 @@
     cursor: pointer;
     position: relative;
 }
-
 .tabs .nav-link::after {
     content: '';
     height: 3px;
@@ -55,15 +49,12 @@
     bottom: 0;
     width: 0;
 }
-
 .nav-tabs {
     --bs-nav-tabs-border-width: 0;
 }
-
 .nav-tabs .nav-link {
     background-color: transparent;
 }
-
 .nav-tabs .nav-link::after {
     content: '';
     height: 3px;
@@ -73,31 +64,25 @@
     bottom: -8px;
     width: 0;
 }
-
 .nav-tabs .nav-link.active::after {
     background-color: #00abf0;
     width: 100%;
 }
-
 .nav-link  {
     padding: 0;
 }
-
 .tab-title {
     color : #00abf0;
     font-size: 15px;
 }
-
 .skills {
 margin: 0 16px 30px;
 padding: 0;  
 }
-
 .skill {
     list-style-type: none;
     position: relative;   
 }
-
 .skill::before {
     content: '■';
     position: absolute;
@@ -105,13 +90,11 @@ padding: 0;
     font-size: 1.1em;     
     padding-right: 5px;
 }
-
 .s {
     padding-left: 7px;
     font-size: 18px;
     color: #00abf0;
 }
-
 .more {
     text-align: center;
     transform: background 1s;
@@ -121,30 +104,27 @@ padding: 0;
 .more  a {
     text-decoration: none;
 }
-
 .more:hover {
     color: #00abf0;;
     background: #1f242d;
     box-shadow: 0 0 10px #00abf0;
 }
-
 .more:hover a {
     color: #00abf0;;
 }
 
 @media (max-width: 1024px) { 
-
     .about-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         gap: 50px;
     }
 }
 
 @media (max-width: 425px) { 
     .about {
-        padding : 100px 50px 50px;
+        padding : 100px 30px 50px;
     }
     .about .title {
         font-size: 35px;
@@ -153,7 +133,7 @@ padding: 0;
     .about .nav-link {
         margin-right: 25px;
         font-weight: 500;
-        font-size: 13px;
+        font-size: 10px;
         cursor: pointer;
         position: relative;
     }
@@ -162,10 +142,17 @@ padding: 0;
         font-size: 15px;
     }
     .about img {
-        height: 350px;
+        height: 320px;
         width: 400px;
         border-radius: 15px;
     }
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+
     
 }
 

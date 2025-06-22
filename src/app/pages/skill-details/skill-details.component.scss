@@ -2,15 +2,26 @@
     padding : 100px 75px 80px;
     color: #fff;
 }
-
 .skills-info  {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px
 }
-
 .skills-info img  {
     height: 200px;
     width: 300px;
+}
+
+@media (max-width: 425px) { 
+    .skill-details {
+        padding : 100px 30px 80px;
+    }
+    .paragraph {
+        text-align: justify;
+    }
+    .skills-info img  {
+        height: 200px;
+        width: 270px;
+    }
 }

@@ -1,24 +1,16 @@
 .contact {
-    padding : 120px 150px 100px;
+    padding : 120px 120px 100px;
 }
-
 .contact .title h2 {
-    font-size: 60px;
+    font-size: 45px;
     margin-bottom: 50px;
 }
-
-// .contact .title span {
-//     color: #00abf0;
-// }
-
 .contact .content {
     padding-left: 15px;
 }
-
 a {
     text-decoration: none;
 }
-
 .btn-sci .btn {
     display: inline-block;
     padding: 10px 30px;
@@ -29,18 +21,13 @@ a {
     font-weight: 600;
     transition: .5s;
 }
-
-
-
 .address .btn-sci {
     display: flex;
     align-items: center;
 }
-
 .address.btn-sci .sci {
     margin-left: 20px;
 }
-
 .address .btn-sci .sci a {
     display: inline-flex;
     padding: 8px;
@@ -51,24 +38,18 @@ a {
     margin: 0 8px;
     transition: .5s;
 }
-
 .address .btn-sci .sci a:hover {
     background: #00abf0;;
     color: #1f242d;
     box-shadow: 0 0 10px #00abf0;;
 }
-
 .form-control.field {
     height: 40px;
 }
-
-
-
 .submit {
     background-color: #00abf0;
     border: 1px solid #00abf0;
 }
-
 .submit:hover, .btn-sci .btn:hover  {
     color: #00abf0;;
     background: #1f242d;
@@ -77,7 +58,7 @@ a {
 
 @media (max-width: 768px) { 
     .contact {
-        padding : 120px 100px 50px;
+        padding : 120px 70px 50px;
     }
     .contact .title h2 {
         font-size: 40px;
@@ -87,10 +68,17 @@ a {
 
 @media (max-width: 425px) { 
     .contact {
-        padding : 120px 50px 100px;
+        padding : 100px 20px 100px;
     }
     .contact .title h2 {
-        font-size: 40px;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .address {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
 }

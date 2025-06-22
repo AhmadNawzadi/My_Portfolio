@@ -1,9 +1,25 @@
 .project-details {
     padding : 120px 120px 100px;
 }
-
 .main-title {
     text-align: center;
     font-size: 30px;
     margin-bottom: 50px;
+}
+.skills {
+    padding: 20px 0;
+}
+.project-description {
+    text-align: justify;
+}
+
+@media (max-width: 425px) { 
+
+    .project-details {
+        padding : 100px 30px 100px;
+    }
+    .main-title {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
 }

@@ -21,7 +21,6 @@ export class FooterComponent implements OnInit {
   }
 
   toggleDarkMode(): void {
-    console.log("Button dark mode clicked ")
     this.isDarkMode = !this.isDarkMode;
     localStorage.setItem('theme', this.isDarkMode ? 'dark' : 'light');
     this.updateBodyClass();

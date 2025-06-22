@@ -1,22 +1,16 @@
 .portfolio {
-    padding: 120px 100px 100px ;
+    padding: 100px ;
 }
-
 .card  {
     border-radius: 10px;
     overflow: hidden;
     transition: 2s;
     margin-bottom: 20px;
 }
-
 .portfolio .title h2 {
     font-size: 50px;
     margin-bottom: 50px;
 }
-
-// .portfolio .title span {
-//     color: #00abf0;
-// }
 a {
     text-decoration: none;
     color: #000;
@@ -99,8 +93,23 @@ color: #fff;
 }
 
 @media (max-width: 425px) { 
-
     .portfolio {
-        padding: 100px 50px 100px;
+        padding: 80px 30px 100px;
+    }
+    .portfolio .title h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .card-text {
+        font-size: 11px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+    .p-icon {
+        padding-top: 4px;
+        height: 40px;
+        width: 40px;
     }
 }
