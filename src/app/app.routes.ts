@@ -28,7 +28,7 @@ export const routes: Routes = [
         path: 'skills', component : SkillsComponent
     },
     {
-        path: 'details', component : ProjectDetailsComponent
+        path: 'details/:id', component : ProjectDetailsComponent
     },
     {
         path: 'skills/:id', component : SkillDetailsComponent 

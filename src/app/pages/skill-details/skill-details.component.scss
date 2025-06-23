@@ -13,6 +13,11 @@
     width: 300px;
 }
 
+.project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 425px) { 
     .skill-details {
         padding : 100px 30px 80px;

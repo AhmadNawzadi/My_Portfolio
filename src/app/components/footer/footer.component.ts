@@ -2,18 +2,25 @@ import { OnInit } from '@angular/core';
 import { HostBinding } from '@angular/core';
 import { Component } from '@angular/core';
 import { ButtonComponent } from '../button/button.component';
+import { CommonModule } from '@angular/common';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
   imports: [
-    ButtonComponent
+    ButtonComponent,
+    CommonModule,
+    FontAwesomeModule
   ],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent implements OnInit {
   isDarkMode = false;
+    faSun = faSun
+    faMoon = faMoon
 
   ngOnInit(): void {
     this.isDarkMode = localStorage.getItem('theme') === 'dark';

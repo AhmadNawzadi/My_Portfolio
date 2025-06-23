@@ -16,6 +16,22 @@
     margin: 0;
  }
 
+ .toggle-icon {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-icon fa-icon {
+    font-size: 24px;
+    color: inherit;
+  }
+
 @media (max-width: 425px) { 
     .footer { 
         line-height: 20px;

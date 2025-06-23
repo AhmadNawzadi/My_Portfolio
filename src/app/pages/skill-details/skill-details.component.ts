@@ -1,25 +1,32 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
 import Skill from '../../types/Skill';
 import { CommonModule } from '@angular/common';
+import { ButtonComponent } from '../../components/button/button.component';
+import { CustomButtonComponent } from '../../components/custom-button/custom-button.component';
 
 @Component({
   selector: 'app-skill-details',
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    CustomButtonComponent,
+    RouterOutlet,
+    RouterModule
   ],
   templateUrl: './skill-details.component.html',
   styleUrl: './skill-details.component.scss'
 })
 export class SkillDetailsComponent{
   skillId: number = 0;
+  ind : number = 1
   selectedSkill : Skill = {
     id: 0,
     name: '',
     description: [],
     img: '',
-    details: ''
+    details: '',
+    projects: []
   };
 
   constructor(private route: ActivatedRoute) { }
@@ -27,6 +34,10 @@ export class SkillDetailsComponent{
   ngOnInit(): void {
     this.skillId = +this.route.snapshot.paramMap.get('id')!;
     this.selectedSkill = this.skills.find(skill => skill.id === this.skillId)!;
+  }
+
+  objectEntries(obj: { [key: string]: string }): [string, string][] {
+    return Object.entries(obj);
   }
 
   skills = [
@@ -40,7 +51,8 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/Java.png',
       details: ` J'ai travaillé sur le développement et l'optimisation d'APIs REST, l'intégration de bases de données, ainsi que la mise en place de bonnes pratiques en matière de sécurité et de gestion des performances. 
         Cette expérience m'a permis d'acquérir une solide maîtrise de l'écosystème Spring (Spring Boot, Spring Security, Spring Data), tout en collaborant étroitement avec les équipes techniques pour assurer une livraison efficace et qualitative des fonctionnalités.
-      `
+      `,
+      projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -52,7 +64,8 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/spring.png', 
       details: ` J'ai travaillé sur le développement et l'optimisation d'APIs REST, l'intégration de bases de données, ainsi que la mise en place de bonnes pratiques en matière de sécurité et de gestion des performances. 
       Cette expérience m'a permis d'acquérir une solide maîtrise de l'écosystème Spring (Spring Boot, Spring Security, Spring Data), tout en collaborant étroitement avec les équipes techniques pour assurer une livraison efficace et qualitative des fonctionnalités.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -63,7 +76,9 @@ export class SkillDetailsComponent{
       `],
       img: 'assets/images/skills-imgs/cicd.png',
       details: ` J'ai appris à configurer et utiliser des outils tels que GitHub Actions, GitLab CI/CD, Jenkins et Docker pour automatiser les tests, le build et le déploiement des applications. Cette expertise me permet d'assurer une livraison rapide et fiable des logiciels tout en garantissant leur qualité et leur stabilité.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+
     }, 
 
     {
@@ -76,7 +91,8 @@ export class SkillDetailsComponent{
       ],
       img: 'assets/images/skills-imgs/angular.png',
       details: ` Ma maîtrise d'Angular, associée à des technologies complémentaires comme TypeScript, RxJS et Firebase, me permet de créer des applications performantes et ergonomiques, adaptées aux besoins des utilisateurs.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -89,7 +105,8 @@ export class SkillDetailsComponent{
       ],
       img: 'assets/images/skills-imgs/js.png',
       details: ` Ma maîtrise d'Angular, associée à des technologies complémentaires comme TypeScript, RxJS et Firebase, me permet de créer des applications performantes et ergonomiques, adaptées aux besoins des utilisateurs.
-    `
+    `  ,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -100,8 +117,10 @@ export class SkillDetailsComponent{
       `],
       img: 'assets/images/skills-imgs/react.png',
       details: `Grâce à cette expérience, j'ai acquis une solide maîtrise de React, en exploitant ses fonctionnalités avancées comme les hooks, le state management (Redux/Context API) et l'optimisation des performances. J'ai également travaillé avec des technologies associées telles que TypeScript, React Query et Material-UI, garantissant une expérience utilisateur fluide et efficace.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     } ,
+
     {
       id: 7,
       name: 'Gestion de Projet',
@@ -110,8 +129,10 @@ export class SkillDetailsComponent{
       `],
       img: 'assets/images/skills-imgs/projet.jpg',
         details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
-      `
+      `,
+      projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
+
     {
       id: 8,
       name: 'Communication',
@@ -119,8 +140,10 @@ export class SkillDetailsComponent{
         Lors de mon expérience chez Liqrade, j'ai développé des compétences en communication et en esprit d'analyse, essentiels pour travailler efficacement en équipe et prendre des décisions stratégiques.      `],
       img: 'assets/images/skills-imgs/com.jpg',
       details: `Grâce à des échanges réguliers avec les différentes parties prenantes, jai appris à formuler des idées de manière claire, à écouter activement et à adapter mon discours en fonction des interlocuteurs. Mon esprit d'analyse m'a permis d'évaluer les problématiques, d'identifier des solutions adaptées et de contribuer à l'amélioration continue des projets.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
+
     {
       id: 9,
       name: 'Esprit d\'analyse',
@@ -129,8 +152,10 @@ export class SkillDetailsComponent{
      `],
       img: 'assets/images/skills-imgs/analyse.png',
       details: `Grâce à des échanges réguliers avec les différentes parties prenantes, jai appris à formuler des idées de manière claire, à écouter activement et à adapter mon discours en fonction des interlocuteurs. Mon esprit d'analyse m'a permis d'évaluer les problématiques, d'identifier des solutions adaptées et de contribuer à l'amélioration continue des projets.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
+
     {
       id: 10,
       name: 'Methodologies Agiles',
@@ -139,8 +164,57 @@ export class SkillDetailsComponent{
       `],
       img: 'assets/images/skills-imgs/Agile-Methodology.png',
       details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
-    `
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
+
+    {
+      id: 11,
+      name: 'Docker',
+      description: [`
+        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+      `],
+      img: 'assets/images/skills/docker.png',
+      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+
+    {
+      id: 12,
+      name: 'Test',
+      description: [`
+        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+      `],
+      img: 'assets/images/skills/test.png',
+      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+
+    {
+      id: 13,
+      name: 'SQL',
+      description: [`
+        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+      `],
+      img: 'assets/images/skills/sql.png',
+      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+
+    {
+      id: 14,
+      name: 'Adobe XD',
+      description: [`
+        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+      `],
+      img: 'assets/images/skills/xd.png',
+      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
+    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    }
   ]
 
 

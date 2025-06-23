@@ -13,5 +13,14 @@
         <div>
             <p>{{selectedSkill.details}}</p>
         </div>
+        <div class="project">
+            <div *ngFor="let p of selectedSkill.projects; let i = index" >
+                <div *ngFor="let entry of objectEntries(p);" class="project">
+                    <app-custom-button [name]="entry[0]" [link]="[entry[1], ind+i]"  [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+<router-outlet></router-outlet>

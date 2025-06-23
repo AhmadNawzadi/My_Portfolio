@@ -15,7 +15,7 @@ import { RouterLink, RouterModule } from '@angular/router';
 export class CustomButtonComponent {
 
   @Input() name: string = ''
-  @Input() link: any[] = [];
+  @Input() link: any[] | string = [];
   @Input() buttonStyle: { [key: string]: string } = {}
 
 }

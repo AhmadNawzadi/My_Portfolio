@@ -11,7 +11,7 @@ export class ProjectService {
   gameUp : boolean = false
   electricitySystem : boolean = false
 
-  selectProject(id : number){
+  selectProject(id : number| null){
     this.gameUp = false
     this.electricitySystem = false
     this.projectManagement = false

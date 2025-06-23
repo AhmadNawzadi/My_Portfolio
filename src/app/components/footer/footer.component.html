@@ -1,9 +1,11 @@
 <div class="container-fluid footer">
-
-        <div>
-            <p> © 2025 - Tous droits réservés </p>
-        </div>
-        <div>
-            <app-button (change)="toggleDarkMode()"></app-button>
-        </div>
+    <div>
+        <p> © 2025 - Tous droits réservés </p>
+    </div>
+    <div>
+        <button (click)="toggleDarkMode()" class="toggle-icon">
+            <fa-icon *ngIf="isDarkMode" [icon]="faSun"></fa-icon>
+            <fa-icon *ngIf="!isDarkMode" [icon]="faMoon"></fa-icon>
+        </button>
+    </div>
 </div>
