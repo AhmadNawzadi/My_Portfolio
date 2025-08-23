@@ -1,5 +1,6 @@
 <div class="project-details">
 
+    <!-- Block pour le projet projectManagement  -->
     <div class="project-management" *ngIf="projectManagement">
         <div>
             <p class="main-title">Project Management Tool</p>
@@ -15,7 +16,6 @@
             </p>
         </div>
         <br>
-
         <div>
             <h5>Mon rôle</h5>  
             <p>Dans ce projet, j'ai occupé plusieurs rôles :</p>
@@ -31,7 +31,6 @@
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Objectifs atteints</h5>  
@@ -46,11 +45,10 @@
                     Mise en place d'un processus de tests automatisés avec une couverture de code à hauteur de 60% pour les instructions et les branches.
                 </li>
                 <li>
-                    Intégration et déploiement continu (CI/CD) avec Docker et GitHub Acti
+                    Intégration et déploiement continu (CI/CD) avec Docker et GitHub Action.
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Détails Techniques</h5>  
@@ -73,7 +71,6 @@
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Défis rencontrés</h5>  
@@ -98,7 +95,6 @@
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Solutions apportées</h5>  
@@ -114,7 +110,6 @@
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Résultats finaux</h5>  
@@ -133,7 +128,7 @@
                 <app-custom-button name="Spring" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="Angular" [link]="['/skills', 4]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
                 <app-custom-button name="CI / CD" [link]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
-                <app-custom-button name="PostgreSQL" [link]="['/skills', 4]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
             </div>
         </div>
     </div>
@@ -144,7 +139,7 @@
             <p class="main-title">Game Up</p>
         </div>
         <p class="project-description">
-            Ce projet a été réalisé dans le cadre de mes fonctions en tant que développeur pour la plateforme GamesUP, une plateforme de vente de jeux de société en ligne. L'objectif était de remédier à des problèmes critiques de performances et de fiabilité de l'API backend, qui impactaient directement les ventes. Le projet comportait plusieurs volets : refonte de l'API backend, mise en place de la sécurité, tests, et intégration d'un système de recommandation basé sur le Machine Learning.        </p>
+            Ce projet a été réalisé dans le cadre de ma formation, une plateforme de vente de jeux de société en ligne. L'objectif était de remédier à des problèmes critiques de performances et de fiabilité de l'API backend, qui impactaient directement les ventes. Le projet comportait plusieurs volets : refonte de l'API backend, mise en place de la sécurité, tests, et intégration d'un système de recommandation basé sur le Machine Learning.        </p>
         <br>
         <div>
             <h5>Problème résolu</h5>
@@ -152,7 +147,6 @@
                 Le site était confronté à des bugs récurrents liés à un backend obsolète et mal conçu par un stagiaire. Ces problèmes rendaient la plateforme instable et faisaient perdre des ventes. Par ailleurs, le système de recommandations était aléatoire et inefficace, ce qui réduisait l'engagement des utilisateurs. Ce projet visait à redéfinir complètement l'architecture de l'API backend tout en intégrant un système de recommandation basé sur le Machine Learning.            </p>
         </div>
         <br>
-
         <div>
             <h5>Mon rôle</h5>  
             <p>En tant que développeur principal, j'ai été en charge des tâches suivantes :
@@ -175,7 +169,6 @@
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Objectifs atteints</h5>  
@@ -209,36 +202,28 @@
                     Sécurité : Spring Security a été utilisé pour la gestion des rôles (client et administrateur) et la protection des endpoints sensibles.
                 </li>
                 <li>
-                    Recommandations : FastAPI a été préféré pour sa légèreté et sa facilité d’intégration avec des bibliothèques de Machine Learning telles que scikit-learn.
+                    Recommandations : FastAPI a été préféré pour sa légèreté et sa facilité d'intégration avec des bibliothèques de Machine Learning telles que scikit-learn.
                 </li>
                 <li>
-                    Tests : Utilisation de JUnit pour les tests backend et Pytest pour les tests Python.
+                    Tests : Utilisation de JUnit pour les tests backend.
                 </li>
                 <li>
-                    Communication entre APIs : Mise en place de RESTful services pour la communication entre l’API Spring et l’API Python.
+                    Communication entre APIs : Mise en place de RESTful services pour la communication entre l'API Spring et l'API Python.
                 </li>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Défis rencontrés</h5>  
             <ul>
-                <p>Code existant mal conçu :</p>
-                <li>
-                    Solution : Refactorisation complète pour respecter les principes SOLID et adoption d'une architecture modulaire.
-                </li>
-                <p>Système de recommandation sans données fiables :</p>
-                <li>
-                    Solution : Génération de données synthétiques pour tester et valider le modèle KNN, en attendant des données réelles.
-                </li>
-                <p>Intégration API Spring et FastAPI :</p>
-                <li>
-                    Solution : Mise en place de endpoints REST clairs pour échanger les données utilisateur entre les deux APIs.
-                </li>
+                <p>1. Code existant mal conçu :</p>
+                <p>Solution : Refactorisation complète pour respecter les principes SOLID et adoption d'une architecture modulaire.</p>
+                <p>2. Système de recommandation sans données fiables :</p>
+                <p>Solution : Génération de données synthétiques pour tester et valider le modèle KNN, en attendant des données réelles.</p>
+                <p>3. Intégration API Spring et FastAPI :</p>
+                <p>Solution : Mise en place de endpoints REST clairs pour échanger les données utilisateur entre les deux APIs.</p>
             </ul>
         </div>
-
         <br>
         <div>
             <h5>Solutions apportées</h5>  
@@ -278,10 +263,10 @@
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
-                <app-custom-button name="Spring" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
-                <app-custom-button name="Angular" [link]="['/skills', 2]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
-                <app-custom-button name="CI / CD" [link]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
-                <app-custom-button name="PostgreSQL" [link]="['/skills', 4]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Spring" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="Python" [link]="['/skills', 12]" [buttonStyle]="{'background-color': '#D1CA1B'}"></app-custom-button>
+                <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Machine Learning" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#1E1FA6'}"></app-custom-button>
             </div>
         </div>
     </div>
@@ -340,31 +325,386 @@
             </ul>
         </div>
 
+        <div>
+            <h5 class="skills">Compétences associées</h5>
+            <div>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Swing" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5C3C45'}"></app-custom-button>
+
+            </div>
+        </div>
+    </div>
+
+     <!-- Block pour le projet Liqtrade CRM  -->
+     <div class="crm-project" *ngIf="liqtradeCRM">
+        <div>
+            <p class="main-title">CRM - Customer Relationship Management</p>
+        </div>
+        <p class="project-description">
+            Ce projet a été développé dans le cadre de mon expérience professionnelle chez <strong>Liqrade</strong>. L'objectif principal était de concevoir et développer une application CRM (Customer Relationship Management) permettant aux équipes commerciales et marketing de suivre et gérer efficacement leurs interactions avec les clients. Cette solution centralise les données clients, optimise les processus de vente et améliore la gestion des opportunités commerciales.
+        </p>
         <br>
         <div>
-            <h5>Défis rencontrés et Solutions apportées</h5>  
+            <h5>Problème résolu</h5>
+            <p>
+                L'entreprise faisait face à une dispersion des informations clients et à un manque d'outils pour suivre l'évolution des contacts, des opportunités et des interactions commerciales. L'application CRM permet de résoudre ce problème en offrant une plateforme unique, accessible et structurée pour gérer l'ensemble du cycle de vie client.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h5>Mon rôle</h5>  
+            <p>Au sein de ce projet, j'ai été responsable de plusieurs aspects :</p>
             <ul>
                 <li>
-                    Connexion à la base de données : Au début, j'ai rencontré des difficultés pour établir la connexion entre l'application et MySQL. Ce problème a été résolu en configurant correctement le driver JDBC et en optimisant les requêtes SQL.
+                    Conception : Élaboration du modèle de données et définition de l'architecture applicative.
                 </li>
                 <li>
-                    Gestion des performances : Certains affichages étaient lents à cause du traitement des données. J'ai optimisé les requêtes et mis en place des index dans la base de données pour accélérer l'exécution des requêtes.
+                    Développement Backend : Création des API REST sécurisées avec Java et Spring Boot.
                 </li>
                 <li>
-                    Interface utilisateur dynamique : L'utilisation de Swing demandait une gestion précise des événements et des mises à jour dynamiques de l'affichage. J'ai utilisé des modèles de conception comme MVC (Modèle-Vue-Contrôleur) pour améliorer la structure du code et faciliter la maintenance.
+                    Développement Frontend : Réalisation de l'interface utilisateur avec Vue.js et Bootstrap pour garantir une expérience utilisateur moderne et responsive.
+                </li>
+                <li>
+                    Intégration de la base de données : Conception et implémentation d'une base relationnelle (SQL) pour stocker les informations clients, contacts, rendez-vous et opportunités.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Objectifs atteints</h5>  
+            <ul>
+                <li>
+                    Mise en place d'un CRM sur mesure, adapté aux besoins de l'entreprise.
+                </li>
+                <li>
+                    Interface fluide et responsive, facilitant l'utilisation quotidienne des équipes.
+                </li>
+                <li>
+                    Intégration réussie entre le frontend Vue.js et le backend Spring Boot.
+                </li>
+                <li>
+                    Structuration efficace des données clients dans une base SQL optimisée.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Détails Techniques</h5>  
+            <p>Choix technologiques :</p>
+            <ul>
+                <li>
+                    Frontend : Vue.js pour la réactivité et la simplicité, Bootstrap pour le design responsive.
+                </li>
+                <li>
+                    Backend : Java avec Spring Boot pour sa robustesse, sa sécurité et la facilité de développement d'API REST.
+                </li>
+                <li>
+                    Base de données : SQL (PostgreSQL) pour la fiabilité et la gestion structurée des données.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Défis rencontrés</h5>  
+            <ul>
+                <li>
+                    Synchronisation des données en temps réel entre les composants Vue.js et les API backend.
+                </li>
+                <li>
+                    Gestion de la sécurité (authentification, autorisation) des utilisateurs selon leurs rôles.
+                </li>
+                <li>
+                    Conception d'une interface intuitive malgré la complexité fonctionnelle de certaines entités.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Solutions apportées</h5>  
+            <ul>
+                <li>
+                    Mise en place d'un système de rôles et permissions via Spring Security.
+                </li>
+                <li>
+                    Utilisation des composants Vue.js réactifs avec gestion d'état centralisé pour une meilleure synchronisation.
+                </li>
+                <li>
+                    Utilisation de Bootstrap pour harmoniser le design et garantir l'accessibilité sur tout type d'appareil.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Résultats finaux</h5>  
+            <ul>
+                <li>
+                    Une application CRM fonctionnelle, utilisée au quotidien par les équipes de Liqrade.
+                </li>
+                <li>
+                    Un gain de productivité notable grâce à la centralisation et la traçabilité des données clients.
                 </li>
             </ul>
         </div>
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
-                <app-custom-button name="Spring" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
-                <app-custom-button name="Angular" [link]="['/skills', 2]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
-                <app-custom-button name="CI / CD" [link]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
-                <app-custom-button name="PostgreSQL" [link]="['/skills', 4]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
+                <app-custom-button name="Spring Boot" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Vue.js" [link]="['/skills', 6]" [buttonStyle]="{'background-color': '#42b883'}"></app-custom-button>
+                <app-custom-button name="Bootstrap" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#7952b3'}"></app-custom-button>
             </div>
         </div>
     </div>
+    
+     <!-- Block pour le projet STPPS  -->
+     <div class="stpps-project" *ngIf="stpps">
+        <div>
+            <p class="main-title">STPPS - Solution de gestion du Tiers Payant et du Recouvrement</p>
+        </div>
+        <p class="project-description">
+            Ce projet a été réalisé dans le cadre de mon activité actuelle au sein d'une ESN, pour le compte du client <strong>STPPS</strong>. STPPS a pour mission d'aider les professionnels de santé, notamment les centres dentaires et cabinets spécialisés, à gérer efficacement le recouvrement de leurs impayés. L'application permet de centraliser la gestion du tiers payant et d'optimiser le traitement des dossiers clients grâce à un accompagnement personnalisé.
+        </p>
+        <br>
+        <div>
+            <h5>Problème résolu</h5>
+            <p>
+                Les structures médicales faisaient face à un manque de suivi dans le traitement des impayés et des rejets de paiement liés au tiers payant. Le projet STPPS propose une solution digitale complète pour améliorer la traçabilité, le suivi et le traitement des opérations financières avec les mutuelles et la sécurité sociale.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h5>Mon rôle</h5>  
+            <p>Sur ce projet, j'ai participé activement au développement de la solution :</p>
+            <ul>
+                <li>
+                    Développement backend en Java avec Spring Boot pour la création des API REST sécurisées.
+                </li>
+                <li>
+                    Intégration d'une base de données PostgreSQL pour le stockage des opérations de facturation, des paiements et des rejets.
+                </li>
+                <li>
+                    Réalisation de l'interface utilisateur en React, avec Tailwind CSS pour garantir une interface ergonomique et responsive.
+                </li>
+                <li>
+                    Participation à la modélisation de la base de données et optimisation des requêtes SQL pour assurer la performance de l'application.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Objectifs atteints</h5>  
+            <ul>
+                <li>
+                    Mise en place d'un tableau de bord centralisant toutes les opérations financières liées au tiers payant.
+                </li>
+                <li>
+                    Automatisation des traitements liés aux rejets de paiement et au recouvrement.
+                </li>
+                <li>
+                    Développement d'une application web moderne avec une interface claire et efficace.
+                </li>
+                <li>
+                    Optimisation des performances backend via une architecture bien structurée et des requêtes SQL optimisées.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Détails Techniques</h5>  
+            <p>Choix technologiques :</p>
+            <ul>
+                <li>
+                    Frontend : React.js pour sa flexibilité et Tailwind CSS pour une mise en page rapide et harmonieuse.
+                </li>
+                <li>
+                    Backend : Java avec Spring Boot pour la gestion des services et API REST.
+                </li>
+                <li>
+                    Base de données : PostgreSQL pour sa robustesse et sa capacité à gérer des volumes importants de données structurées.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Défis rencontrés</h5>  
+            <ul>
+                <li>
+                    Gestion des règles complexes liées aux rejets de paiement selon les mutuelles et types de soins.
+                </li>
+                <li>
+                    Synchronisation des mises à jour entre les modules frontend et backend.
+                </li>
+                <li>
+                    Optimisation des performances de traitement en base de données.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Solutions apportées</h5>  
+            <ul>
+                <li>
+                    Implémentation d'un moteur de règles métier personnalisable côté backend.
+                </li>
+                <li>
+                    Utilisation de hooks et d'état centralisé dans React pour garantir une synchronisation fluide de l'interface.
+                </li>
+                <li>
+                    Indexation, procédures stockées, et analyse des plans d'exécution SQL pour améliorer les temps de réponse.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Résultats finaux</h5>  
+            <ul>
+                <li>
+                    Une application performante, utilisée par les équipes STPPS pour accompagner leurs clients dans la gestion du tiers payant.
+                </li>
+                <li>
+                    Un gain de temps significatif dans le traitement des rejets et des impayés grâce à l'automatisation.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="skills">Compétences associées</h5>
+            <div>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
+                <app-custom-button name="Spring Boot" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="React" [link]="['/skills', 5]" [buttonStyle]="{'background-color': '#61dafb'}"></app-custom-button>
+                <app-custom-button name="PostgreSQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#336791'}"></app-custom-button>
+                <app-custom-button name="Tailwind CSS" [link]="['/skills', 11]" [buttonStyle]="{'background-color': '#38bdf8'}"></app-custom-button>
+            </div>
+        </div>
+    </div>
+    
+     <!-- Block pour le projet OCR -->
+     <div class="ocr-project" *ngIf="ocr">
+        <div>
+            <p class="main-title">OCR - Extraction d'informations de cartes bancaires</p>
+        </div>
+        <p class="project-description">
+            Ce projet a été développé dans le cadre de ma formation en <strong>intelligence artificielle</strong>. L'objectif principal était de concevoir une solution capable d'extraire automatiquement les informations présentes sur une carte bancaire (nom du titulaire, numéro de carte, date d'expiration) à partir d'une image, grâce à la technologie de reconnaissance optique de caractères (OCR). L'application permet ensuite de sauvegarder ces données dans une base de données pour un usage ultérieur sécurisé.
+        </p>
+        <br>
+        <div>
+            <h5>Problème résolu</h5>
+            <p>
+                Le remplissage manuel d'informations bancaires peut être source d'erreurs et représente un frein à l'expérience utilisateur. Ce projet vise à automatiser la lecture de ces données via une simple photo, tout en garantissant un traitement rapide, précis et sécurisé.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h5>Mon rôle</h5>  
+            <p>J'ai pris en charge l'ensemble du développement de l'application :</p>
+            <ul>
+                <li>
+                    Intégration de la librairie EasyOCR en Python pour effectuer la reconnaissance de texte sur les images.
+                </li>
+                <li>
+                    Développement du backend avec Flask pour la gestion des requêtes, du traitement et de l'API.
+                </li>
+                <li>
+                    Réalisation de l'interface utilisateur en HTML/CSS avec Bootstrap pour assurer une utilisation simple et responsive.
+                </li>
+                <li>
+                    Conception et intégration de la base de données pour stocker les informations extraites.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Objectifs atteints</h5>  
+            <ul>
+                <li>
+                    Extraction fiable des données à partir de différents formats de cartes bancaires.
+                </li>
+                <li>
+                    Interface web légère et intuitive pour télécharger et traiter une image.
+                </li>
+                <li>
+                    Stockage structuré des résultats dans une base de données relationnelle.
+                </li>
+                <li>
+                    Respect des bonnes pratiques en matière de traitement de données sensibles.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Détails Techniques</h5>  
+            <p>Choix technologiques :</p>
+            <ul>
+                <li>
+                    Traitement OCR : EasyOCR (Python), pour sa simplicité et sa prise en charge multi-langue.
+                </li>
+                <li>
+                    Backend : Flask, pour la légèreté et la rapidité de développement d'API REST.
+                </li>
+                <li>
+                    Frontend : Bootstrap pour un design responsive et rapide à mettre en œuvre.
+                </li>
+                <li>
+                    Base de données : Système relationnel (SQLite ou PostgreSQL) pour persister les données extraites.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Défis rencontrés</h5>  
+            <ul>
+                <li>
+                    Traitement d'images de qualité variable et en différents formats.
+                </li>
+                <li>
+                    Fiabilité de l'extraction des données chiffrées comme les numéros de carte.
+                </li>
+                <li>
+                    Sécurisation du stockage des données sensibles.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Solutions apportées</h5>  
+            <ul>
+                <li>
+                    Prétraitement des images avec OpenCV (recadrage, niveaux de gris) avant OCR.
+                </li>
+                <li>
+                    Validation des données extraites via expressions régulières.
+                </li>
+                <li>
+                    Chiffrement des données sensibles avant stockage.
+                </li>
+            </ul>
+        </div>
+        <br>
+        <div>
+            <h5>Résultats finaux</h5>  
+            <ul>
+                <li>
+                    Une application simple et fonctionnelle permettant d'extraire automatiquement les données d'une carte bancaire.
+                </li>
+                <li>
+                    Traitement rapide avec un taux de précision satisfaisant sur un jeu de données réel.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="skills">Compétences associées</h5>
+            <div>
+                <app-custom-button name="Python" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#3572A5'}"></app-custom-button>
+                <app-custom-button name="EasyOCR" [link]="['/skills', 19]" [buttonStyle]="{'background-color': '#f7c873'}"></app-custom-button>
+                <app-custom-button name="Flask" [link]="['/skills', 9]" [buttonStyle]="{'background-color': '#000000'}"></app-custom-button>
+                <app-custom-button name="Bootstrap" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#7952b3'}"></app-custom-button>
+                <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+            </div>
+        </div>
+    </div>
+    
 
 </div>
 

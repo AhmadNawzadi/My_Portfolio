@@ -17,6 +17,12 @@ import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
   styleUrls: ['./project-details.component.scss']
 })
 export class ProjectDetailsComponent {
+  projectManagement : boolean = false
+  gameUp : boolean = false
+  electricitySystem : boolean = false
+  liqtradeCRM : boolean = false
+  stpps : boolean = false
+  ocr : boolean = false
 
   constructor(private data: ProjectService, private route: ActivatedRoute) {
     const id = this.route.snapshot.paramMap.get('id');
@@ -26,14 +32,15 @@ export class ProjectDetailsComponent {
       this.gameUp = true;
     } else if (id === '3') {
       this.electricitySystem = true;
+    }else if (id === '4') {
+      this.liqtradeCRM = true;
+    } else if (id === '5') {
+      this.stpps = true;
+    } else if (id === '6') {
+      this.ocr = true;
     }
-    // this.projectManagement = data.projectManagement
-    // this.gameUp = data.gameUp
-    // this.electricitySystem = data.electricitySystem
   }
 
-  projectManagement : boolean = false
-  gameUp : boolean = false
-  electricitySystem : boolean = false
+
 
 }

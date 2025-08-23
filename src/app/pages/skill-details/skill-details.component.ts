@@ -52,7 +52,10 @@ export class SkillDetailsComponent{
       details: ` J'ai travaillé sur le développement et l'optimisation d'APIs REST, l'intégration de bases de données, ainsi que la mise en place de bonnes pratiques en matière de sécurité et de gestion des performances. 
         Cette expérience m'a permis d'acquérir une solide maîtrise de l'écosystème Spring (Spring Boot, Spring Security, Spring Data), tout en collaborant étroitement avec les équipes techniques pour assurer une livraison efficace et qualitative des fonctionnalités.
       `,
-      projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+      projects: [
+        {"Project management tool":"/details"}, 
+        {"Game up":"/details"}, 
+        {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -65,7 +68,10 @@ export class SkillDetailsComponent{
       details: ` J'ai travaillé sur le développement et l'optimisation d'APIs REST, l'intégration de bases de données, ainsi que la mise en place de bonnes pratiques en matière de sécurité et de gestion des performances. 
       Cette expérience m'a permis d'acquérir une solide maîtrise de l'écosystème Spring (Spring Boot, Spring Security, Spring Data), tout en collaborant étroitement avec les équipes techniques pour assurer une livraison efficace et qualitative des fonctionnalités.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"}, 
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -77,8 +83,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/cicd.png',
       details: ` J'ai appris à configurer et utiliser des outils tels que GitHub Actions, GitLab CI/CD, Jenkins et Docker pour automatiser les tests, le build et le déploiement des applications. Cette expertise me permet d'assurer une livraison rapide et fiable des logiciels tout en garantissant leur qualité et leur stabilité.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
-
+    projects: [
+      {"Project management tool":"/details"},
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     }, 
 
     {
@@ -92,7 +100,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/angular.png',
       details: ` Ma maîtrise d'Angular, associée à des technologies complémentaires comme TypeScript, RxJS et Firebase, me permet de créer des applications performantes et ergonomiques, adaptées aux besoins des utilisateurs.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"}, 
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -106,7 +117,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/js.png',
       details: ` Ma maîtrise d'Angular, associée à des technologies complémentaires comme TypeScript, RxJS et Firebase, me permet de créer des applications performantes et ergonomiques, adaptées aux besoins des utilisateurs.
     `  ,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"},
+      {"Game up":"/details"},
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -118,7 +132,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/react.png',
       details: `Grâce à cette expérience, j'ai acquis une solide maîtrise de React, en exploitant ses fonctionnalités avancées comme les hooks, le state management (Redux/Context API) et l'optimisation des performances. J'ai également travaillé avec des technologies associées telles que TypeScript, React Query et Material-UI, garantissant une expérience utilisateur fluide et efficace.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"},
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     } ,
 
     {
@@ -130,7 +147,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/projet.jpg',
         details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
       `,
-      projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+      projects: [
+        {"Project management tool":"/details"},
+        {"Game up":"/details"}, 
+        {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -141,7 +161,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/com.jpg',
       details: `Grâce à des échanges réguliers avec les différentes parties prenantes, jai appris à formuler des idées de manière claire, à écouter activement et à adapter mon discours en fonction des interlocuteurs. Mon esprit d'analyse m'a permis d'évaluer les problématiques, d'identifier des solutions adaptées et de contribuer à l'amélioration continue des projets.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"},
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -153,7 +176,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/analyse.png',
       details: `Grâce à des échanges réguliers avec les différentes parties prenantes, jai appris à formuler des idées de manière claire, à écouter activement et à adapter mon discours en fonction des interlocuteurs. Mon esprit d'analyse m'a permis d'évaluer les problématiques, d'identifier des solutions adaptées et de contribuer à l'amélioration continue des projets.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"},
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -165,7 +191,10 @@ export class SkillDetailsComponent{
       img: 'assets/images/skills-imgs/Agile-Methodology.png',
       details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
     `,
-    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    projects: [
+      {"Project management tool":"/details"}, 
+      {"Game up":"/details"}, 
+      {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
     {
