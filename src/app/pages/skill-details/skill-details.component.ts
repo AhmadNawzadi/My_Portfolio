@@ -201,10 +201,10 @@ export class SkillDetailsComponent{
       id: 11,
       name: 'Docker',
       description: [`
-        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+        Lors du développement du projet "Project Management Tools", j’ai acquis des compétences solides dans l’utilisation de Docker. J’ai appris à créer et gérer des environnements de conteneurisation, facilitant le déploiement et la portabilité des applications. 
       `],
       img: 'assets/images/skills/docker.png',
-      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
+      details: `Cette expérience m’a permis d’optimiser la configuration des services, de renforcer la cohérence des environnements de développement et de simplifier les processus d’intégration et de déploiement continus (CI/CD).
     `,
     projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
@@ -213,11 +213,10 @@ export class SkillDetailsComponent{
       id: 12,
       name: 'Test',
       description: [`
-        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+        L’apprentissage des tests unitaires avec JUnit s’est construit à travers plusieurs projets significatifs. Lors du contrat en alternance chez Liqtrade, l’intégration des tests dans le projet CRM a permis de renforcer la fiabilité des fonctionnalités livrées et d’assurer une meilleure maintenance du code.
       `],
       img: 'assets/images/skills/test.png',
-      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
-    `,
+      details: `Durant le développement du projet académique "Project Management Tool" dans le cadre du Master en Ingénierie Logicielle, JUnit a été utilisé pour structurer des scénarios de validation et améliorer la qualité du logiciel. Plus récemment, sur le projet en cours "STPPS" chez Groupe FBO, les tests automatisés participent directement à la robustesse et à la pérennité des solutions déployées.    `,
     projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
@@ -225,11 +224,10 @@ export class SkillDetailsComponent{
       id: 13,
       name: 'SQL',
       description: [`
-        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+        L’utilisation de SQL s’est affirmée au fil de plusieurs projets variés. Lors du contrat en alternance chez Liqtrade, le langage a été mobilisé dans le cadre du projet CRM pour la gestion et l’optimisation des bases de données relationnelles. Durant la formation en Master en Ingénierie Logicielle, les projets "Project Management Tool" et "Game Up" ont permis d’approfondir la conception de schémas relationnels et l’écriture de requêtes complexes. 
       `],
       img: 'assets/images/skills/sql.png',
-      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
-    `,
+      details: `Actuellement, sur le projet "STPPS" chez Groupe FBO, SQL occupe une place centrale dans le traitement, l’analyse et la sécurisation des données opérationnelles.    `,
     projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
     },
 
@@ -237,14 +235,92 @@ export class SkillDetailsComponent{
       id: 14,
       name: 'Adobe XD',
       description: [`
-        Lors de mon expérience chez Groupe FBO, j'ai développé des compétences en gestion de projet et en méthodes agiles (Scrum, Kanban). J'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement, en favorisant la collaboration et l'adaptabilité. 
+        L’expérience avec Adobe XD a été développée durant le contrat en alternance chez Liqtrade, à travers le projet CRM. La réalisation de maquettes interactives a permis de concevoir des interfaces claires et ergonomiques, facilitant la communication entre l’équipe technique et les utilisateurs finaux. 
       `],
       img: 'assets/images/skills/xd.png',
-      details: `Grâce aux rituels agiles (daily meetings, sprint planning, rétrospectives), j'ai acquis une approche structurée et efficace pour la gestion des tâches, l'amélioration continue et la livraison rapide de fonctionnalités. Cette expérience m'a permis d'améliorer la coordination entre les équipes et d'optimiser la qualité des livrables.
-    `,
+      details: `Cette pratique a contribué à renforcer la dimension UX/UI dans le cycle de développement et à garantir une meilleure adéquation entre les besoins fonctionnels et la solution livrée.    `,
     projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
-    }
+    }, 
+    {
+      id: 15,
+      name: 'Python',
+      description: [`
+        L’apprentissage de Python s’est construit dans le cadre de la formation en Intelligence Artificielle, accompagné par plusieurs projets concrets. Le langage a servi de base au développement d’algorithmes et de modèles d’apprentissage automatique, tout en facilitant l’expérimentation grâce à ses nombreuses bibliothèques spécialisées.
+      `],
+      img: 'assets/images/skills/python.png',
+      details: `Les projets réalisés ont permis de consolider les compétences en programmation orientée objet, en traitement de données et en implémentation de solutions intelligentes adaptées à des cas d’usage variés.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 16,
+      name: 'Machine Learning',
+      description: [`
+        Les compétences en Machine Learning se sont développées dans le cadre de la formation en Intelligence Artificielle et à travers les différents projets réalisés durant ce parcours. L’apprentissage a porté sur la conception, l’entraînement et l’évaluation de modèles prédictifs, avec une mise en pratique concrète dans des cas variés. 
+      `],
+      img: 'assets/images/skills/machine_learning.jpg',
+      details: `Le projet final d’OCR de cartes bancaires a particulièrement permis d’appliquer des techniques avancées de reconnaissance de texte et de traitement d’images, démontrant l’efficacité des approches supervisées et non supervisées dans des environnements réels.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 17,
+      name: 'Swing',
+      description: [`
+        L’apprentissage de Java Swing a été consolidé lors du développement du projet "Electricity Billing System". Ce projet a permis de mettre en pratique les concepts fondamentaux du langage Java tout en explorant la création d’interfaces graphiques interactives. 
+      `],
+      img: 'assets/images/skills/swing.png',
+      details: `L’expérience a renforcé la compréhension de la programmation orientée objet, la gestion des événements et la conception d’applications conviviales, offrant ainsi une approche complète de la construction de logiciels desktop en Java.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 18,
+      name: 'Vue Js',
+      description: [`
+        L’utilisation de Vue.js a été développée dans le cadre du contrat en alternance chez Liqtrade, à travers le projet CRM. Le framework a permis de construire des interfaces dynamiques et réactives, tout en favorisant une architecture modulaire et maintenable.
+      `],
+      img: 'assets/images/skills/vue.png',
+      details: `Cette expérience a renforcé la maîtrise des principes du développement frontend moderne, notamment la gestion des composants, la réactivité des données et l’intégration fluide avec les services backend.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 19,
+      name: 'Tailwind',
+      description: [`
+        L’expérience avec Tailwind CSS s’est développée dans le cadre du projet actuel "STPPS" chez Groupe FBO, lors de la conception de la partie UI. Son utilisation a permis de mettre en place une interface moderne, responsive et cohérente, tout en accélérant le développement grâce à son approche utilitaire.
+      `],
+      img: 'assets/images/skills/tailwind.png',
+      details: `Cette pratique a renforcé les compétences en design d’interfaces orientées utilisateur, en garantissant une meilleure ergonomie et une personnalisation efficace des composants visuels.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 20,
+      name: 'Bootsrap',
+      description: [`
+        L’apprentissage de Bootstrap s’est fait dans le cadre du contrat en alternance chez Liqtrade, à travers le projet CRM. 
+      `],
+      img: 'assets/images/skills/boot.png',
+      details: `Le framework a été utilisé pour concevoir une interface responsive et ergonomique, en exploitant ses composants préconstruits et son système de grille.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 21,
+      name: 'Easy OCR',
+      description: [`
+        L’utilisation d’EasyOCR a été abordée dans le cadre de la formation en Intelligence Artificielle, notamment lors du projet final d’OCR de cartes bancaires. Cet outil a permis de mettre en place des modèles de reconnaissance optique de caractères adaptés à un cas d’usage concret.
+      `],
+      img: 'assets/images/skills/easyocr.png',
+      details: `L’expérience a renforcé les compétences en traitement d’images, en extraction automatisée de données textuelles et en intégration de solutions d’intelligence artificielle dans des applications pratiques.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+    {
+      id: 22,
+      name: 'Flask',
+      description: [`
+        L’apprentissage de Flask a eu lieu dans le cadre de la formation en Intelligence Artificielle, avec une mise en pratique lors du projet final d’OCR de cartes bancaires. Le framework a été utilisé pour développer une API permettant d’exposer les fonctionnalités de reconnaissance et de les intégrer dans une application fonctionnelle. 
+      `],
+      img: 'assets/images/skills/flask.png',
+      details: `Cette expérience a permis de renforcer les compétences en développement backend léger, en gestion des routes et en déploiement de services web adaptés à des projets d’intelligence artificielle.    `,
+    projects: [{"Project management tool":"/details"}, {"Game up":"/details"}, {"Electricity billing system":"/details"} as { [key: string]: string }]
+    },
+
   ]
-
-
 }

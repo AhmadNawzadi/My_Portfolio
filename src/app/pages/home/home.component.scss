@@ -1,6 +1,5 @@
 // =============================================================================
 .home-page {
-    //background-color: #080808;
     height: 100vh;
 }
 
@@ -10,24 +9,20 @@ a {
 .intro {
     padding-bottom: 20px;
 }
-
 .home {
     display: flex;
     align-items: center;
     height: 100vh;
     padding: 60px 9% 0;
 }
-
 .home-info h1 {
     font-size: 50px;
 }
-
 .home-info h2 {
     display: inline-block;
     font-size: 32px;
     margin-top: -10px;
 }
-
 .home-info h2 span {
     position: relative;
     display: inline-block;
@@ -42,7 +37,6 @@ a {
     100% {  
     }
 }
-
 .home-info h2 span::before {
     content: attr(data-text);
     position: absolute;
@@ -53,7 +47,6 @@ a {
     overflow: hidden;
     animation: fill-text 4s linear infinite;
 }
-
 @keyframes fill-text {
 
     10%,
@@ -66,16 +59,13 @@ a {
         width: 100%;
     }
 }
-
 .home-info p {
     font-size: 16px;
     margin: 10px 0 25px;
 }
-
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    //background: #7cf03d;
     background: #00abf0;
     border: 2px solid #00abf0;
     border-radius: 5px;
@@ -85,13 +75,11 @@ a {
     font-weight: 600;
     transition: .5s;
 }
-
 .btn:hover {
     background: transparent;
     color: #00abf0;
     box-shadow: none;
 }
-
 .home-img .img-box {
     position: relative;
     width: 26vw;
@@ -144,20 +132,10 @@ a {
 }
 
 .home-img .img-box .img-item img {
-    position: absolute;
     display: block;
-    width: 100%;
     object-fit: cover;
     mix-blend-mode: lighten;
-    //padding-left: 40px;
 }
-
-// @media (min-width: 992px) {
-//     .col-lg-6 {
-//         flex: 0 0 auto;
-//         width: 45%;
-//     }
-// }
 
 @media (max-width: 768px) { 
 
