@@ -2,17 +2,28 @@
 <div class="skill-details container">
     <div class="content">
         <div>
-            <h1>{{selectedSkill.name}}</h1>
-        </div>
-        <div *ngFor="let paragraph of selectedSkill.description">
-            <p class="paragraph" [innerHTML]>{{paragraph}}</p>
+            <h1 class="titleCenter">{{selectedSkill.name}}</h1>
         </div>
         <div class="skills-info">
             <img [src]="selectedSkill.img" alt="java-logo" class="skill-logos">
         </div>
+        <br>
         <div>
-            <p>{{selectedSkill.details}}</p>
+            <h4>Introduction</h4>
+            <p class="paragraph" [innerHTML]>{{selectedSkill.introduction}}</p>
         </div>
+        <br>
+        <div>
+            <h4>Mon expérience vécue</h4>
+            <p [innerHTML]>{{selectedSkill.experiance.replace('/n', '\n')}}</p>
+        </div>
+        <br>
+        <div>
+            <h4>Mon niveau de compétence</h4>
+            <p>{{selectedSkill.level}}</p>
+        </div>
+        <br>
+        <br>
         <div class="project">
             <div *ngFor="let p of selectedSkill.projects; let i = index" >
                 <div *ngFor="let entry of objectEntries(p);" class="project">

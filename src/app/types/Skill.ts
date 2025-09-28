@@ -3,9 +3,10 @@ type Project = { [projectName: string]: string };
 interface Skill {
     id: number;
     name: string;
-    description: string[];
+    introduction: string[];
     img?: string;
-    details?: string;
+    level?: string;
+    experiance: string;
     projects: { [key: string]: string }[]
 }
 

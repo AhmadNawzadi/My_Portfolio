@@ -1,26 +1,12 @@
 .about {
-    padding : 120px 120px 150px;
+    padding : 120px 200px 150px;
+    text-align: justify;
 }
 .lead {
     font-size: 15px;
 }
-.about .title h2 {
-    font-size: 60px;
-    margin: 50px auto 40px;
-}
-// .about img {
-//     height: 420px;
-//     width: 400px;
-//     border-radius: 15px;
-// }
-// .about-content {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     gap: 80px;
-// }
 .about .title {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
 }
 .list-unstyled li {

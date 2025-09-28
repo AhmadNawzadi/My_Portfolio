@@ -1,6 +1,7 @@
 .skill-details {
-    padding : 100px 75px 80px;
+    padding : 100px 280px 80px;
     color: #fff;
+    text-align: justify;
 }
 .skills-info  {
     display: flex;
@@ -16,6 +17,10 @@
 .project {
     display: flex;
     flex-wrap: wrap;
+}
+
+.titleCenter {
+    text-align: center;
 }
 
 @media (max-width: 425px) { 
