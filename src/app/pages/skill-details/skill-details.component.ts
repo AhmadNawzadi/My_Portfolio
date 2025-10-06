@@ -81,8 +81,7 @@ export class SkillDetailsComponent{
         En parallèle, lors du développement du projet Project Management Tools, j’ai acquis une solide expérience dans l’utilisation de Docker, en apprenant à créer et gérer des environnements de conteneurisation. Cette pratique a permis de simplifier les déploiements, de renforcer la cohérence entre les environnements et d’améliorer la portabilité des applications.      `,
     projects: [
       {"Project management tool":"/details"},
-      {"Game up":"/details"}, 
-      {"Electricity billing system":"/details"} as { [key: string]: string }]
+      {"Liqtrade CRM":"/details"} as { [key: string]: string }]
     }, 
 
     {
@@ -100,9 +99,7 @@ export class SkillDetailsComponent{
         Lors de ma formation Visiplus Master en Ingénierie Logicielle, j'ai acquis une expertise solide en JavaScript et Angular, en travaillant sur plusieurs projets concrets. Parmi mes réalisations, j'ai conçu Project Management Tool, une application de gestion de projet permettant d'organiser les tâches, suivre l'avancement et collaborer efficacement en équipe. J'ai également développé Game Up, une plateforme interactive pour les passionnés de jeux vidéo, intégrant des fonctionnalités avancées comme la gestion de collections et des recommandations personnalisées.
       `,
       projects: [
-        {"Project management tool":"/details"}, 
-        {"Game up":"/details"}, 
-        {"Electricity billing system":"/details"} as { [key: string]: string }]
+        {"Project management tool":"/details"} as { [key: string]: string }]
       },
     {
       id: 6,
@@ -118,9 +115,7 @@ export class SkillDetailsComponent{
         Lors de mon contrat en CDI chez Groupe FBO, j'ai approfondi mes compétences en travaillant sur le projet STPPS – Gestion du tiers payant. Cette application destinée aux professionnels de santé facilite la gestion du tiers payant en automatisant les processus et en améliorant le suivi des remboursements. Dans ce cadre, j'ai exploité les fonctionnalités avancées de React telles que les hooks, le state management (Redux et Context API) et les techniques d'optimisation des performances. J'ai également intégré des technologies complémentaires comme TypeScript, React Query et Material-UI afin de garantir une application fluide, ergonomique et fiable.
       `,
     projects: [
-      {"Project management tool":"/details"},
-      {"Game up":"/details"}, 
-      {"Electricity billing system":"/details"} as { [key: string]: string }]
+      {"STPPS ":"/details"} as { [key: string]: string }]
     } ,
 
     {
@@ -137,9 +132,7 @@ export class SkillDetailsComponent{
         Lors de mon expérience chez Groupe FBO, j'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement. J'ai pris part aux différents rituels agiles tels que les daily meetings, les sprint planning et les rétrospectives, ce qui m'a permis de contribuer à la structuration des tâches, à la coordination des équipes et à la fluidité du cycle de développement. Cette immersion dans un environnement agile m'a appris à équilibrer rigueur et flexibilité afin de répondre efficacement aux besoins du projet et aux attentes des utilisateurs.
       `,
       projects: [
-        {"Project management tool":"/details"},
-        {"Game up":"/details"}, 
-        {"Electricity billing system":"/details"} as { [key: string]: string }]
+        {"STPPS ":"/details"} as { [key: string]: string }]
     },
 
     {
@@ -153,11 +146,12 @@ export class SkillDetailsComponent{
       experiance: ` 
         Lors de mon expérience chez Liqtrade, j'ai eu l'opportunité de développer mes compétences en communication et en esprit d'analyse grâce à des interactions régulières avec différentes parties prenantes. J'ai appris à formuler mes idées de manière claire et structurée, à écouter activement et à adapter mon discours en fonction de mes interlocuteurs, qu'ils soient techniques ou non techniques.
       `,
-    projects: [
-      {"Project management tool":"/details"},
-      {"Game up":"/details"}, 
-      {"Electricity billing system":"/details"} as { [key: string]: string }]
-    },
+      img: 'assets/images/skills-imgs/com.jpg',
+      projects: [
+        {"Project management tool":"/details"},
+        {"Game up":"/details"}, 
+        {"Electricity billing system":"/details"} as { [key: string]: string }]
+      },
 
     {
       id: 9,

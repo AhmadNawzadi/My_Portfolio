@@ -1,131 +1,121 @@
 <div class="project-details">
 
-    <!-- Block pour le projet projectManagement  -->
+    <!-- Block pour le projet Project Management Tool -->
     <div class="project-management" *ngIf="projectManagement">
         <div>
             <p class="main-title">Project Management Tool</p>
         </div>
+
+        <!-- Présentation -->
         <p class="project-description">
-            Ce projet a été réalisé dans le cadre de ma formation, dans le but de mettre en pratique les compétences techniques et les méthodes de gestion de projet acquises. L'objectif principal était de développer une application web permettant de gérer des projets, des tâches et des utilisateurs de manière intuitive et efficace. Cette application cible les équipes de travail qui souhaitent organiser leurs activités et suivre l'avancement de leurs projets.
+            Project Management Tool est une application web développée dans le cadre de ma formation. 
+            L'objectif principal était de concevoir un outil complet permettant de gérer des projets, 
+            des tâches et des utilisateurs de manière intuitive et collaborative. 
+            Ce projet avait pour but de mettre en pratique les compétences techniques acquises 
+            et d'appliquer des méthodes de gestion de projet modernes.
         </p>
         <br>
+
+        <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
-            <h5>Problème résolu</h5>
+            <h5>Objectif / Contexte / Enjeux et Risques</h5>
+            <p><strong>Objectif :</strong> Créer une solution centralisée pour la planification, 
+            le suivi et la supervision des projets au sein d'équipes de travail, 
+            tout en garantissant la fiabilité et la maintenabilité du système.</p>
+            
+            <p><strong>Contexte :</strong> Le projet a été réalisé en formation dans un environnement simulant une équipe agile. 
+            L'objectif pédagogique était de maîtriser l'ensemble du cycle de vie d'une application web : 
+            conception, développement, tests, industrialisation et déploiement.</p>
+            
+            <p><strong>Enjeux :</strong></p>
+            <ul>
+                <li>Améliorer la visibilité et l'organisation dans la gestion des projets.</li>
+                <li>Proposer une interface claire et moderne facilitant la collaboration.</li>
+                <li>Assurer la fiabilité du backend et la cohérence des données.</li>
+                <li>Garantir la qualité du code via les tests et l'intégration continue.</li>
+            </ul>
+
+            <p><strong>Risques :</strong></p>
+            <ul>
+                <li>Complexité de la gestion des relations entre entités (utilisateurs, projets, tâches).</li>
+                <li>Synchronisation asynchrone entre frontend (Angular) et backend (Spring Boot).</li>
+                <li>Automatisation du pipeline CI/CD et gestion des conteneurs Docker.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les étapes -->
+        <div>
+            <h5>Les étapes</h5>
+            <ul>
+                <li>Conception du modèle de données et définition des entités principales.</li>
+                <li>Développement du backend avec Spring Boot et mise en place des API REST.</li>
+                <li>Développement du frontend avec Angular et intégration des composants dynamiques.</li>
+                <li>Configuration de la base de données relationnelle PostgreSQL.</li>
+                <li>Réalisation des tests unitaires et d'intégration (JUnit, Jasmine/Karma).</li>
+                <li>Dockerisation de l'application pour faciliter le déploiement.</li>
+                <li>Mise en place d'un pipeline CI/CD avec GitHub Actions.</li>
+                <li>Rédaction d'une documentation technique et du guide de déploiement.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les acteurs -->
+        <div>
+            <h5>Les acteurs</h5>
+            <ul>
+                <li><strong>Moi :</strong> Développeur principal, responsable de la conception, du développement full-stack, 
+                    des tests, de la dockerisation et de la mise en place de la CI/CD.</li>
+                <li><strong>Formateur :</strong> Encadrant et validateur technique du projet.</li>
+                <li><strong>Autres apprenants :</strong> Collaboration sur la gestion de projet et la documentation.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les résultats -->
+        <div>
+            <h5>Les résultats</h5>
+            <ul>
+                <li>Application web fonctionnelle, fluide et intuitive.</li>
+                <li>Backend robuste et conforme aux principes REST.</li>
+                <li>Pipeline CI/CD opérationnel avec tests automatisés et déploiement Dockerisé.</li>
+                <li>Base de données relationnelle stable et bien modélisée.</li>
+                <li>Documentation claire du code et du processus d'industrialisation.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Le futur du projet -->
+        <div>
+            <h5>Le futur du projet</h5>
+            <ul>
+                <li>Ajout d'un module de notifications en temps réel (WebSocket / SignalR).</li>
+                <li>Intégration d'un tableau de bord statistique avec suivi d'avancement.</li>
+                <li>Implémentation d'un système de rôles avancé (admin, chef de projet, collaborateur).</li>
+                <li>Déploiement sur un environnement cloud pour la montée en charge.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Mon retour d'expérience -->
+        <div>
+            <h5>Mon retour d'expérience</h5>
             <p>
-                L'application vise à résoudre le problème de manque de visibilité et d'organisation dans la gestion quotidienne des projets. Elle propose une solution centralisée pour créer des projets, assigner des tâches aux membres d'équipe, suivre leur avancement et gérer les priorités.
+                Ce projet m'a permis de renforcer mes compétences en développement full-stack, 
+                en particulier sur la communication entre Angular et Spring Boot, 
+                ainsi que sur la gestion des cycles de développement avec CI/CD.
             </p>
-        </div>
-        <br>
-        <div>
-            <h5>Mon rôle</h5>  
-            <p>Dans ce projet, j'ai occupé plusieurs rôles :</p>
-            <ul>
-                <li>
-                    Conception : Identification des entités principales (utilisateurs, projets, tâches) et création d'une architecture modulaire.
-                </li>
-                <li>
-                    Développement : Implémentation de l'interface utilisateur en Angular, développement des API REST avec Spring Boot et mise en place d'une base de données relationnelle.
-                </li>
-                <li>
-                    Tests et Industrialisation : Réalisation de tests automatisés (frontend et backend), dockerisation des composants, et mise en place d'une chaîne CI/CD pour garantir une livraison continue.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Objectifs atteints</h5>  
-            <ul>
-                <li>
-                    Conception et modélisation d'une base de données relationnelle robuste.
-                </li>
-                <li>
-                    Développement complet d'une application web avec une interface intuitive et des fonctionnalités backend performantes.
-                </li>
-                <li>
-                    Mise en place d'un processus de tests automatisés avec une couverture de code à hauteur de 60% pour les instructions et les branches.
-                </li>
-                <li>
-                    Intégration et déploiement continu (CI/CD) avec Docker et GitHub Action.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Détails Techniques</h5>  
-            <p>Choix technologiques :</p>
-            <ul>
-                <li>
-                    Frontend : Angular a été choisi pour sa capacité à construire des interfaces utilisateur dynamiques et modérnes. Son architecture basée sur les composants facilite la maintenance et l'évolutivité.
-                </li>
-                <li>
-                    Backend : Spring Boot a été utilisé pour sa robustesse et son écosystème complet, permettant une gestion facile des API REST.
-                </li>
-                <li>
-                    Base de données : Une base relationnelle (PostgreSQL) a été choisie pour sa fiabilité et sa capacité à gérer des données structurées.
-                </li>
-                <li>
-                    Tests : Utilisation de Jasmine/Karma pour le frontend et JUnit pour le backend.
-                </li>
-                <li>
-                    Industrialisation : Docker pour la conteneurisation, GitHub Actions pour l'automatisation des tests et du déploiement.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Défis rencontrés</h5>  
-            <ul>
-                <li>
-                    Gestion des relations complexes dans la base de données (ex. : relations utilisateur-tâches, tâches-projets) :
-                </li>
-                <li>
-                    Solution : Conception d'un schéma de base de données bien normalisé et utilisation de JPA/Hibernate pour la gestion des relations.
-                </li>
-                <li>
-                    Synchronisation des données entre le frontend et le backend :
-                </li>
-                <li>
-                    Solution : Mise en place de services Angular avec gestion des observables (à l'aide de RxJS) pour un transfert de données fluide.
-                </li>
-                <li>
-                    Automatisation des tests et couverture de code :
-                </li>
-                <li>
-                    Solution : Configuration de pipelines CI/CD avec GitHub Actions pour l'exécution des tests automatisés et génération de rapports de couverture via Jacoco.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Solutions apportées</h5>  
-            <ul>
-                <li>
-                    Une documentation claire du processus de déploiement dans un fichier README.md.
-                </li>
-                <li>
-                    Dockerisation complète des services pour garantir un déploiement rapide et cohérent.
-                </li>
-                <li>
-                    Mise à disposition des images Docker sur Docker Hub pour un accès public.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Résultats finaux</h5>  
-            <ul>
-                <li>
-                    Une application fonctionnelle avec des fonctionnalités clés telles que la gestion des utilisateurs, la création de projets et la supervision des tâches.
-                </li>
-                <li>
-                    Un processus industrialisé permettant un déploiement rapide et fiable, tout en garantissant la stabilité du code grâce aux tests automatisés.
-                </li>
-            </ul>
+            <p>
+                J'ai beaucoup appris sur la conception d'architectures modulaires, 
+                la gestion des données complexes et l'importance d'un processus d'intégration continue 
+                pour assurer la qualité du logiciel. Ce projet a également renforcé ma rigueur 
+                et ma vision d'ensemble dans la conduite d'un projet complet.
+            </p>
         </div>
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
-                <app-custom-button name="Spring" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="Angular" [link]="['/skills', 4]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
                 <app-custom-button name="CI / CD" [link]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
@@ -133,577 +123,517 @@
         </div>
     </div>
 
-    <!-- Block pour le projet Game Up  -->
+    <!-- Block pour le projet Game Up -->
     <div class="game-up" *ngIf="gameUp">
         <div>
             <p class="main-title">Game Up</p>
         </div>
+
+        <!-- Présentation -->
         <p class="project-description">
-            Ce projet a été réalisé dans le cadre de ma formation, une plateforme de vente de jeux de société en ligne. L'objectif était de remédier à des problèmes critiques de performances et de fiabilité de l'API backend, qui impactaient directement les ventes. Le projet comportait plusieurs volets : refonte de l'API backend, mise en place de la sécurité, tests, et intégration d'un système de recommandation basé sur le Machine Learning.        </p>
+            Game Up est une plateforme de vente de jeux de société en ligne, réalisée dans le cadre de ma formation. 
+            L'objectif principal du projet était de refondre complètement l'API backend, d'améliorer la sécurité, 
+            d'assurer la fiabilité des services et d'intégrer un système de recommandation basé sur le Machine Learning.
+        </p>
         <br>
+
+        <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
-            <h5>Problème résolu</h5>
+            <h5>Objectif / Contexte / Enjeux et Risques</h5>
+            <p><strong>Objectif :</strong> Moderniser et stabiliser le backend pour améliorer les performances et offrir une meilleure expérience utilisateur.</p>
+            <p><strong>Contexte :</strong> Le projet a été mené dans le cadre de ma formation, sur une base de code héritée d'un ancien stagiaire. 
+            L'architecture du backend présentait de nombreux bugs, un manque de sécurité et une absence de tests.</p>
+            <p><strong>Enjeux :</strong></p>
+            <ul>
+                <li>Assurer la stabilité et la fiabilité du backend pour éviter les pertes de ventes.</li>
+                <li>Garantir la sécurité et l'intégrité des données utilisateurs.</li>
+                <li>Mettre en place une architecture évolutive et maintenable.</li>
+            </ul>
+            <p><strong>Risques :</strong></p>
+            <ul>
+                <li>Difficulté à corriger un code mal structuré et peu documenté.</li>
+                <li>Manque de données réelles pour entraîner le système de recommandation.</li>
+                <li>Complexité de la communication entre l'API Java (Spring) et l'API Python (FastAPI).</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les étapes -->
+        <div>
+            <h5>Les étapes</h5>
+            <ul>
+                <li>Analyse et diagnostic du backend existant pour identifier les points critiques.</li>
+                <li>Refonte complète de l'API backend avec Spring Boot, architecture REST et principes SOLID.</li>
+                <li>Intégration de Spring Security pour la gestion des rôles (client / administrateur).</li>
+                <li>Création d'une API FastAPI en Python pour gérer le système de recommandation basé sur l'algorithme KNN.</li>
+                <li>Conception de tests unitaires et d'intégration avec JUnit.</li>
+                <li>Dockerisation des deux APIs (Spring et FastAPI) pour faciliter le déploiement.</li>
+                <li>Rédaction d'une documentation technique complète (diagrammes d'architecture, de classes, de composants et de séquences).</li>
+            </ul>
+        </div>
+        <br>
+
+        <div>
+            <h5>Les acteurs</h5>
+            <ul>
+                <li><strong>Moi :</strong> Développeur principal, responsable de la refonte du backend, de la sécurité, des tests et de l'intégration du système de recommandation.</li>
+                <li><strong>Formateur :</strong> Encadrant technique et validateur du projet.</li>
+                <li><strong>Autres apprenants :</strong> Collaboration sur la partie front-end et design de la plateforme.</li>
+            </ul>
+        </div>
+        <br>
+
+        <div>
+            <h5>Les résultats</h5>
+            <ul>
+                <li>Une API Spring Boot robuste, performante et conforme aux standards REST.</li>
+                <li>Une sécurité renforcée grâce à Spring Security et la gestion des rôles utilisateurs.</li>
+                <li>Un système de recommandation fonctionnel entre les deux APIs (Spring ↔ FastAPI).</li>
+                <li>Une couverture de tests élevée garantissant la fiabilité du code.</li>
+                <li>Une documentation technique claire et complète.</li>
+            </ul>
+        </div>
+        <br>
+
+        <div>
+            <h5>Le futur du projet</h5>
+            <ul>
+                <li>Intégration de données réelles pour affiner le modèle de recommandation.</li>
+                <li>Évolution vers un système hybride de recommandations (collaboratif + contenu).</li>
+                <li>Déploiement sur le cloud (AWS, Azure) pour améliorer la scalabilité.</li>
+                <li>Mise en place d'un système de monitoring (Spring Actuator, Prometheus).</li>
+            </ul>
+        </div>
+        <br>
+
+        <div>
+            <h5>Mon retour d'expérience</h5>
             <p>
-                Le site était confronté à des bugs récurrents liés à un backend obsolète et mal conçu par un stagiaire. Ces problèmes rendaient la plateforme instable et faisaient perdre des ventes. Par ailleurs, le système de recommandations était aléatoire et inefficace, ce qui réduisait l'engagement des utilisateurs. Ce projet visait à redéfinir complètement l'architecture de l'API backend tout en intégrant un système de recommandation basé sur le Machine Learning.            </p>
-        </div>
-        <br>
-        <div>
-            <h5>Mon rôle</h5>  
-            <p>En tant que développeur principal, j'ai été en charge des tâches suivantes :
+                Ce projet m'a permis de consolider mes compétences en développement backend et en intégration inter-langages. 
+                J'ai particulièrement apprécié relever le défi de la refonte d'un code legacy en appliquant les principes SOLID 
+                et en assurant la qualité du logiciel par les tests et la documentation.
             </p>
-            <ul>
-                <li>
-                    Refonte de l'API backend : Analyse et restructuration du code existant, mise en place d'une architecture REST modulable, et respect des principes SOLID.
-                </li>
-                <li>
-                    Sécurité : Implémentation de Spring Security pour garantir l'intégrité des données.
-                </li>
-                <li>
-                    Tests : Conception et exécution de tests unitaires et d'intégration pour assurer la stabilité et la fiabilité de l'API.
-                </li>
-                <li>
-                    Système de recommandation : Finalisation d'une API Python avec FastAPI pour gérer les recommandations basées sur un algorithme KNN.
-                </li>
-                <li>
-                    Documentation : Rédaction de documents techniques incluant les diagrammes d'architecture, de classes, de composants, et de séquences.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Objectifs atteints</h5>  
-            <ul>
-                <li>
-                    Révision complète de l'API backend pour garantir sa fiabilité et sa performance.
-                </li>
-                <li>
-                    Intégration d'un système de sécurité robuste avec Spring Security.
-                </li>
-                <li>
-                    Mise en place d'un système de recommandation efficace connectant l'API Spring à une API Python.
-                </li>
-                <li>
-                    Livraison de tests unitaires et d'intégration avec des rapports de couverture.
-                </li>
-                <li>
-                    Documentation complète et précise pour assurer une compréhension globale du projet.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Détails Techniques</h5>  
-            <p>Choix technologiques :</p>
-            <ul>
-                <li>
-                    Backend : Spring Boot a été choisi pour sa robustesse, sa flexibilité et sa compatibilité avec Hibernate pour la gestion des bases de données.
-                </li>
-                <li>
-                    Sécurité : Spring Security a été utilisé pour la gestion des rôles (client et administrateur) et la protection des endpoints sensibles.
-                </li>
-                <li>
-                    Recommandations : FastAPI a été préféré pour sa légèreté et sa facilité d'intégration avec des bibliothèques de Machine Learning telles que scikit-learn.
-                </li>
-                <li>
-                    Tests : Utilisation de JUnit pour les tests backend.
-                </li>
-                <li>
-                    Communication entre APIs : Mise en place de RESTful services pour la communication entre l'API Spring et l'API Python.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Défis rencontrés</h5>  
-            <ul>
-                <p>1. Code existant mal conçu :</p>
-                <p>Solution : Refactorisation complète pour respecter les principes SOLID et adoption d'une architecture modulaire.</p>
-                <p>2. Système de recommandation sans données fiables :</p>
-                <p>Solution : Génération de données synthétiques pour tester et valider le modèle KNN, en attendant des données réelles.</p>
-                <p>3. Intégration API Spring et FastAPI :</p>
-                <p>Solution : Mise en place de endpoints REST clairs pour échanger les données utilisateur entre les deux APIs.</p>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Solutions apportées</h5>  
-            <ul>
-                <li>
-                    Implémentation des opérations CRUD pour les entités principales (client, jeu, éditeur, commande).
-                </li>
-                <li>
-                    Mise en place d'un système de rôles avec accès restreint pour les administrateurs.
-                </li>
-                <li>
-                    Dockerisation des deux APIs (Spring et FastAPI) pour garantir un déploiement rapide et sans conflit.
-                </li>
-                <li>
-                    Tests approfondis pour assurer la stabilité et identifier les régressions.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Résultats finaux</h5>  
-            <ul>
-                <li>
-                    Une API Spring robuste, modulable et conforme aux standards REST.
-                </li>
-                <li>
-                    Un système de recommandation fonctionnel basé sur l'algorithme KNN, prêt à être amélioré avec des données réelles.
-                </li>
-                <li>
-                    Une documentation technique complète avec des diagrammes d'architecture, de classes, de composants et de séquences.
-                </li>
-                <li>
-                    Une couverture de tests élevée et des rapports de qualité logicielle.
-                </li>
-            </ul>
+            <p>
+                J'ai également approfondi ma compréhension des enjeux de sécurité et de performance dans une application distribuée. 
+                Ce projet a renforcé ma rigueur technique, ma méthodologie et mon autonomie en tant que développeur backend.
+            </p>
         </div>
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
-                <app-custom-button name="Spring" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="Python" [link]="['/skills', 15]" [buttonStyle]="{'background-color': '#D1CA1B'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
-                <app-custom-button name="Machine Learning" [link]="['/skills', 16]" [buttonStyle]="{'background-color': '#1E1FA6'}"></app-custom-button>
             </div>
         </div>
     </div>
 
-    <!-- Block pour le projet Electricity Billing System  -->
-    <div class="game-up" *ngIf="electricitySystem">
+    <!-- Block pour le projet Electricity Billing System -->
+    <div class="electricity-system" *ngIf="electricitySystem">
         <div>
             <p class="main-title">Electricity Billing System</p>
         </div>
+
+        <!-- Présentation -->
         <p class="project-description">
-            Ce projet a été réalisé dans un cadre personnel afin de renforcer mes compétences en développement logiciel. L'objectif principal était de mettre en pratique mes connaissances en Java, MySQL et Swing en développant une application complète avec une interface utilisateur et une base de données.
+            Electricity Billing System est un projet personnel développé afin de renforcer mes compétences 
+            en développement logiciel. L'objectif principal était de concevoir une application complète en Java, 
+            connectée à une base de données MySQL, avec une interface graphique réalisée en Swing.
         </p>
         <br>
+
+        <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
-            <h5>Problème résolu</h5>
-            <p>
-                Le projet vise à résoudre un problème spécifique : la gestion efficace des données et leur affichage sous une interface conviviale. Il permet d'organiser et de manipuler des informations de manière structurée tout en offrant une interaction fluide avec l'utilisateur.  
-            </div>
+            <h5>Objectif / Contexte / Enjeux et Risques</h5>
+            <p><strong>Objectif :</strong> Créer une application de gestion des factures d'électricité 
+            permettant de stocker, afficher et manipuler des données clients à travers une interface conviviale.</p>
+
+            <p><strong>Contexte :</strong> Projet réalisé dans un cadre d'autoformation pour mettre en pratique 
+            mes connaissances en Java, JDBC et MySQL tout en explorant la conception d'interfaces graphiques avec Swing.</p>
+
+            <p><strong>Enjeux :</strong></p>
+            <ul>
+                <li>Concevoir une application complète, de la base de données à l'interface utilisateur.</li>
+                <li>Assurer la fiabilité de la connexion entre la couche graphique et la base MySQL.</li>
+                <li>Appliquer les bonnes pratiques de structuration du code en Java.</li>
+            </ul>
+
+            <p><strong>Risques :</strong></p>
+            <ul>
+                <li>Problèmes de synchronisation entre les actions utilisateur et les données stockées.</li>
+                <li>Difficultés liées à la gestion des exceptions JDBC et aux transactions.</li>
+            </ul>
+        </div>
         <br>
 
+        <!-- Les étapes -->
         <div>
-            <h5>Mon rôle</h5> 
+            <h5>Les étapes</h5>
+            <ul>
+                <li>Conception du schéma relationnel de la base MySQL.</li>
+                <li>Développement de la logique applicative en Java.</li>
+                <li>Création de l'interface graphique avec Swing (menus, formulaires, affichages).</li>
+                <li>Intégration JDBC pour la communication entre l'interface et la base de données.</li>
+                <li>Tests de validation et débogage des fonctionnalités CRUD.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les acteurs -->
+        <div>
+            <h5>Les acteurs</h5>
+            <ul>
+                <li><strong>Moi :</strong> Concepteur et développeur unique du projet (base de données, backend et interface graphique).</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les résultats -->
+        <div>
+            <h5>Les résultats</h5>
+            <ul>
+                <li>Application complète et fonctionnelle.</li>
+                <li>Connexion fluide entre l'interface Swing et la base MySQL.</li>
+                <li>Gestion complète des opérations CRUD (Create, Read, Update, Delete).</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Le futur du projet -->
+        <div>
+            <h5>Le futur du projet</h5>
+            <ul>
+                <li>Ajout d'un module de génération de factures PDF.</li>
+                <li>Intégration d'un système de gestion d'utilisateurs avec rôles.</li>
+                <li>Migration vers une application web avec Spring Boot et Angular.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Mon retour d'expérience -->
+        <div>
+            <h5>Mon retour d'expérience</h5>
             <p>
-                Mon rôle dans ce projet était à la fois celui du développeur et du concepteur. Les objectifs atteints incluent la mise en place d'une application fonctionnelle, la connexion réussie entre l'interface utilisateur et la base de données, ainsi que la gestion des opérations CRUD (Create, Read, Update, Delete).
-            </p> 
-            <ul>
-                <li>J'ai assuré la conception de la base de données</li>
-                <li>le développement du code en Java, ainsi que l'intégration de l'interface graphique avec Swing</li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Objectifs atteints</h5>  
-            <ul>
-                <li>la mise en place d'une application fonctionnelle</li>
-                <li>la connexion réussie entre l'interface utilisateur et la base de données,                </li>
-                <li>la gestion des opérations CRUD (Create, Read, Update, Delete).</li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Détails Techniques</h5>  
-            <p>        
-                L'application a été développée en utilisant les technologies suivantes :
+                Ce projet m'a permis de consolider mes bases en Java et de comprendre le fonctionnement 
+                d'une architecture logicielle complète, du stockage des données à la présentation graphique.
             </p>
-            <ul>
-                <li>
-                    Java pour la logique métier et la gestion des événements.
-                </li>
-                <li>
-                    Swing pour la conception de l'interface graphique.
-                </li>
-                <li>
-                    MySQL pour le stockage des données, avec JDBC pour assurer la connexion entre la base de données et l'application.
-                </li>
-            </ul>
+            <p>
+                J'ai également renforcé ma compréhension des interactions entre une application et une base SQL, 
+                tout en apprenant à concevoir des interfaces ergonomiques et stables.
+            </p>
         </div>
-
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
                 <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
-                <app-custom-button name="Swing" [link]="['/skills', 17]" [buttonStyle]="{'background-color': '#5C3C45'}"></app-custom-button>
-
             </div>
         </div>
     </div>
 
-     <!-- Block pour le projet Liqtrade CRM  -->
-     <div class="crm-project" *ngIf="liqtradeCRM">
+    <!-- Block pour le projet Liqtrade CRM -->
+    <div class="crm-project" *ngIf="liqtradeCRM">
         <div>
-            <p class="main-title">CRM - Customer Relationship Management</p>
+            <p class="main-title">Liqtrade CRM - Customer Relationship Management</p>
         </div>
+
+        <!-- Présentation -->
         <p class="project-description">
-            Ce projet a été développé dans le cadre de mon expérience professionnelle chez <strong>Liqrade</strong>. L'objectif principal était de concevoir et développer une application CRM (Customer Relationship Management) permettant aux équipes commerciales et marketing de suivre et gérer efficacement leurs interactions avec les clients. Cette solution centralise les données clients, optimise les processus de vente et améliore la gestion des opportunités commerciales.
+            Ce projet a été développé dans le cadre de mon expérience professionnelle chez <strong>Liqtrade</strong>. 
+            L'objectif était de concevoir un outil CRM complet pour les équipes commerciales et marketing, 
+            permettant de gérer efficacement les interactions clients, les opportunités et le suivi des ventes.
         </p>
         <br>
+
+        <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
-            <h5>Problème résolu</h5>
+            <h5>Objectif / Contexte / Enjeux et Risques</h5>
+            <p><strong>Objectif :</strong> Centraliser les informations clients et automatiser le suivi des opportunités commerciales 
+            afin d'optimiser les performances des équipes.</p>
+
+            <p><strong>Contexte :</strong> L'entreprise faisait face à une dispersion des données clients et à une absence 
+            d'outil unifié pour gérer le cycle de vie client. Le projet visait à développer une application interne moderne, 
+            connectant les équipes via une plateforme unique.</p>
+
+            <p><strong>Enjeux :</strong></p>
+            <ul>
+                <li>Améliorer la traçabilité et la centralisation des données clients.</li>
+                <li>Faciliter le travail collaboratif entre les équipes.</li>
+                <li>Garantir la sécurité et la fiabilité du stockage des informations sensibles.</li>
+            </ul>
+
+            <p><strong>Risques :</strong></p>
+            <ul>
+                <li>Synchronisation en temps réel entre le frontend Vue.js et le backend Spring Boot.</li>
+                <li>Gestion de la sécurité et des rôles utilisateurs (authentification, autorisation).</li>
+                <li>Complexité de la modélisation des entités liées (contacts, rendez-vous, opportunités).</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les étapes -->
+        <div>
+            <h5>Les étapes</h5>
+            <ul>
+                <li>Conception du modèle de données et de l'architecture applicative.</li>
+                <li>Développement des API REST sécurisées avec Java et Spring Boot.</li>
+                <li>Création du frontend avec Vue.js et Bootstrap pour un design responsive.</li>
+                <li>Intégration de la base PostgreSQL et mise en place des relations entités.</li>
+                <li>Tests de performance et validation des fonctionnalités principales.</li>
+            </ul>
+        </div>
+        <br>
+
+        <!-- Les acteurs -->
+        <div>
+            <h5>Les acteurs</h5>
+            <ul>
+                <li><strong>Moi :</strong> Développeur principal, responsable du backend, du frontend et de la base de données.</li>
+                <li><strong>Équipe commerciale :</strong> Utilisateurs finaux du CRM.</li>
+                <li><strong>Chef de projet :</strong> Supervision et validation des fonctionnalités clés.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les résultats -->
+        <div>
+            <h5>Les résultats</h5>
+            <ul>
+                <li>CRM complet, centralisant toutes les données clients.</li>
+                <li>Interface moderne et fluide, facilitant l'utilisation quotidienne.</li>
+                <li>Gain de productivité grâce à la traçabilité des interactions clients.</li>
+                <li>Intégration réussie entre Vue.js, Spring Boot et PostgreSQL.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Le futur du projet -->
+        <div>
+            <h5>Le futur du projet</h5>
+            <ul>
+                <li>Ajout d'un module d'automatisation marketing (emailing, notifications).</li>
+                <li>Intégration d'analyses statistiques sur les performances commerciales.</li>
+                <li>Amélioration du tableau de bord avec des visualisations en temps réel.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Mon retour d'expérience -->
+        <div>
+            <h5>Mon retour d'expérience</h5>
             <p>
-                L'entreprise faisait face à une dispersion des informations clients et à un manque d'outils pour suivre l'évolution des contacts, des opportunités et des interactions commerciales. L'application CRM permet de résoudre ce problème en offrant une plateforme unique, accessible et structurée pour gérer l'ensemble du cycle de vie client.
+                Ce projet professionnel m'a permis d'approfondir mes compétences en développement web complet 
+                et de travailler dans un environnement orienté entreprise avec des exigences réelles de performance et de sécurité.
             </p>
-        </div>
-        <br>
-        <div>
-            <h5>Mon rôle</h5>  
-            <p>Au sein de ce projet, j'ai été responsable de plusieurs aspects :</p>
-            <ul>
-                <li>
-                    Conception : Élaboration du modèle de données et définition de l'architecture applicative.
-                </li>
-                <li>
-                    Développement Backend : Création des API REST sécurisées avec Java et Spring Boot.
-                </li>
-                <li>
-                    Développement Frontend : Réalisation de l'interface utilisateur avec Vue.js et Bootstrap pour garantir une expérience utilisateur moderne et responsive.
-                </li>
-                <li>
-                    Intégration de la base de données : Conception et implémentation d'une base relationnelle (SQL) pour stocker les informations clients, contacts, rendez-vous et opportunités.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Objectifs atteints</h5>  
-            <ul>
-                <li>
-                    Mise en place d'un CRM sur mesure, adapté aux besoins de l'entreprise.
-                </li>
-                <li>
-                    Interface fluide et responsive, facilitant l'utilisation quotidienne des équipes.
-                </li>
-                <li>
-                    Intégration réussie entre le frontend Vue.js et le backend Spring Boot.
-                </li>
-                <li>
-                    Structuration efficace des données clients dans une base SQL optimisée.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Détails Techniques</h5>  
-            <p>Choix technologiques :</p>
-            <ul>
-                <li>
-                    Frontend : Vue.js pour la réactivité et la simplicité, Bootstrap pour le design responsive.
-                </li>
-                <li>
-                    Backend : Java avec Spring Boot pour sa robustesse, sa sécurité et la facilité de développement d'API REST.
-                </li>
-                <li>
-                    Base de données : SQL (PostgreSQL) pour la fiabilité et la gestion structurée des données.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Défis rencontrés</h5>  
-            <ul>
-                <li>
-                    Synchronisation des données en temps réel entre les composants Vue.js et les API backend.
-                </li>
-                <li>
-                    Gestion de la sécurité (authentification, autorisation) des utilisateurs selon leurs rôles.
-                </li>
-                <li>
-                    Conception d'une interface intuitive malgré la complexité fonctionnelle de certaines entités.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Solutions apportées</h5>  
-            <ul>
-                <li>
-                    Mise en place d'un système de rôles et permissions via Spring Security.
-                </li>
-                <li>
-                    Utilisation des composants Vue.js réactifs avec gestion d'état centralisé pour une meilleure synchronisation.
-                </li>
-                <li>
-                    Utilisation de Bootstrap pour harmoniser le design et garantir l'accessibilité sur tout type d'appareil.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Résultats finaux</h5>  
-            <ul>
-                <li>
-                    Une application CRM fonctionnelle, utilisée au quotidien par les équipes de Liqrade.
-                </li>
-                <li>
-                    Un gain de productivité notable grâce à la centralisation et la traçabilité des données clients.
-                </li>
-            </ul>
+            <p>
+                J'ai particulièrement apprécié la combinaison du backend Spring Boot et du frontend Vue.js, 
+                qui m'a permis de mieux comprendre les enjeux de synchronisation des données et d'expérience utilisateur.
+            </p>
         </div>
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
                 <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
-                <app-custom-button name="Spring Boot" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
-                <app-custom-button name="Vue.js" [link]="['/skills', 18]" [buttonStyle]="{'background-color': '#42b883'}"></app-custom-button>
+                <app-custom-button name="Communication" [link]="['/skills', 8]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="L'esprit d'analyse " [link]="['/skills', 9]" [buttonStyle]="{'background-color': '#9C2007'}"></app-custom-button>                
                 <app-custom-button name="Bootstrap" [link]="['/skills', 20]" [buttonStyle]="{'background-color': '#7952b3'}"></app-custom-button>
             </div>
         </div>
     </div>
     
-     <!-- Block pour le projet STPPS  -->
-     <div class="stpps-project" *ngIf="stpps">
+    <!-- STPPS -->
+    <div class="stpps-project" *ngIf="stpps">
         <div>
             <p class="main-title">STPPS - Solution de gestion du Tiers Payant et du Recouvrement</p>
         </div>
+        <!-- Présentation -->
         <p class="project-description">
-            Ce projet a été réalisé dans le cadre de mon activité actuelle au sein d'une ESN, pour le compte du client <strong>STPPS</strong>. STPPS a pour mission d'aider les professionnels de santé, notamment les centres dentaires et cabinets spécialisés, à gérer efficacement le recouvrement de leurs impayés. L'application permet de centraliser la gestion du tiers payant et d'optimiser le traitement des dossiers clients grâce à un accompagnement personnalisé.
+            Ce projet a été réalisé dans le cadre de mon activité au sein d'une ESN, pour le compte du client <strong>STPPS</strong>. 
+            STPPS accompagne les professionnels de santé, tels que les centres dentaires et cabinets spécialisés, dans la gestion du recouvrement de leurs impayés. 
+            L'application vise à centraliser la gestion du tiers payant et à optimiser le traitement des dossiers clients grâce à une plateforme digitale performante.
         </p>
         <br>
+        <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
-            <h5>Problème résolu</h5>
+            <h5>Objectif / Contexte / Enjeux et Risques</h5>
+            <p><strong>Objectif :</strong> Concevoir une solution web complète pour améliorer la traçabilité, le suivi et le traitement des paiements et rejets liés au tiers payant.</p>
+    
+            <p><strong>Contexte :</strong> Le client STPPS faisait face à une gestion manuelle et chronophage des impayés. 
+            Le projet visait à automatiser et structurer les processus de recouvrement, tout en offrant une interface claire et ergonomique pour les équipes internes.</p>
+    
+            <p><strong>Enjeux :</strong></p>
+            <ul>
+                <li>Automatiser les processus de traitement des rejets et paiements.</li>
+                <li>Centraliser les informations financières dans un tableau de bord unique.</li>
+                <li>Garantir la sécurité et la fiabilité des données sensibles de santé et de paiement.</li>
+            </ul>
+            <p><strong>Risques :</strong></p>
+            <ul>
+                <li>Complexité des règles métier selon les mutuelles et types de soins.</li>
+                <li>Performance du système sur des volumes importants de transactions.</li>
+                <li>Synchronisation des modules frontend et backend.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les étapes -->
+        <div>
+            <h5>Les étapes</h5>
+            <ul>
+                <li>Conception de la base de données et modélisation des entités métier.</li>
+                <li>Développement du backend en Java / Spring Boot avec création d'API REST sécurisées.</li>
+                <li>Réalisation du frontend en React.js avec Tailwind CSS.</li>
+                <li>Optimisation des requêtes SQL et de la performance du backend.</li>
+                <li>Tests d'intégration et validation des flux financiers.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les acteurs -->
+        <div>
+            <h5>Les acteurs</h5>
+            <ul>
+                <li><strong>Moi :</strong> Développeur full-stack (backend + frontend + base de données).</li>
+                <li><strong>Chef de projet :</strong> Suivi fonctionnel et coordination avec le client.</li>
+                <li><strong>Équipe STPPS :</strong> Utilisateurs finaux (service recouvrement et gestion).</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les résultats -->
+        <div>
+            <h5>Les résultats</h5>
+            <ul>
+                <li>Mise en production d'une application performante et ergonomique.</li>
+                <li>Automatisation des traitements liés aux rejets et paiements.</li>
+                <li>Gain de temps significatif dans la gestion des impayés.</li>
+                <li>Tableau de bord complet centralisant toutes les opérations financières.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Le futur du projet -->
+        <div>
+            <h5>Le futur du projet</h5>
+            <ul>
+                <li>Ajout d'un module de reporting et d'analyse statistique des paiements.</li>
+                <li>Amélioration de la gestion des rôles et permissions.</li>
+                <li>Intégration d'un module d'alertes automatiques par e-mail ou SMS.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Mon retour d'expérience -->
+        <div>
+            <h5>Mon retour d'expérience</h5>
             <p>
-                Les structures médicales faisaient face à un manque de suivi dans le traitement des impayés et des rejets de paiement liés au tiers payant. Le projet STPPS propose une solution digitale complète pour améliorer la traçabilité, le suivi et le traitement des opérations financières avec les mutuelles et la sécurité sociale.
+                Ce projet m'a permis de renforcer mes compétences en architecture backend et en intégration frontend moderne avec React et Tailwind. 
+                J'ai particulièrement apprécié le travail sur l'optimisation des performances SQL et la mise en place de règles métier complexes côté serveur.
             </p>
-        </div>
-        <br>
-        <div>
-            <h5>Mon rôle</h5>  
-            <p>Sur ce projet, j'ai participé activement au développement de la solution :</p>
-            <ul>
-                <li>
-                    Développement backend en Java avec Spring Boot pour la création des API REST sécurisées.
-                </li>
-                <li>
-                    Intégration d'une base de données PostgreSQL pour le stockage des opérations de facturation, des paiements et des rejets.
-                </li>
-                <li>
-                    Réalisation de l'interface utilisateur en React, avec Tailwind CSS pour garantir une interface ergonomique et responsive.
-                </li>
-                <li>
-                    Participation à la modélisation de la base de données et optimisation des requêtes SQL pour assurer la performance de l'application.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Objectifs atteints</h5>  
-            <ul>
-                <li>
-                    Mise en place d'un tableau de bord centralisant toutes les opérations financières liées au tiers payant.
-                </li>
-                <li>
-                    Automatisation des traitements liés aux rejets de paiement et au recouvrement.
-                </li>
-                <li>
-                    Développement d'une application web moderne avec une interface claire et efficace.
-                </li>
-                <li>
-                    Optimisation des performances backend via une architecture bien structurée et des requêtes SQL optimisées.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Détails Techniques</h5>  
-            <p>Choix technologiques :</p>
-            <ul>
-                <li>
-                    Frontend : React.js pour sa flexibilité et Tailwind CSS pour une mise en page rapide et harmonieuse.
-                </li>
-                <li>
-                    Backend : Java avec Spring Boot pour la gestion des services et API REST.
-                </li>
-                <li>
-                    Base de données : PostgreSQL pour sa robustesse et sa capacité à gérer des volumes importants de données structurées.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Défis rencontrés</h5>  
-            <ul>
-                <li>
-                    Gestion des règles complexes liées aux rejets de paiement selon les mutuelles et types de soins.
-                </li>
-                <li>
-                    Synchronisation des mises à jour entre les modules frontend et backend.
-                </li>
-                <li>
-                    Optimisation des performances de traitement en base de données.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Solutions apportées</h5>  
-            <ul>
-                <li>
-                    Implémentation d'un moteur de règles métier personnalisable côté backend.
-                </li>
-                <li>
-                    Utilisation de hooks et d'état centralisé dans React pour garantir une synchronisation fluide de l'interface.
-                </li>
-                <li>
-                    Indexation, procédures stockées, et analyse des plans d'exécution SQL pour améliorer les temps de réponse.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Résultats finaux</h5>  
-            <ul>
-                <li>
-                    Une application performante, utilisée par les équipes STPPS pour accompagner leurs clients dans la gestion du tiers payant.
-                </li>
-                <li>
-                    Un gain de temps significatif dans le traitement des rejets et des impayés grâce à l'automatisation.
-                </li>
-            </ul>
+            <p>
+                Cette expérience a également amélioré ma capacité à collaborer avec des équipes fonctionnelles et à concevoir des solutions adaptées à des besoins métiers réels.
+            </p>
         </div>
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
-                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
-                <app-custom-button name="Spring Boot" [link]="['/skills', 2]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
-                <app-custom-button name="Javascript" [link]="['/skills', 5]" [buttonStyle]="{'background-color': '#F5B027'}"></app-custom-button>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="React" [link]="['/skills', 6]" [buttonStyle]="{'background-color': '#61dafb'}"></app-custom-button>
-                <app-custom-button name="Tailwind CSS" [link]="['/skills', 19]" [buttonStyle]="{'background-color': '#38bdf8'}"></app-custom-button>
+                <app-custom-button name="Methodologies Agiles" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#9C2007'}"></app-custom-button>
+                <app-custom-button name="Gestion de Projet" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
             </div>
         </div>
-    </div>
+    </div>    
     
      <!-- Block pour le projet OCR -->
      <div class="ocr-project" *ngIf="ocr">
         <div>
             <p class="main-title">OCR - Extraction d'informations de cartes bancaires</p>
         </div>
+    
+        <!-- Présentation -->
         <p class="project-description">
-            Ce projet a été développé dans le cadre de ma formation en <strong>intelligence artificielle</strong>. L'objectif principal était de concevoir une solution capable d'extraire automatiquement les informations présentes sur une carte bancaire (nom du titulaire, numéro de carte, date d'expiration) à partir d'une image, grâce à la technologie de reconnaissance optique de caractères (OCR). L'application permet ensuite de sauvegarder ces données dans une base de données pour un usage ultérieur sécurisé.
-        </p>
+            Ce projet a été développé dans le cadre de ma formation en <strong>intelligence artificielle</strong>. 
+            L'objectif était de concevoir une solution capable d'extraire automatiquement les informations 
+            présentes sur une carte bancaire (nom, numéro, date d'expiration) à partir d'une image grâce à la reconnaissance optique de caractères (OCR).
+        </p> 
         <br>
+        <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
-            <h5>Problème résolu</h5>
+            <h5>Objectif / Contexte / Enjeux et Risques</h5>
+            <p><strong>Objectif :</strong> Automatiser la lecture et l'extraction d'informations à partir d'images de cartes bancaires pour simplifier la saisie utilisateur.</p>
+    
+            <p><strong>Contexte :</strong> Le remplissage manuel d'informations bancaires est souvent source d'erreurs et de perte de temps. 
+            Ce projet vise à montrer comment les techniques d'OCR peuvent améliorer la fiabilité et la rapidité de ces processus.</p>
+    
+            <p><strong>Enjeux :</strong></p>
+            <ul>
+                <li>Obtenir une reconnaissance précise malgré la variabilité des images (angle, luminosité, qualité).</li>
+                <li>Garantir la sécurité et la confidentialité des données bancaires traitées.</li>
+                <li>Créer une interface web simple d'utilisation pour le test de l'outil.</li>
+            </ul>
+    
+            <p><strong>Risques :</strong></p>
+            <ul>
+                <li>Erreur d'extraction due à la qualité ou l'orientation de la photo.</li>
+                <li>Gestion sensible des données personnelles et bancaires.</li>
+                <li>Performance du modèle OCR sur des caractères spéciaux et chiffres.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les étapes -->
+        <div>
+            <h5>Les étapes</h5>
+            <ul>
+                <li>Préparation du dataset et tests sur différentes images de cartes bancaires.</li>
+                <li>Intégration de la librairie EasyOCR pour la détection et la lecture des textes.</li>
+                <li>Développement du backend Flask pour gérer l'analyse et le stockage des données.</li>
+                <li>Création de l'interface web (HTML/CSS/Bootstrap).</li>
+                <li>Validation et chiffrement des données avant enregistrement.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les acteurs -->
+        <div>
+            <h5>Les acteurs</h5>
+            <ul>
+                <li><strong>Moi :</strong> Développeur unique – conception, développement et intégration complète.</li>
+                <li><strong>Formateur IA :</strong> Supervision technique et validation des livrables.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Les résultats -->
+        <div>
+            <h5>Les résultats</h5>
+            <ul>
+                <li>Application fonctionnelle permettant l'extraction automatique des données bancaires.</li>
+                <li>Interface claire et intuitive pour le test du modèle OCR.</li>
+                <li>Taux de reconnaissance satisfaisant après prétraitement des images.</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Le futur du projet -->
+        <div>
+            <h5>Le futur du projet</h5>
+            <ul>
+                <li>Entraînement d'un modèle OCR personnalisé sur un dataset plus large.</li>
+                <li>Intégration d'une API sécurisée pour l'usage dans d'autres applications.</li>
+                <li>Extension du système à d'autres types de documents (CNI, passeports, etc.).</li>
+            </ul>
+        </div>
+        <br>
+        <!-- Mon retour d'expérience -->
+        <div>
+            <h5>Mon retour d'expérience</h5>
             <p>
-                Le remplissage manuel d'informations bancaires peut être source d'erreurs et représente un frein à l'expérience utilisateur. Ce projet vise à automatiser la lecture de ces données via une simple photo, tout en garantissant un traitement rapide, précis et sécurisé.
+                Ce projet m'a permis de comprendre le fonctionnement des algorithmes d'OCR et d'expérimenter leur intégration dans une application web complète. 
+                J'ai également renforcé mes compétences en traitement d'images, en Python et en sécurité des données.
             </p>
-        </div>
-        <br>
-        <div>
-            <h5>Mon rôle</h5>  
-            <p>J'ai pris en charge l'ensemble du développement de l'application :</p>
-            <ul>
-                <li>
-                    Intégration de la librairie EasyOCR en Python pour effectuer la reconnaissance de texte sur les images.
-                </li>
-                <li>
-                    Développement du backend avec Flask pour la gestion des requêtes, du traitement et de l'API.
-                </li>
-                <li>
-                    Réalisation de l'interface utilisateur en HTML/CSS avec Bootstrap pour assurer une utilisation simple et responsive.
-                </li>
-                <li>
-                    Conception et intégration de la base de données pour stocker les informations extraites.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Objectifs atteints</h5>  
-            <ul>
-                <li>
-                    Extraction fiable des données à partir de différents formats de cartes bancaires.
-                </li>
-                <li>
-                    Interface web légère et intuitive pour télécharger et traiter une image.
-                </li>
-                <li>
-                    Stockage structuré des résultats dans une base de données relationnelle.
-                </li>
-                <li>
-                    Respect des bonnes pratiques en matière de traitement de données sensibles.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Détails Techniques</h5>  
-            <p>Choix technologiques :</p>
-            <ul>
-                <li>
-                    Traitement OCR : EasyOCR (Python), pour sa simplicité et sa prise en charge multi-langue.
-                </li>
-                <li>
-                    Backend : Flask, pour la légèreté et la rapidité de développement d'API REST.
-                </li>
-                <li>
-                    Frontend : Bootstrap pour un design responsive et rapide à mettre en œuvre.
-                </li>
-                <li>
-                    Base de données : Système relationnel (SQLite ou PostgreSQL) pour persister les données extraites.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Défis rencontrés</h5>  
-            <ul>
-                <li>
-                    Traitement d'images de qualité variable et en différents formats.
-                </li>
-                <li>
-                    Fiabilité de l'extraction des données chiffrées comme les numéros de carte.
-                </li>
-                <li>
-                    Sécurisation du stockage des données sensibles.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Solutions apportées</h5>  
-            <ul>
-                <li>
-                    Prétraitement des images avec OpenCV (recadrage, niveaux de gris) avant OCR.
-                </li>
-                <li>
-                    Validation des données extraites via expressions régulières.
-                </li>
-                <li>
-                    Chiffrement des données sensibles avant stockage.
-                </li>
-            </ul>
-        </div>
-        <br>
-        <div>
-            <h5>Résultats finaux</h5>  
-            <ul>
-                <li>
-                    Une application simple et fonctionnelle permettant d'extraire automatiquement les données d'une carte bancaire.
-                </li>
-                <li>
-                    Traitement rapide avec un taux de précision satisfaisant sur un jeu de données réel.
-                </li>
-            </ul>
+            <p>
+                L'utilisation de Flask et EasyOCR m'a appris à gérer le flux complet entre analyse, affichage et stockage, 
+                tout en respectant les bonnes pratiques de développement backend et frontend.
+            </p>
         </div>
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
                 <app-custom-button name="Python" [link]="['/skills', 15]" [buttonStyle]="{'background-color': '#3572A5'}"></app-custom-button>
-                <app-custom-button name="EasyOCR" [link]="['/skills', 21]" [buttonStyle]="{'background-color': '#f7c873'}"></app-custom-button>
-                <app-custom-button name="Flask" [link]="['/skills',22]" [buttonStyle]="{'background-color': '#000000'}"></app-custom-button>
                 <app-custom-button name="Bootstrap" [link]="['/skills', 20]" [buttonStyle]="{'background-color': '#7952b3'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
             </div>
         </div>
-    </div>
+    </div>    
 
 </div>
 
