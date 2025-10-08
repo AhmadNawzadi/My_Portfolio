@@ -1,0 +1,20 @@
+<section class="timeline-section">
+    <h2 class="timeline-title">Mon Parcours</h2>
+  
+    <div class="timeline">
+      <div *ngFor="let item of parcours; let i = index" class="timeline-item" [class.right]="i % 2 === 0">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line"></div>
+  
+        <div class="timeline-card">
+          <p class="date">{{ item.date }}</p>
+          <h3>{{ item.titre }}</h3>
+          <a class="lieu" [href]="item.lien" target="_blank" rel="noopener noreferrer">
+            {{ item.lieu }}
+          </a>
+          <p class="details">{{ item.details }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
