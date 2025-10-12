@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CustomButtonComponent } from '../../components/custom-button/custom-button.component';
 
 @Component({
   selector: 'app-parcours',
@@ -7,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./parcours.component.scss'],
   standalone: true,
   imports: [
-    CommonModule
+    CommonModule,
+    CustomButtonComponent
   ]
 })
 export class ParcoursComponent {
