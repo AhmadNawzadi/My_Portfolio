@@ -15,14 +15,14 @@ import { CustomButtonComponent } from '../../components/custom-button/custom-but
 export class ParcoursComponent {
   parcours = [
     {
-      date: 'Jan 2024 - Présent',
+      date: "Jan 2024 - Aujourd'hui",
       titre: 'Master Ingénierie Logicielle',
       lieu: 'Visiplus Academy',
       lien: 'https://www.visiplus.com/',
       details: 'Formation approfondie en architecture logicielle, gestion de projet et développement full-stack. Focus sur la qualité logicielle et les bonnes pratiques de conception.'
     },
     {
-      date: '2024 - Aujourd’hui',
+      date: "2024 - Aujourd'hui",
       titre: 'Développeur Informatique',
       lieu: 'Groupe FBO - La Roche-sur-Yon',
       lien: 'https://groupefbo.com/',
