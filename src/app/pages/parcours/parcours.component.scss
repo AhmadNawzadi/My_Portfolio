@@ -175,6 +175,19 @@
   }
 }
 
+@media (max-width: 425px) {
+    .timeline-section {
+    .timeline-title {
+      font-size: 15px;
+    }
+    .timeline-card {
+      margin-right: 0;
+    }
+      .timeline-card {
+        margin-left: 0;
+      }
+  }
+}
 .parcours-skills {
   padding: 10px;
 }

@@ -1,5 +1,6 @@
 .portfolio {
     padding: 100px ;
+    margin: 0
 }
 .card  {
     border-radius: 10px;
@@ -113,5 +114,15 @@ color: #fff;
         padding-top: 4px;
         height: 40px;
         width: 40px;
+    }
+    .projects img {
+        width: 280px;
+        height: 200px;
+    }
+    .portfolio .title h2 {
+        font-size: 35px;
+    }
+    .portfolio .title {
+        margin-bottom: 20px;
     }
 }

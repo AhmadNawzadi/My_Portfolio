@@ -133,33 +133,32 @@ export class SkillDetailsComponent{
 
     {
       id: 7,
-      name: 'Gestion de Projet',
+      name: "Capacité d'autocritique",
       introduction: [`
-        La gestion de projet joue un rôle central dans la réussite des développements logiciels. Elle consiste à organiser, planifier et piloter les différentes étapes d'un projet afin d'atteindre les objectifs fixés dans les délais et avec la qualité attendue. Dans le domaine informatique, les méthodes agiles (Scrum, Kanban) se sont imposées comme une référence, car elles privilégient la collaboration, la transparence et l'amélioration continue.
-        Elles offrent une approche itérative et flexible qui permet d'intégrer rapidement les retours des utilisateurs et de s'adapter aux changements. Les rituels agiles, tels que les daily meetings, les sprint planning et les rétrospectives, sont autant de leviers pour améliorer la communication au sein des équipes et garantir une livraison régulière et fiable des fonctionnalités.
+        La capacité d'autocritique est une compétence essentielle dans le développement logiciel, où les technologies, les pratiques et les exigences évoluent en permanence. Être capable d'analyser son propre travail, d'identifier ses limites et de mettre en place des actions d'amélioration permet de progresser durablement et de gagner en maturité professionnelle. Cette démarche est indispensable pour maintenir un haut niveau de qualité et s'adapter aux attentes du monde professionnel.     
       `],
-      img: 'assets/images/skills-imgs/projet.jpg',
+      img: 'assets/images/skills-imgs/autocritique.png',
       level: `
-        Grâce à cette expérience, j'ai acquis une approche méthodique et collaborative de la gestion de projet. Je maîtrise les outils et pratiques liés aux méthodes agiles, ce qui me permet aujourd'hui d'optimiser la qualité des livrables, d'améliorer la communication entre les membres de l'équipe et de garantir une livraison rapide et fiable des fonctionnalités. Je suis ainsi capable de contribuer à la réussite d'un projet, aussi bien en tant que développeur impliqué qu'en tant que coordinateur de processus.      `,
+        Aujourd'hui, je considère avoir une bonne capacité d'analyse critique de mon travail. Je suis capable d'identifier ce qui fonctionne et ce qui peut être amélioré, tant sur le plan technique que méthodologique. Néanmoins, j'ai conscience que l'autocritique doit être équilibrée afin de ne pas ralentir inutilement l'avancement des projets. Je travaille donc à mieux prioriser les axes d'amélioration les plus impactants, afin de progresser efficacement tout en respectant les contraintes de temps.      `,
       experiance: `
-        Lors de mon expérience chez Groupe FBO, j'ai participé activement à la planification, au suivi et à l'optimisation des processus de développement. J'ai pris part aux différents rituels agiles tels que les daily meetings, les sprint planning et les rétrospectives, ce qui m'a permis de contribuer à la structuration des tâches, à la coordination des équipes et à la fluidité du cycle de développement. Cette immersion dans un environnement agile m'a appris à équilibrer rigueur et flexibilité afin de répondre efficacement aux besoins du projet et aux attentes des utilisateurs.
-      `,
+        Au cours de mes projets académiques et professionnels, j'ai régulièrement été amené à analyser la qualité de mes réalisations, que ce soit lors de revues de code, de retours de formateurs ou d'échanges avec des Product Owners. Les projets comme Liqtrade CRM, STPPS ou encore mes projets de formation m'ont confronté à des problématiques réelles, où certaines décisions techniques pouvaient être améliorées après coup.\n
+        Ces situations m'ont appris à accepter les retours, à remettre en question mes choix et à considérer les erreurs non comme des échecs, mais comme des opportunités d'apprentissage. Cette posture m'a permis d'améliorer progressivement la qualité de mon code et ma compréhension des enjeux techniques et métiers.      `,
       projects: [
         {"STPPS ":"/details"} as { [key: string]: string }]
     },
 
     {
       id: 8,
-      name: 'Communication',
+      name: 'Rigueur',
       introduction: [`
-        La communication est une compétence clé dans le domaine professionnel, en particulier dans l'ingénierie logicielle où la réussite d'un projet repose autant sur la qualité technique que sur la clarté des échanges entre les équipes. Une bonne communication favorise la collaboration, renforce la cohésion et permet de transmettre les informations de manière fluide. Associée à un esprit d'analyse, elle devient un levier stratégique pour comprendre les besoins, résoudre les problèmes et prendre des décisions éclairées.      img: 'assets/images/skills-imgs/com.jpg',
-      `],
+        La rigueur et le sens de la qualité sont des compétences fondamentales dans le développement logiciel, en particulier sur des applications métiers et des systèmes en production. Elles garantissent la fiabilité, la maintenabilité et la sécurité des solutions développées, tout en réduisant les risques de régression et de dysfonctionnement.      `],
       level: `
-        Ces échanges m'ont permis de renforcer mon esprit d'analyse, en évaluant les problématiques rencontrées et en identifiant des solutions adaptées aux besoins du projet. Je suis désormais capable de contribuer efficacement à l'amélioration continue en alliant communication ouverte, réflexion critique et collaboration constructive au sein d'une équipe.      `,
+        Je considère aujourd'hui la rigueur comme l'un de mes points forts. Toutefois, j'ai identifié que cette exigence peut parfois m'amener à passer trop de temps sur des détails techniques. Je travaille donc à trouver un meilleur équilibre entre qualité et efficacité, en priorisant les actions ayant le plus fort impact sur la fiabilité et la valeur métier de l'application.      `,
       experiance: ` 
-        Lors de mon expérience chez Liqtrade, j'ai eu l'opportunité de développer mes compétences en communication et en esprit d'analyse grâce à des interactions régulières avec différentes parties prenantes. J'ai appris à formuler mes idées de manière claire et structurée, à écouter activement et à adapter mon discours en fonction de mes interlocuteurs, qu'ils soient techniques ou non techniques.
+        Lors de mes expériences professionnelles et de formation, j'ai été sensibilisé à l'importance de la qualité du code à travers la mise en place de tests unitaires, de pipelines CI/CD et le respect des bonnes pratiques de développement. Sur des projets comme STPPS ou Liqtrade, la stabilité et la sécurité des applications étaient des enjeux majeurs, ce qui m'a conduit à adopter une approche rigoureuse dans mes développements.\n
+        Cette rigueur s'est traduite par une attention portée à la lisibilité du code, à la structuration des projets et à la validation des fonctionnalités avant leur mise en production.      
       `,
-      img: 'assets/images/skills-imgs/com.jpg',
+      img: 'assets/images/skills-imgs/rigueur.png',
       projects: [
         {"Project management tool":"/details"},
         {"Game up":"/details"} as { [key: string]: string }]
@@ -167,36 +166,34 @@ export class SkillDetailsComponent{
 
     {
       id: 9,
-      name: 'Esprit d\'analyse',
+      name: 'Communication',
       introduction: [`
-        L'esprit d'analyse est une compétence fondamentale dans le domaine de l'ingénierie logicielle et du développement informatique. Il permet de comprendre en profondeur les problématiques rencontrées, d'identifier les causes sous-jacentes et de proposer des solutions pertinentes. Au-delà de la technique, il favorise la prise de décision stratégique et l'amélioration continue des projets, en tenant compte à la fois des contraintes techniques, organisationnelles et humaines.     `],
+        La communication est une compétence clé dans un contexte de développement logiciel collaboratif. Être capable d'expliquer des choix techniques, de comprendre des besoins fonctionnels et de travailler avec des interlocuteurs variés est indispensable pour mener à bien des projets complexes.      `],
       experiance: ` 
-        Lors de mon expérience chez Liqtrade, j'ai eu l'occasion de développer mon esprit d'analyse à travers des échanges réguliers avec les différentes parties prenantes. Cette collaboration m'a appris à évaluer les problématiques de manière structurée, à poser les bonnes questions et à dégager des pistes de réflexion adaptées aux besoins du projet.
-      `,
-      img: 'assets/images/skills-imgs/analyse.png',
+        J'ai eu l'occasion de collaborer avec différents profils : développeurs, Product Owners, équipes métiers et formateurs. Dans des projets comme STPPS ou Liqtrade, les échanges réguliers étaient essentiels pour aligner les développements avec les besoins réels des utilisateurs.\n
+        Ces expériences m'ont appris à adapter mon discours selon mon interlocuteur, à vulgariser des concepts techniques et à prendre en compte les contraintes fonctionnelles dans mes choix techniques.      `,
+      img: 'assets/images/skills-imgs/communication.png',
       level: `
-        Grâce à cette expérience, j'ai renforcé ma capacité à identifier les solutions les plus efficaces tout en tenant compte des priorités et des contraintes. Je suis désormais en mesure d'apporter une vision claire et constructive dans la résolution de problèmes complexes, et de contribuer activement à l'optimisation et à l'amélioration des processus au sein d'une équipe.
-        `,
-    projects: [
-      {"Project management tool":"/details"},
-      {"Game up":"/details"}as { [key: string]: string }]
+        Je suis aujourd'hui à l'aise dans les échanges techniques et fonctionnels. Toutefois, je souhaite progresser sur une communication encore plus proactive, notamment en anticipant davantage les besoins des parties prenantes et en formulant plus tôt des propositions ou des alertes lorsque des risques sont identifiés.        `,
+      projects: [
+        {"Project management tool":"/details"},
+        {"Game up":"/details"}as { [key: string]: string }]
     },
 
     {
       id: 10,
-      name: 'Methodologies Agiles',
+      name: 'Autonomie',
       introduction: [`
-        Les méthodes agiles (Scrum, Kanban) sont aujourd'hui incontournables dans le développement logiciel. Elles offrent une approche itérative et collaborative qui permet de livrer rapidement des fonctionnalités tout en intégrant les retours des utilisateurs et en s'adaptant aux changements. Grâce à leurs principes de transparence, de communication constante et d'amélioration continue, elles favorisent la cohésion des équipes et l'efficacité opérationnelle. Les rituels agiles, tels que les daily meetings, le sprint planning et les rétrospectives, jouent un rôle essentiel pour structurer le travail et garantir la qualité des livrables.       `],
+        L'autonomie est une compétence essentielle pour un développeur, mais elle doit s'accompagner d'un sens des responsabilités. Être autonome signifie être capable de prendre en charge des tâches complètes, tout en sachant quand solliciter de l'aide ou un avis extérieur.      `],
       experiance: ` 
-        Lors de mon expérience au sein de Groupe FBO, j'ai participé activement à la mise en œuvre des méthodes agiles dans le cadre de projets de développement logiciel. J'ai contribué à la planification des sprints, au suivi des tâches et à l'optimisation des processus, tout en favorisant la collaboration entre les membres de l'équipe et l'adaptabilité face aux imprévus. Cette immersion m'a permis de mieux comprendre les bénéfices des cycles courts et des itérations pour atteindre progressivement les objectifs fixés.
-      `,
-      img: 'assets/images/skills-imgs/Agile-Methodology.png',
+        J'ai été amené à travailler de manière autonome sur plusieurs projets, notamment lors de mes projets de formation et sur certaines fonctionnalités développées en contexte professionnel. J'ai pris en charge des tâches allant de l'analyse du besoin jusqu'à la livraison, ce qui m'a permis de gagner en confiance et en efficacité.        `,
+      img: 'assets/images/skills-imgs/autonomie.png',
       level: `
-        Grâce à cette expérience, j'ai acquis une approche structurée et pragmatique de la gestion de projet agile. Je maîtrise les principaux rituels et outils agiles, ce qui me permet de contribuer à une meilleure coordination entre les équipes, d'assurer une amélioration continue et de garantir la livraison rapide et qualitative des fonctionnalités. Je suis ainsi capable d'apporter une réelle valeur ajoutée dans des environnements où la flexibilité et la collaboration sont essentielles.    `,
+        Je considère avoir atteint un bon niveau d'autonomie, mais j'ai conscience que celle-ci doit rester encadrée. Je travaille donc à améliorer ma capacité à solliciter des retours au bon moment, afin d'éviter les dérives techniques et de garantir l'alignement avec les attentes métier.    
+      `,
       projects: [
-        {"Project management tool":"/details"}, 
-        {"Game up":"/details"} as { [key: string]: string }
-      ]
+        {"Project management tool":"/details"},
+        {"Game up":"/details"}as { [key: string]: string }]
     },
 
     {
@@ -267,33 +264,6 @@ export class SkillDetailsComponent{
         Cette démarche d'autoévaluation me permet d'utiliser Python de manière polyvalente et efficace aujourd'hui, tout en construisant une montée en compétence progressive vers des projets d'intelligence artificielle plus avancés et industrialisés.      `,
       projects: [{"Project management tool":"/details"}, {"Game up":"/details"} as { [key: string]: string }]
     },
-    {
-      id: 16,
-      name: 'Machine Learning',
-      introduction: [`
-        Les compétences en Machine Learning se sont développées dans le cadre de la formation en Intelligence Artificielle et à travers les différents projets réalisés durant ce parcours. L'apprentissage a porté sur la conception, l'entraînement et l'évaluation de modèles prédictifs, avec une mise en pratique concrète dans des cas variés. 
-      `],
-      img: 'assets/images/skills/machine_learning.jpg',
-      level: `Le projet final d'OCR de cartes bancaires a particulièrement permis d'appliquer des techniques avancées de reconnaissance de texte et de traitement d'images, démontrant l'efficacité des approches supervisées et non supervisées dans des environnements réels.`,
-      experiance: ` J'ai travaillé sur le développement et l'optimisation d'APIs REST, l'intégration de bases de données, ainsi que la mise en place de bonnes pratiques en matière de sécurité et de gestion des performances. 
-      Cette expérience m'a permis d'acquérir une solide maîtrise de l'écosystème Spring (Spring Boot, Spring Security, Spring Data), tout en collaborant étroitement avec les équipes techniques pour assurer une livraison efficace et qualitative des fonctionnalités.
-    `,
-      projects: [{"Project management tool":"/details"}, {"Game up":"/details"} as { [key: string]: string }]
-    },
-    {
-      id: 17,
-      name: 'Swing',
-      introduction: [`
-        L'apprentissage de Java Swing a été consolidé lors du développement du projet "Electricity Billing System". Ce projet a permis de mettre en pratique les concepts fondamentaux du langage Java tout en explorant la création d'interfaces graphiques interactives. 
-      `],
-      img: 'assets/images/skills/swing.png',
-      level: `L'expérience a renforcé la compréhension de la programmation orientée objet, la gestion des événements et la conception d'applications conviviales, offrant ainsi une approche complète de la construction de logiciels desktop en Java.`,
-      experiance: ` J'ai travaillé sur le développement et l'optimisation d'APIs REST, l'intégration de bases de données, ainsi que la mise en place de bonnes pratiques en matière de sécurité et de gestion des performances. 
-      Cette expérience m'a permis d'acquérir une solide maîtrise de l'écosystème Spring (Spring Boot, Spring Security, Spring Data), tout en collaborant étroitement avec les équipes techniques pour assurer une livraison efficace et qualitative des fonctionnalités.
-    `,
-      projects: [{"Project management tool":"/details"}, {"Game up":"/details"} as { [key: string]: string }]
-    },
- 
     {
       id: 20,
       name: 'Bootsrap',
