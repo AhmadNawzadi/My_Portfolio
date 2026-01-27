@@ -24,11 +24,15 @@
         <br>
         <br>
         <div class="project">
-            <div *ngFor="let p of selectedSkill.projects; let i = index" >
-                <div *ngFor="let entry of objectEntries(p);" class="project">
-                    <app-custom-button [name]="entry[0]" [link]="[entry[1], ind+i]"  [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
+            <div *ngFor="let p of selectedSkill.projects; let i = index">
+                <div *ngFor="let entry of objectEntries(p)" class="project">
+                    <app-custom-button [name]="entry[0]" [link]="entry[1]" [buttonStyle]="{'background-color': 'green'}" (click)="selectedProject = entry[0]"></app-custom-button>
                 </div>
             </div>
+        </div>
+        <div *ngIf="selectedProject">
+            <h4>Détails du projet : {{selectedProject}}</h4>
+            <!-- Add more details here if needed -->
         </div>
         <br>
     </div>

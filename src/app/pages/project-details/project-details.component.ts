@@ -31,12 +31,10 @@ export class ProjectDetailsComponent {
     } else if (id === '2') {
       this.gameUp = true;
     } else if (id === '3') {
-      this.electricitySystem = true;
+      this.stpps = true;
     }else if (id === '4') {
       this.liqtradeCRM = true;
     } else if (id === '5') {
-      this.stpps = true;
-    } else if (id === '6') {
       this.ocr = true;
     }
   }

@@ -1,26 +1,23 @@
 <div class="project-details">
 
-    <!-- Block pour le projet Liqtrade CRM -->
+    <!--Liqtrade CRM -->
     <div class="crm-project" *ngIf="liqtradeCRM">
         <div>
             <p class="main-title">CRM - Liqtrade</p>
         </div>
-
         <!-- Présentation -->
         <p class="project-description">
             Ce projet a été développé dans le cadre de mon expérience professionnelle chez <a href="https://www.frenchtech-paysbasque.com/ecosysteme/liqtrade/" target="_blank"><strong>Liqtrade</strong></a>. Il s'agissait de concevoir un outil CRM interne destiné aux équipes commerciales et marketing, avec pour objectif de centraliser les données clients et d'automatiser plusieurs processus métiers liés aux demandes de prêts. Le projet répondait à un besoin réel de l'entreprise et a été conçu pour être utilisé en production par les équipes.
         </p>
         <br>
-
         <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
             <h5>Objectif / Contexte / Enjeux et Risques</h5>
             <p>L'objectif principal était de centraliser l'ensemble des informations clients dans une plateforme unique et de faciliter le suivi des interactions et des opportunités commerciales. L'entreprise rencontrait des difficultés liées à la dispersion des données et à l'absence d'un outil unifié permettant de suivre le cycle de vie client. Le projet visait donc à structurer ces informations, à améliorer la collaboration entre les équipes et à automatiser certains processus chronophages, notamment les demandes de prêts.</p>
 
-            <p>Les enjeux étaient à la fois fonctionnels et techniques. Il fallait améliorer la traçabilité des échanges avec les clients, garantir la fiabilité et la sécurité des données sensibles, et offrir une application performante capable de gérer un volume croissant d'utilisateurs. Les principaux risques concernaient la synchronisation entre le frontend en Vue.js et le backend en Spring Boot, ainsi que la gestion fine des rôles et des autorisations via Spring Security, notamment pour distinguer les accès administrateurs, commerciaux et clients.</p>
+            <p>Les enjeux étaient à la fois fonctionnels et techniques. Il fallait améliorer la traçabilité des échanges avec les clients, garantir la fiabilité et la sécurité des données sensibles, et offrir une application performante capable de gérer un volume croissant de clients. Les principaux risques concernaient la synchronisation entre le frontend en Vue.js et le backend en Spring Boot, ainsi que la gestion fine des rôles et des autorisations via Spring Security, notamment pour distinguer les accès administrateurs, commerciaux et clients.</p>
         </div>
         <br>
-
         <!-- Les étapes -->
         <div>
             <h5>Les étapes</h5>
@@ -32,7 +29,6 @@
             </p>
         </div>
         <br>
-
         <!-- Les acteurs -->
         <div>
             <h5>Les acteurs</h5>
@@ -67,11 +63,12 @@
         <div>
             <h5 class="skills">Compétences associées</h5>
             <div>
-                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
+                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
-                <app-custom-button name="Communication" [link]="['/skills', 8]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
-                <app-custom-button name="L'esprit d'analyse " [link]="['/skills', 9]" [buttonStyle]="{'background-color': '#9C2007'}"></app-custom-button>                
+                <app-custom-button name="Capacité d'autocritique" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="Rigueur" [link]="['/skills', 8]" [buttonStyle]="{'background-color': '#9C2007'}"></app-custom-button>                
                 <app-custom-button name="Bootstrap" [link]="['/skills', 20]" [buttonStyle]="{'background-color': '#7952b3'}"></app-custom-button>
+                <app-custom-button name="Communication" [link]="['/skills', 9]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
             </div>
         </div>
     </div>
@@ -144,8 +141,9 @@
             <div>
                 <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="React" [link]="['/skills', 6]" [buttonStyle]="{'background-color': '#61dafb'}"></app-custom-button>
-                <app-custom-button name="Methodologies Agiles" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#9C2007'}"></app-custom-button>
-                <app-custom-button name="Gestion de Projet" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Rigueur" [link]="['/skills', 8]" [buttonStyle]="{'background-color': '#9C2007'}"></app-custom-button>
+                <app-custom-button name="Capacité d'autocritique" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="Communication" [link]="['/skills', 9]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
             </div>
         </div>
     </div>    
@@ -220,22 +218,22 @@
                 <app-custom-button name="Python" [link]="['/skills', 15]" [buttonStyle]="{'background-color': '#3572A5'}"></app-custom-button>
                 <app-custom-button name="Bootstrap" [link]="['/skills', 20]" [buttonStyle]="{'background-color': '#7952b3'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Capacité d'autocritique" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="Autonomie" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
             </div>
         </div>
     </div>   
     
-        <!-- Block pour le projet Project Management Tool -->
+        <!-- projet Project Management Tool -->
     <div class="project-management" *ngIf="projectManagement">
         <div>
             <p class="main-title">Project Management Tool</p>
         </div>
-
         <!-- Présentation -->
         <p class="project-description">
             Project Management Tool est une application web que j'ai développée dans le cadre de ma formation afin de permettre la gestion complète de projets, de tâches et d'utilisateurs. Ce projet avait pour objectif de proposer un outil moderne et collaboratif, tout en me permettant de mobiliser l'ensemble des compétences acquises en développement full-stack. L'application couvre aujourd'hui toutes les fonctionnalités essentielles, depuis l'authentification des utilisateurs jusqu'au suivi détaillé de l'avancement des projets.
         </p>
         <br>
-
         <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
             <h5>Objectif / Contexte / Enjeux et Risques</h5>
@@ -247,7 +245,6 @@
             </p>
         </div>
         <br>
-
         <!-- Les étapes -->
         <div>
             <h5>Les étapes</h5>
@@ -259,14 +256,12 @@
             </p>
         </div>
         <br>
-
         <!-- Les acteurs -->
         <div>
             <h5>Les acteurs</h5>
             <p>J'ai réalisé l'ensemble du projet seul, en assurant toutes les étapes du développement. Mon formateur intervenait ponctuellement pour valider la cohérence technique et m'accompagner sur les choix d'architecture lorsque cela était nécessaire.</p>
         </div>
         <br>
-
         <!-- Les résultats -->
         <div>
             <h5>Les résultats</h5>
@@ -275,7 +270,6 @@
             </p>
         </div>
         <br>
-
         <!-- Le futur du projet -->
         <div>
             <h5>Le futur du projet</h5>
@@ -284,7 +278,6 @@
             </p>
         </div>
         <br>
-
         <!-- Mon retour d'expérience -->
         <div>
             <h5>Mon retour d'expérience</h5>
@@ -302,6 +295,8 @@
                 <app-custom-button name="Angular" [link]="['/skills', 4]" [buttonStyle]="{'background-color': '#C70039'}"></app-custom-button>
                 <app-custom-button name="CI / CD" [link]="['/skills', 3]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Capacité d'autocritique" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#007396'}"></app-custom-button>
+                <app-custom-button name="Autonomie" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
             </div>
         </div>
     </div>
@@ -311,13 +306,11 @@
         <div>
             <p class="main-title">Game Up</p>
         </div>
-
         <!-- Présentation -->
         <p class="project-description">
             Game Up est une plateforme de vente de jeux de société en ligne que j'ai reprise et améliorée dans le cadre de ma formation. Le projet reposait sur une base de code existante, héritée d'un ancien stagiaire, et mon rôle était de moderniser entièrement l'API backend. L'objectif consistait à renforcer la sécurité, stabiliser les services, optimiser les performances et intégrer un système de recommandation utilisant du Machine Learning afin d'améliorer l'expérience utilisateur.
         </p>
         <br>
-
         <!-- Objectif / Contexte / Enjeux et Risques -->
         <div>
             <h5>Objectif / Contexte / Enjeux et Risques</h5>
@@ -329,7 +322,6 @@
             </p>
         </div>
         <br>
-
         <!-- Les étapes -->
         <div>
             <h5>Les étapes</h5>
@@ -344,7 +336,6 @@
             </p>
         </div>
         <br>
-
         <div>
             <h5>Les acteurs</h5>
             <p>
@@ -352,7 +343,6 @@
             </p>
         </div>
         <br>
-
         <div>
             <h5>Les résultats</h5>
             <p>
@@ -360,7 +350,6 @@
             </p>
         </div>
         <br>
-
         <div>
             <h5>Le futur du projet</h5>
             <p>
@@ -368,7 +357,6 @@
             </p>
         </div>
         <br>
-
         <div>
             <h5>Mon retour d'expérience</h5>
             <p>
@@ -381,111 +369,11 @@
                 <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
                 <app-custom-button name="Python" [link]="['/skills', 15]" [buttonStyle]="{'background-color': '#D1CA1B'}"></app-custom-button>
                 <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
+                <app-custom-button name="Capacité d'autocritique" [link]="['/skills', 7]" [buttonStyle]="{'background-color': '#ff5733'}"></app-custom-button>
+                <app-custom-button name="Autonomie" [link]="['/skills', 10]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
             </div>
         </div>
     </div>
-
-    <!-- Block pour le projet Electricity Billing System -->
-    <div class="electricity-system" *ngIf="electricitySystem">
-        <div>
-            <p class="main-title">Electricity Billing System</p>
-        </div>
-
-        <!-- Présentation -->
-        <p class="project-description">
-            Electricity Billing System est un projet personnel développé afin de renforcer mes compétences 
-            en développement logiciel. L'objectif principal était de concevoir une application complète en Java, 
-            connectée à une base de données MySQL, avec une interface graphique réalisée en Swing.
-        </p>
-        <br>
-
-        <!-- Objectif / Contexte / Enjeux et Risques -->
-        <div>
-            <h5>Objectif / Contexte / Enjeux et Risques</h5>
-            <p><strong>Objectif :</strong> Créer une application de gestion des factures d'électricité 
-            permettant de stocker, afficher et manipuler des données clients à travers une interface conviviale.</p>
-
-            <p><strong>Contexte :</strong> Projet réalisé dans un cadre d'autoformation pour mettre en pratique 
-            mes connaissances en Java, JDBC et MySQL tout en explorant la conception d'interfaces graphiques avec Swing.</p>
-
-            <p><strong>Enjeux :</strong></p>
-            <ul>
-                <li>Concevoir une application complète, de la base de données à l'interface utilisateur.</li>
-                <li>Assurer la fiabilité de la connexion entre la couche graphique et la base MySQL.</li>
-                <li>Appliquer les bonnes pratiques de structuration du code en Java.</li>
-            </ul>
-
-            <p><strong>Risques :</strong></p>
-            <ul>
-                <li>Problèmes de synchronisation entre les actions utilisateur et les données stockées.</li>
-                <li>Difficultés liées à la gestion des exceptions JDBC et aux transactions.</li>
-            </ul>
-        </div>
-        <br>
-
-        <!-- Les étapes -->
-        <div>
-            <h5>Les étapes</h5>
-            <ul>
-                <li>Conception du schéma relationnel de la base MySQL.</li>
-                <li>Développement de la logique applicative en Java.</li>
-                <li>Création de l'interface graphique avec Swing (menus, formulaires, affichages).</li>
-                <li>Intégration JDBC pour la communication entre l'interface et la base de données.</li>
-                <li>Tests de validation et débogage des fonctionnalités CRUD.</li>
-            </ul>
-        </div>
-        <br>
-
-        <!-- Les acteurs -->
-        <div>
-            <h5>Les acteurs</h5>
-            <ul>
-                <li><strong>Moi :</strong> Concepteur et développeur unique du projet (base de données, backend et interface graphique).</li>
-            </ul>
-        </div>
-        <br>
-        <!-- Les résultats -->
-        <div>
-            <h5>Les résultats</h5>
-            <ul>
-                <li>Application complète et fonctionnelle.</li>
-                <li>Connexion fluide entre l'interface Swing et la base MySQL.</li>
-                <li>Gestion complète des opérations CRUD (Create, Read, Update, Delete).</li>
-            </ul>
-        </div>
-        <br>
-        <!-- Le futur du projet -->
-        <div>
-            <h5>Le futur du projet</h5>
-            <ul>
-                <li>Ajout d'un module de génération de factures PDF.</li>
-                <li>Intégration d'un système de gestion d'utilisateurs avec rôles.</li>
-                <li>Migration vers une application web avec Spring Boot et Angular.</li>
-            </ul>
-        </div>
-        <br>
-
-        <!-- Mon retour d'expérience -->
-        <div>
-            <h5>Mon retour d'expérience</h5>
-            <p>
-                Ce projet m'a permis de consolider mes bases en Java et de comprendre le fonctionnement 
-                d'une architecture logicielle complète, du stockage des données à la présentation graphique.
-            </p>
-            <p>
-                J'ai également renforcé ma compréhension des interactions entre une application et une base SQL, 
-                tout en apprenant à concevoir des interfaces ergonomiques et stables.
-            </p>
-        </div>
-        <div>
-            <h5 class="skills">Compétences associées</h5>
-            <div>
-                <app-custom-button name="Java" [link]="['/skills', 1]" [buttonStyle]="{'background-color': 'green'}"></app-custom-button>
-                <app-custom-button name="SQL" [link]="['/skills', 13]" [buttonStyle]="{'background-color': '#5058b7'}"></app-custom-button>
-            </div>
-        </div>
-    </div>
-
 </div>
 
 <router-outlet></router-outlet>
