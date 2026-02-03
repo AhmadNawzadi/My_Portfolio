@@ -65,8 +65,9 @@ export class SkillDetailsComponent{
       `,
       experiance: 
       ` 
-        Lors de mon contrat d'apprentissage chez Liqtrade, j'ai travaillé de manière approfondie avec Java et Spring sur une plateforme métier en production. J'ai participé à la conception et à l'implémentation de nouvelles fonctionnalités back-end, ainsi qu'à l'évolution d'APIs REST existantes, en tenant compte des contraintes de performance, de sécurité et de maintenabilité.\n
-        J'ai été amené à gérer des problématiques concrètes telles que l'authentification et l'autorisation des utilisateurs, la persistance des données, ainsi que l'intégration entre le backend et le frontend. Cette expérience m'a permis de renforcer ma rigueur technique, de mieux comprendre les enjeux métiers et de travailler dans un cadre agile avec des échanges réguliers au sein de l'équipe technique.
+        Lors de mon contrat d’apprentissage chez Liqtrade, j’ai travaillé de manière approfondie avec Java et Spring sur une plateforme métier en production. J’ai participé à la conception et à l’implémentation de nouvelles fonctionnalités back-end, ainsi qu’à l’évolution d’APIs REST existantes, en tenant compte des contraintes de performance, de sécurité et de maintenabilité.\n
+        Dans le cadre de ma formation en ingénierie logicielle, j’ai ensuite renforcé ces compétences à travers des projets tels que Project Management Tool et Game Up, qui m’ont permis d’appliquer les bonnes pratiques de développement backend et frontend dans des contextes pédagogiques proches de situations réelles.\n
+        Enfin, dans mon poste actuel chez Groupe FBO, je travaille sur le projet STPPS, une application métier en production destinée au secteur de la santé. Ce projet m’a permis de consolider mes compétences en architecture backend, en gestion de règles métier complexes et en intégration avec un frontend moderne, dans un environnement soumis à des exigences élevées de performance, de sécurité et de fiabilité.
       `,
       projects: [
         {"Project management tool":"/details/" + 1}, 
@@ -224,11 +225,13 @@ export class SkillDetailsComponent{
       id: 12,
       name: 'Test',
       introduction: [`
-          Mon apprentissage des tests unitaires avec JUnit s'est construit progressivement à travers plusieurs projets concrets. Lors de mon contrat en alternance chez Liqtrade, j'ai participé à l'intégration de suites de tests unitaires dans le projet CRM, afin de sécuriser les fonctionnalités existantes et les nouvelles évolutions.\n
-          Cette démarche a également été mise en œuvre dans d’autres projets tels que Project Management Tool, Game Up et STPPS, où les tests unitaires faisaient partie intégrante du processus de développement. L'ajout de tests automatisés a permis de détecter plus rapidement les anomalies, de fiabiliser les livraisons et de faciliter l'évolution du code dans le temps. Cette pratique s'inscrivait dans un cycle de développement intégrant des phases de validation avant déploiement et m'a permis de mieux collaborer avec les équipes techniques en apportant des garanties concrètes sur la stabilité des fonctionnalités développées.      `],
+        Les tests logiciels jouent un rôle central dans la qualité et la fiabilité des applications. Les tests unitaires permettent de valider le comportement des composants de manière isolée, de prévenir les régressions et de sécuriser les évolutions du code dans le temps. Intégrés dans une démarche de développement moderne, ils constituent un pilier essentiel des pratiques de qualité logicielle et s’inscrivent naturellement dans des processus d’intégration et de déploiement continus (CI/CD).\n
+        L’utilisation de frameworks comme JUnit en Java facilite l’automatisation des tests, améliore la maintenabilité du code et contribue à des livraisons plus sûres et plus maîtrisées.
+      `],
       experiance: ` 
         Mon apprentissage des tests unitaires avec JUnit s'est construit progressivement à travers plusieurs projets concrets. Lors de mon contrat en alternance chez Liqtrade, j'ai participé à l'intégration de suites de tests unitaires dans le projet CRM, afin de sécuriser les fonctionnalités existantes et les nouvelles évolutions.\n
-        L'ajout de tests automatisés a permis de détecter plus rapidement les anomalies, de fiabiliser les livraisons et de faciliter l'évolution du code dans le temps. Cette pratique s'inscrivait dans un cycle de développement intégrant des phases de validation avant déploiement, et m'a permis de mieux collaborer avec l'équipe technique en apportant des garanties sur la stabilité des fonctionnalités développées.      `,
+        Cette démarche a également été mise en œuvre dans d’autres projets tels que Project Management Tool, Game Up et STPPS, où les tests unitaires faisaient partie intégrante du processus de développement. Cette pratique s'inscrivait dans un cycle de développement intégrant des phases de validation avant déploiement et m'a permis de mieux collaborer avec les équipes techniques en apportant des garanties concrètes sur la stabilité des fonctionnalités développées.\n
+        L'ajout de tests automatisés a permis de détecter plus rapidement les anomalies, de fiabiliser les livraisons et de faciliter l'évolution du code dans le temps.`,
       img: 'assets/images/skills/test.png',
       level: `
         Grâce à ces expériences, j'ai acquis une bonne maîtrise opérationnelle de JUnit et des principes fondamentaux des tests unitaires en Java. Je suis aujourd'hui capable de concevoir des tests pertinents, de valider des comportements métiers simples et d'intégrer ces tests dans des pipelines CI/CD afin d'automatiser les contrôles qualité.\n
