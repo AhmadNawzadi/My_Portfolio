@@ -65,9 +65,9 @@ export class SkillDetailsComponent{
       `,
       experiance: 
       ` 
-        Lors de mon contrat d’apprentissage chez Liqtrade, j’ai travaillé de manière approfondie avec Java et Spring sur une plateforme métier en production. J’ai participé à la conception et à l’implémentation de nouvelles fonctionnalités back-end, ainsi qu’à l’évolution d’APIs REST existantes, en tenant compte des contraintes de performance, de sécurité et de maintenabilité.\n
-        Dans le cadre de ma formation en ingénierie logicielle, j’ai ensuite renforcé ces compétences à travers des projets tels que Project Management Tool et Game Up, qui m’ont permis d’appliquer les bonnes pratiques de développement backend et frontend dans des contextes pédagogiques proches de situations réelles.\n
-        Enfin, dans mon poste actuel chez Groupe FBO, je travaille sur le projet STPPS, une application métier en production destinée au secteur de la santé. Ce projet m’a permis de consolider mes compétences en architecture backend, en gestion de règles métier complexes et en intégration avec un frontend moderne, dans un environnement soumis à des exigences élevées de performance, de sécurité et de fiabilité.
+        Lors de mon contrat d'apprentissage chez Liqtrade, j'ai travaillé de manière approfondie avec Java et Spring sur une plateforme métier en production. J'ai participé à la conception et à l'implémentation de nouvelles fonctionnalités back-end, ainsi qu'à l'évolution d'APIs REST existantes, en tenant compte des contraintes de performance, de sécurité et de maintenabilité.\n
+        Dans le cadre de ma formation en ingénierie logicielle, j'ai ensuite renforcé ces compétences à travers des projets tels que Project Management Tool et Game Up, qui m'ont permis d'appliquer les bonnes pratiques de développement backend et frontend dans des contextes pédagogiques proches de situations réelles.\n
+        Enfin, dans mon poste actuel chez Groupe FBO, je travaille sur le projet STPPS, une application métier en production destinée au secteur de la santé. Ce projet m'a permis de consolider mes compétences en architecture backend, en gestion de règles métier complexes et en intégration avec un frontend moderne, dans un environnement soumis à des exigences élevées de performance, de sécurité et de fiabilité.
       `,
       projects: [
         {"Project management tool":"/details/" + 1}, 
@@ -90,13 +90,56 @@ export class SkillDetailsComponent{
         Mon objectif est de consolider ces compétences en les associant à des environnements cloud et à des pratiques DevOps avancées, afin de contribuer efficacement à des projets nécessitant un haut niveau de fiabilité, de sécurité et de performance.
       `,
       experiance: `
-        Dans le cadre de ma formation Visiplus – Master en Ingénierie Logicielle, j'ai mis en place plusieurs pipelines CI/CD en utilisant des outils tels que GitHub Actions, GitLab CI/CD et Jenkins. Ces pipelines intégraient des étapes de tests automatiques, de build et de déploiement, garantissant la qualité du code avant toute mise en production ou publication.\n
+        Dans le cadre de ma formation Visiplus – Master en Ingénierie Logicielle, j'ai mis en place plusieurs pipelines CI/CD en utilisant des outils tels que GitHub Actions et GitLab CI/CD. Ces pipelines intégraient des étapes de tests automatiques, de build et de déploiement, garantissant la qualité du code avant toute mise en production ou publication.\n
         Lors du développement du projet Project Management Tool, j'ai utilisé Docker de manière approfondie, en rédigeant des Dockerfile et en orchestrant les différents services de l'application à l'aide de Docker Compose. Cette approche m'a permis de gérer efficacement les dépendances entre les services et d'assurer la cohérence entre les environnements de développement et de déploiement.\n
         Les images Docker étaient construites automatiquement et publiées sur Docker Hub uniquement après validation des tests, ce qui m'a permis de comprendre l'importance des contrôles qualité dans un pipeline d'industrialisation complet.
       `,
     projects: [
       {"Project management tool":"/details/" + 1}]
     }, 
+
+        {
+      id: 12,
+      name: 'Test',
+      introduction: [`
+        Les tests logiciels jouent un rôle central dans la qualité et la fiabilité des applications. Les tests unitaires permettent de valider le comportement des composants de manière isolée, de prévenir les régressions et de sécuriser les évolutions du code dans le temps. Intégrés dans une démarche de développement moderne, ils constituent un pilier essentiel des pratiques de qualité logicielle et s'inscrivent naturellement dans des processus d'intégration et de déploiement continus (CI/CD).\n
+        L'utilisation de frameworks comme JUnit en Java facilite l'automatisation des tests, améliore la maintenabilité du code et contribue à des livraisons plus sûres.
+      `],
+      experiance: ` 
+        Mon apprentissage des tests unitaires avec JUnit s'est construit progressivement à travers plusieurs projets concrets. Lors de mon contrat en alternance chez Liqtrade, j'ai participé à l'intégration de suites de tests unitaires dans le projet CRM, afin de sécuriser les fonctionnalités existantes et les nouvelles évolutions.\n
+        Cette démarche a également été mise en œuvre dans d'autres projets tels que Project Management Tool, Game Up et STPPS, où les tests unitaires faisaient partie intégrante du processus de développement. Cette pratique s'inscrivait dans un cycle de développement intégrant des phases de validation avant déploiement et m'a permis de mieux collaborer avec les équipes techniques en apportant des garanties concrètes sur la stabilité des fonctionnalités développées.\n
+        L'ajout de tests automatisés a permis de détecter plus rapidement les anomalies, de fiabiliser les livraisons et de faciliter l'évolution du code dans le temps.`,
+      img: 'assets/images/skills/test.png',
+      level: `
+        Grâce à ces expériences, j'ai acquis une bonne maîtrise opérationnelle de JUnit et des principes fondamentaux des tests unitaires en Java. Je suis aujourd'hui capable de concevoir des tests pertinents, de valider des comportements métiers simples et d'intégrer ces tests dans des pipelines CI/CD afin d'automatiser les contrôles qualité.\n
+        Cependant, j'ai également identifié plusieurs axes de progression. Bien que je sois à l'aise avec les tests unitaires classiques, je souhaite approfondir des aspects plus avancés tels que la conception de tests orientés métier, l'amélioration de la couverture de code pertinente (au-delà des simples indicateurs chiffrés) et l'utilisation de techniques de mocking plus avancées pour tester des composants complexes.\n
+        De plus, je cherche à renforcer mes compétences sur les tests d'intégration et la complémentarité entre tests unitaires et tests end-to-end, afin de disposer d'une vision plus globale de la qualité logicielle. Cette démarche d'amélioration continue me permet de mieux anticiper les risques de régression et de contribuer plus efficacement à la stabilité des applications en production.      `,
+      projects: [{"CRM-Liqtrade":"/details/" + 4},
+        {"Project management tool":"/details/" + 1}, 
+        {"Game up":"/details/" + 2},
+        {"STPPS ":"/details/" + 3} as { [key: string]: string }]
+    },
+
+        {
+      id: 20,
+      name: 'Bootstrap',
+      introduction: [`
+        Bootstrap est un framework CSS largement utilisé pour la conception d'interfaces web modernes, cohérentes et responsives. Il fournit une base solide de composants réutilisables et un système de grille flexible permettant d'adapter les applications à différents supports (desktop, tablette, mobile).\n
+        Son adoption facilite la standardisation des interfaces, améliore l'expérience utilisateur et permet de gagner un temps précieux lors du développement front-end, tout en respectant les bonnes pratiques d'ergonomie et d'accessibilité.         `],
+      img: 'assets/images/skills/boot.png',
+      level: `
+        Aujourd'hui, je possède une bonne maîtrise opérationnelle de Bootstrap, me permettant de concevoir des interfaces web responsives et fonctionnelles. Je suis capable de personnaliser les composants du framework, d'exploiter son système de grille et de l'intégrer efficacement dans des projets utilisant des frameworks frontend comme React ou Angular.\n
+        Cependant, j'ai identifié certaines limites liées à l'utilisation exclusive de Bootstrap. Bien que le framework soit très efficace pour accélérer le développement, il peut restreindre la flexibilité graphique et conduire à des interfaces standardisées si l'on ne maîtrise pas suffisamment la personnalisation avancée du CSS. Dans cette optique, je cherche à renforcer mes compétences en CSS avancé, en design système et en frameworks plus orientés personnalisation comme Tailwind CSS, afin de produire des interfaces plus sur mesure.\n
+        Cette prise de recul me permet aujourd'hui d'utiliser Bootstrap de manière pertinente, comme un outil de productivité, tout en développant progressivement une approche frontend plus fine et plus orientée expérience utilisateur. 
+     `,   
+      experiance: `
+        J'ai utilisé Bootstrap principalement dans le cadre de mon contrat en alternance chez Liqtrade, notamment lors du développement du projet CRM, ainsi que lors de mon projet d'OCR de cartes bancaires réalisé dans le cadre de ma formation en intelligence artificielle. Le framework m'a permis de concevoir des interfaces ergonomiques et responsives, adaptées aussi bien aux usages des équipes métiers qu'aux besoins d'une application de démonstration orientée utilisateur.\n
+        Cette expérience m'a appris à structurer efficacement les pages, à exploiter le système de grille et à utiliser les composants fournis par Bootstrap afin de répondre rapidement à des besoins fonctionnels tout en respectant les contraintes de délais. Elle m'a également sensibilisé à l'importance de la cohérence visuelle, de la lisibilité de l'interface et de l'expérience utilisateur dans des contextes applicatifs variés.
+          `,
+      projects: [
+         {"CRM-Liqtrade":"/details/" + 4},
+         {"Carte bancaire OCR":"/details/" + 5}]
+    },
 
     {
       id: 4,
@@ -107,11 +150,11 @@ export class SkillDetailsComponent{
       ],
       img: 'assets/images/skills-imgs/angular.png',
       level: ` 
-        Grâce à ces projets, j'ai acquis une bonne maîtrise des bases d'Angular, incluant la création de composants, l'utilisation des services, la navigation via le router et la gestion des formulaires. Je suis également à l'aise avec les technologies associées telles que TypeScript et les principes réactifs via RxJS, ce qui me permet de développer des interfaces fonctionnelles et performantes.\n
+        Grâce à ces projets, j'ai acquis une maîtrise des bases d'Angular, incluant la création de composants, l'utilisation des services, la navigation via le router et la gestion des formulaires. Je suis également à l'aise avec les technologies associées telles que TypeScript et les principes réactifs via RxJS, ce qui me permet de développer des interfaces fonctionnelles et performantes.\n
         Cependant, j'ai identifié plusieurs axes de progression. Bien que je sois capable de développer des applications complètes, je souhaite approfondir des notions plus avancées comme l'optimisation des performances, la gestion avancée de l'état et l'architecture front-end à grande échelle. De plus, l'écosystème Angular étant vaste, je cherche à renforcer mes pratiques sur la testabilité des composants et la structuration de projets complexes.\n
-        Cette démarche d'autoévaluation me permet d'utiliser Angular de manière efficace aujourd'hui, tout en construisant une montée en compétence progressive vers des applications plus robustes et mieux structurées.      `,
+        `,
       experiance: ` 
-        Lors de ma formation Visiplus – Master en Ingénierie Logicielle, j'ai travaillé avec Angular sur plusieurs projets concrets visant à mettre en pratique les concepts fondamentaux du framework. J'ai notamment conçu Project Management Tool, une application de gestion de projets permettant d'organiser les tâches, de suivre l'avancement et de faciliter la collaboration entre utilisateurs.\n
+        Lors de ma formation Visiplus – Master en Ingénierie Logicielle, j'ai travaillé avec Angular sur plusieurs projets visant à mettre en pratique les concepts fondamentaux du framework. J'ai notamment conçu Project Management Tool, une application de gestion de projets permettant d'organiser les tâches, de suivre l'avancement et de faciliter la collaboration entre utilisateurs.\n
         J'ai également participé au développement de Game Up, une plateforme interactive intégrant des fonctionnalités de gestion de contenu et de recommandations. Ces projets m'ont permis de manipuler les principales briques d'Angular, telles que les composants, les services, la gestion des routes et les formulaires, tout en assurant l'intégration avec un backend et des APIs REST.\n
         Cette expérience m'a permis de mieux comprendre les enjeux liés à la structuration d'une application front-end et à la gestion des flux de données dans une application à plusieurs modules.      `,
       projects: [
@@ -126,15 +169,58 @@ export class SkillDetailsComponent{
       `],
       img: 'assets/images/skills-imgs/react.png',
       level: `
-        Grâce à cette expérience professionnelle, j'ai acquis une maîtrise solide de React, me permettant de concevoir des composants réutilisables, de structurer des applications complexes et d'optimiser les performances front-end. Je suis aujourd'hui capable de développer de manière autonome des applications React robustes, en appliquant les bonnes pratiques de l'écosystème et en tenant compte des contraintes métier et utilisateurs.\n
+        Grâce à cette expérience professionnelle, j'ai acquis une maîtrise solide de React, me permettant de concevoir des composants réutilisables, de structurer des applications et d'optimiser les performances front-end. Je suis aujourd'hui capable de développer de manière autonome des applications React, en appliquant les bonnes pratiques de l'écosystème et en tenant compte des contraintes métier et utilisateurs.\n
         Toutefois, j'ai identifié plusieurs axes de progression. Bien que je sois à l'aise avec la gestion de l'état et l'optimisation des performances, je souhaite approfondir des sujets plus avancés tels que l'architecture front-end à grande échelle, la gestion fine des performances sur des applications à fort volume de données, ainsi que les pratiques avancées de test des composants React.\n
         Cette prise de recul me permet d'aborder React non seulement comme un outil de développement, mais comme un véritable levier de qualité logicielle, avec une démarche d'amélioration continue orientée performance, maintenabilité et expérience utilisateur.      `,
       experiance: ` 
         Lors de mon contrat en CDI chez Groupe FBO, j'ai travaillé sur le projet STPPS – Gestion du tiers payant, une application destinée aux professionnels de santé visant à automatiser les processus liés au tiers payant et à améliorer le suivi des remboursements. Dans ce contexte, j'ai utilisé React comme technologie principale pour le développement de l'interface utilisateur.\n
-        J'ai exploité des fonctionnalités avancées telles que les hooks, la gestion de l'état via Redux et la Context API, ainsi que des techniques d'optimisation des performances pour garantir une application fluide et réactive. J'ai également intégré des outils complémentaires comme TypeScript, React Query pour la gestion des données asynchrones, et Material-UI afin d'assurer une interface ergonomique et cohérente. Cette expérience m'a permis de travailler sur une application front-end en production, intégrée à un backend métier complexe.      `,
+        J'ai exploité des fonctionnalités telles que les hooks, la gestion de l'état via Redux et la Context API, ainsi que des techniques d'optimisation des performances pour garantir une application fluide et réactive. J'ai également intégré des outils complémentaires comme TypeScript et Material-UI afin d'assurer une interface ergonomique et cohérente. Cette expérience m'a permis de travailler sur une application front-end en production, intégrée à un backend métier complexe.      `,
     projects: [
       {"STPPS ":"/details/" + 3} ]
     } ,
+
+        {
+      id: 13,
+      name: 'SQL',
+      introduction: [`
+        Le langage SQL (Structured Query Language) est un pilier incontournable du développement logiciel moderne. Il permet de manipuler et de gérer efficacement les bases de données relationnelles, qu'il s'agisse de la création de schémas, de l'écriture de requêtes complexes ou de l'optimisation des performances. La maîtrise de SQL est essentielle pour garantir l'intégrité, la cohérence et la disponibilité des données, qui constituent le cœur de nombreuses applications métiers.      
+      `],
+      img: 'assets/images/skills/sql.png',
+      level: `
+        Grâce à ces projets, j'ai acquis une maîtrise solide des bases de SQL, tant sur le plan de la conception des bases de données relationnelles (modélisation, normalisation) que sur l'aspect opérationnel (écriture de requêtes, gestion des transactions et optimisation simple des performances). Je suis aujourd'hui capable de travailler efficacement avec des bases relationnelles dans des contextes applicatifs variés.\n
+        Cependant, j'ai identifié plusieurs axes de progression. Bien que je sois à l'aise avec les requêtes et la modélisation relationnelle classique, je souhaite approfondir mes compétences sur des sujets plus avancés tels que l'optimisation fine des performances, l'analyse des plans d'exécution, la gestion des volumes de données importants et les stratégies d'indexation avancées. Je souhaite également renforcer mes connaissances sur les problématiques de scalabilité et de gestion concurrente des accès.\n
+        Cette prise de recul me permet d'aborder SQL non seulement comme un langage de requêtes, mais comme un véritable levier de performance et de fiabilité au cœur des applications métiers.      `,
+      experiance: ` 
+        L'utilisation de SQL s'est construite progressivement à travers plusieurs projets académiques et professionnels. Lors de mes contrats chez Liqtrade et GroupeFBO, j'ai utilisé SQL dans le cadre du projet CRM et STPPS, notamment pour la gestion des bases de données relationnelles, la conception des tables et l'écriture de requêtes nécessaires au fonctionnement des fonctionnalités métiers.\n
+        J'ai également travaillé sur l'optimisation de certaines requêtes afin d'améliorer les performances des opérations courantes, tout en veillant à la cohérence et à l'intégrité des données. Par ailleurs, durant ma formation en Master en Ingénierie Logicielle, les projets Project Management Tool et Game Up m'ont permis de concevoir des schémas relationnels adaptés aux besoins fonctionnels et de rédiger des requêtes impliquant des jointures, des filtres et des contraintes d'intégrité.\n
+        Ces expériences m'ont permis de comprendre l'importance d'une base de données bien modélisée pour garantir la stabilité et l'évolutivité d'une application.      
+      `,
+      projects: [{"CRM-Liqtrade":"/details/" + 4},
+        {"Project management tool":"/details/" + 1}, 
+        {"Game up":"/details/" + 2},
+        {"STPPS ":"/details/" + 3} as { [key: string]: string }]
+    },
+
+        {
+      id: 15,
+      name: 'Python',
+      introduction: [`
+        Python est l'un des langages les plus polyvalents et les plus utilisés dans le domaine du développement logiciel et de l'intelligence artificielle. Sa syntaxe simple et lisible, combinée à un écosystème très riche de bibliothèques, en fait un outil privilégié pour le développement d'algorithmes, la création d'API et la mise en œuvre de modèles de Machine Learning. Qu'il s'agisse de manipulation de données, de reconnaissance optique de caractères ou de développement d'applications web légères, Python permet de prototyper rapidement et de construire des solutions efficaces et adaptées aux besoins métiers.      `],
+      img: 'assets/images/skills/python.png',
+       experiance: `
+        Mon apprentissage de Python s'est construit principalement au cours de ma formation en Intelligence Artificielle, puis s'est renforcé à travers plusieurs projets concrets. J'ai utilisé Python pour développer des algorithmes, manipuler des données et expérimenter différents modèles de Machine Learning, depuis la phase d'exploration jusqu'à l'évaluation des résultats.\n
+        J'ai notamment travaillé sur un projet de reconnaissance optique de caractères (OCR) appliquée aux cartes bancaires, dans lequel j'ai intégré la bibliothèque EasyOCR afin d'extraire automatiquement des informations textuelles à partir d'images. Dans ce même projet, j'ai développé une API avec Flask, permettant d'exposer les fonctionnalités d'OCR et de les intégrer dans une application web complète.\n
+        Ces travaux m'ont permis d'avoir une vision globale de l'utilisation de Python, depuis le développement d'algorithmes et de modèles jusqu'à leur intégration dans des services exploitables au sein d'une application.     
+      `,
+      level: ` 
+        Grâce à ces expériences, j'ai acquis une maîtrise solide de Python et de son écosystème, aussi bien pour le développement d'algorithmes que pour la mise en œuvre de solutions en intelligence artificielle. Je maîtrise les principaux algorithmes de Machine Learning, notamment la régression, la classification et le clustering, que j'ai appliqués dans différents projets concrets. J'ai également abordé le Deep Learning à travers des cas d'usage liés à l'analyse d'images, en particulier dans le cadre de projets de reconnaissance visuelle et d'OCR.\n
+        Par ailleurs, je suis capable de concevoir des API simples avec Flask, permettant d'exposer des modèles ou des traitements métier et de les intégrer dans des applications complètes. Cette approche m'a permis de comprendre le lien entre l'intelligence artificielle et son intégration dans des solutions applicatives réelles.\n
+        En termes de progression, je souhaite approfondir l'utilisation de Flask pour développer des API plus structurées et robustes (gestion avancée des routes, sécurité, tests, performance), ainsi que découvrir et maîtriser le framework Django, afin de concevoir des applications web Python plus complètes et industrialisées. Cette montée en compétence me permettra de renforcer mes capacités sur la conception d'architectures backend solides et évolutives en Python.    
+      `,
+      projects: [
+        {"GameUp":"/details/" + 2}, 
+        {"Carte bancaire OCR":"/details/" + 5}]
+    },
 
     {
       id: 7,
@@ -219,87 +305,6 @@ export class SkillDetailsComponent{
       Cette expérience m'a permis d'optimiser la configuration des services, de renforcer la cohérence des environnements de développement et de simplifier les processus d'intégration et de déploiement continus (CI/CD).
     `,
     projects: [{"Project management tool":"/details"}, {"Game up":"/details"} as { [key: string]: string }]
-    },
-
-    {
-      id: 12,
-      name: 'Test',
-      introduction: [`
-        Les tests logiciels jouent un rôle central dans la qualité et la fiabilité des applications. Les tests unitaires permettent de valider le comportement des composants de manière isolée, de prévenir les régressions et de sécuriser les évolutions du code dans le temps. Intégrés dans une démarche de développement moderne, ils constituent un pilier essentiel des pratiques de qualité logicielle et s’inscrivent naturellement dans des processus d’intégration et de déploiement continus (CI/CD).\n
-        L’utilisation de frameworks comme JUnit en Java facilite l’automatisation des tests, améliore la maintenabilité du code et contribue à des livraisons plus sûres et plus maîtrisées.
-      `],
-      experiance: ` 
-        Mon apprentissage des tests unitaires avec JUnit s'est construit progressivement à travers plusieurs projets concrets. Lors de mon contrat en alternance chez Liqtrade, j'ai participé à l'intégration de suites de tests unitaires dans le projet CRM, afin de sécuriser les fonctionnalités existantes et les nouvelles évolutions.\n
-        Cette démarche a également été mise en œuvre dans d’autres projets tels que Project Management Tool, Game Up et STPPS, où les tests unitaires faisaient partie intégrante du processus de développement. Cette pratique s'inscrivait dans un cycle de développement intégrant des phases de validation avant déploiement et m'a permis de mieux collaborer avec les équipes techniques en apportant des garanties concrètes sur la stabilité des fonctionnalités développées.\n
-        L'ajout de tests automatisés a permis de détecter plus rapidement les anomalies, de fiabiliser les livraisons et de faciliter l'évolution du code dans le temps.`,
-      img: 'assets/images/skills/test.png',
-      level: `
-        Grâce à ces expériences, j'ai acquis une bonne maîtrise opérationnelle de JUnit et des principes fondamentaux des tests unitaires en Java. Je suis aujourd'hui capable de concevoir des tests pertinents, de valider des comportements métiers simples et d'intégrer ces tests dans des pipelines CI/CD afin d'automatiser les contrôles qualité.\n
-        Cependant, j'ai également identifié plusieurs axes de progression. Bien que je sois à l'aise avec les tests unitaires classiques, je souhaite approfondir des aspects plus avancés tels que la conception de tests orientés métier, l'amélioration de la couverture de code pertinente (au-delà des simples indicateurs chiffrés) et l'utilisation de techniques de mocking plus avancées pour tester des composants complexes.\n
-        De plus, je cherche à renforcer mes compétences sur les tests d'intégration et la complémentarité entre tests unitaires et tests end-to-end, afin de disposer d'une vision plus globale de la qualité logicielle. Cette démarche d'amélioration continue me permet de mieux anticiper les risques de régression et de contribuer plus efficacement à la stabilité des applications en production.      `,
-      projects: [{"CRM-Liqtrade":"/details/" + 4},
-        {"Project management tool":"/details/" + 1}, 
-        {"Game up":"/details/" + 2},
-        {"STPPS ":"/details/" + 3} as { [key: string]: string }]
-    },
-
-    {
-      id: 13,
-      name: 'SQL',
-      introduction: [`
-        Le langage SQL (Structured Query Language) est un pilier incontournable du développement logiciel moderne. Il permet de manipuler et de gérer efficacement les bases de données relationnelles, qu'il s'agisse de la création de schémas, de l'écriture de requêtes complexes ou de l'optimisation des performances. La maîtrise de SQL est essentielle pour garantir l'intégrité, la cohérence et la disponibilité des données, qui constituent le cœur de nombreuses applications métiers. Au-delà des requêtes, SQL joue également un rôle central dans la modélisation des données, la gestion des transactions et la sécurisation des accès.      `],
-      img: 'assets/images/skills/sql.png',
-      level: `
-        Grâce à ces projets, j'ai acquis une maîtrise solide des bases de SQL, tant sur le plan de la conception des bases de données relationnelles (modélisation, normalisation) que sur l'aspect opérationnel (écriture de requêtes, gestion des transactions et optimisation simple des performances). Je suis aujourd'hui capable de travailler efficacement avec des bases relationnelles dans des contextes applicatifs variés.\n
-        Cependant, j'ai identifié plusieurs axes de progression. Bien que je sois à l'aise avec les requêtes complexes et la modélisation relationnelle classique, je souhaite approfondir mes compétences sur des sujets plus avancés tels que l'optimisation fine des performances, l'analyse des plans d'exécution, la gestion des volumes de données importants et les stratégies d'indexation avancées. Je souhaite également renforcer mes connaissances sur les problématiques de scalabilité et de gestion concurrente des accès.\n
-        Cette prise de recul me permet d'aborder SQL non seulement comme un langage de requêtes, mais comme un véritable levier de performance et de fiabilité au cœur des applications métiers.      `,
-      experiance: ` 
-        L'utilisation de SQL s'est construite progressivement à travers plusieurs projets académiques et professionnels. Lors de mes contrats chez Liqtrade et GroupeFBO, j'ai utilisé SQL dans le cadre du projet CRM et STPPS, notamment pour la gestion des bases de données relationnelles, la conception des tables et l'écriture de requêtes nécessaires au fonctionnement des fonctionnalités métiers.\n
-        J'ai également travaillé sur l'optimisation de certaines requêtes afin d'améliorer les performances des opérations courantes, tout en veillant à la cohérence et à l'intégrité des données. Par ailleurs, durant ma formation en Master en Ingénierie Logicielle, les projets Project Management Tool et Game Up m'ont permis de concevoir des schémas relationnels adaptés aux besoins fonctionnels et de rédiger des requêtes plus complexes impliquant des jointures, des filtres et des contraintes d'intégrité.\n
-        Ces expériences m'ont permis de comprendre l'importance d'une base de données bien modélisée pour garantir la stabilité et l'évolutivité d'une application.      
-      `,
-      projects: [{"CRM-Liqtrade":"/details/" + 4},
-        {"Project management tool":"/details/" + 1}, 
-        {"Game up":"/details/" + 2},
-        {"STPPS ":"/details/" + 3} as { [key: string]: string }]
-    },
-
-    {
-      id: 15,
-      name: 'Python',
-      introduction: [`
-        Python est l'un des langages les plus polyvalents et les plus utilisés dans le domaine du développement logiciel et de l'intelligence artificielle. Sa syntaxe simple et lisible, combinée à un écosystème très riche de bibliothèques, en fait un outil privilégié pour le développement d'algorithmes, la création d'API et la mise en œuvre de modèles de Machine Learning. Qu'il s'agisse de manipulation de données, de reconnaissance optique de caractères ou de développement d'applications web légères, Python permet de prototyper rapidement et de construire des solutions efficaces et adaptées aux besoins métiers.      `],
-      img: 'assets/images/skills/python.png',
-       experiance: `
-        Mon apprentissage de Python s'est construit principalement au cours de ma formation en Intelligence Artificielle, puis s'est renforcé à travers plusieurs projets concrets. J'ai utilisé Python pour développer des algorithmes, manipuler des données et expérimenter différents modèles de Machine Learning, depuis la phase d'exploration jusqu'à l'évaluation des résultats.\n
-        J'ai notamment travaillé sur un projet de reconnaissance optique de caractères (OCR) appliquée aux cartes bancaires, dans lequel j'ai intégré la bibliothèque EasyOCR afin d'extraire automatiquement des informations textuelles à partir d'images. Dans ce même projet, j'ai développé une API avec Flask, permettant d'exposer les fonctionnalités d'OCR et de les intégrer dans une application web complète.\n
-        Ces travaux m'ont permis d'avoir une vision globale de l'utilisation de Python, depuis le développement d'algorithmes et de modèles jusqu'à leur intégration dans des services exploitables au sein d'une application.     
-      `,
-      level: ` 
-        Grâce à ces expériences, j'ai acquis une maîtrise solide des bases de Python et de son écosystème, aussi bien pour le développement d'algorithmes que pour la création d'API web avec Flask. Je suis capable de concevoir des scripts structurés, d'intégrer des bibliothèques spécialisées comme EasyOCR et de développer des services fonctionnels répondant à des cas d'usage concrets.\n
-        Cependant, j'ai également identifié plusieurs axes de progression. Bien que je sois à l'aise avec l'utilisation de bibliothèques existantes et la mise en œuvre de modèles standards, je souhaite approfondir mes connaissances sur l'optimisation des performances, la gestion avancée des données et l'entraînement de modèles personnalisés plutôt que l'utilisation exclusive de solutions prêtes à l'emploi. De plus, je cherche à renforcer mes compétences sur la mise en production de modèles de Machine Learning, notamment en termes de robustesse, de supervision et de sécurité des données.\n
-        Cette démarche d'autoévaluation me permet d'utiliser Python de manière polyvalente et efficace aujourd'hui, tout en construisant une montée en compétence progressive vers des projets d'intelligence artificielle plus avancés et industrialisés.      `,
-      projects: [
-        {"GameUp":"/details/" + 2}, 
-        {"Carte bancaire OCR":"/details/" + 5}]
-    },
-    {
-      id: 20,
-      name: 'Bootstrap',
-      introduction: [`
-        J’ai utilisé Bootstrap principalement dans le cadre de mon contrat en alternance chez Liqtrade, notamment lors du développement du projet CRM, ainsi que durant ma formation en intelligence artificielle chez Simplon. Ce framework m’a permis de concevoir des interfaces ergonomiques et responsives, adaptées aux usages et aux besoins des équipes métiers.      `],
-      img: 'assets/images/skills/boot.png',
-      level: `
-        Aujourd'hui, je possède une bonne maîtrise opérationnelle de Bootstrap, me permettant de concevoir rapidement des interfaces web modernes, responsives et fonctionnelles. Je suis capable de personnaliser les composants du framework, d'exploiter son système de grille et de l'intégrer efficacement dans des projets utilisant des frameworks frontend comme React ou Angular.\n
-        Cependant, j'ai identifié certaines limites liées à l'utilisation exclusive de Bootstrap. Bien que le framework soit très efficace pour accélérer le développement, il peut restreindre la flexibilité graphique et conduire à des interfaces standardisées si l'on ne maîtrise pas suffisamment la personnalisation avancée du CSS. Dans cette optique, je cherche à renforcer mes compétences en CSS avancé, en design système et en frameworks plus orientés personnalisation comme Tailwind CSS, afin de produire des interfaces plus sur mesure.\n
-        Cette prise de recul me permet aujourd'hui d'utiliser Bootstrap de manière pertinente, comme un outil de productivité, tout en développant progressivement une approche frontend plus fine et plus orientée expérience utilisateur. 
-     `,   
-      experiance: `
-        J'ai utilisé Bootstrap principalement dans le cadre de mon contrat en alternance chez Liqtrade, notamment lors du développement du projet CRM. Le framework m'a permis de concevoir des interfaces ergonomiques et responsives, adaptées aux usages des équipes métiers.\n
-        Cette expérience m'a appris à structurer efficacement les pages, à exploiter le système de grille et à utiliser les composants fournis par Bootstrap afin de répondre rapidement à des besoins fonctionnels tout en respectant les contraintes de délais. Elle m'a également sensibilisé à l'importance de la cohérence visuelle et de la lisibilité de l'interface pour améliorer l'expérience utilisateur.      `,
-      projects: [
-         {"CRM-Liqtrade":"/details/" + 4},
-         {"Carte bancaire OCR":"/details/" + 5}]
     },
   ]
 }
