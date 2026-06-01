@@ -8,6 +8,7 @@ import { ProjectComponent } from './pages/project/project.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 import { SkillDetailsComponent } from './pages/skill-details/skill-details.component';
 import { ParcoursComponent } from './pages/parcours/parcours.component';
+import { ParcoursDetailsComponent } from './pages/parcours-details/parcours-details.component';
 
 export const routes: Routes = [
     {
@@ -36,5 +37,8 @@ export const routes: Routes = [
     },
     {
         path: 'parcours', component : ParcoursComponent
+    }, 
+    {
+        path: 'parcours/:id', component : ParcoursDetailsComponent
     }, 
 ];

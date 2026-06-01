@@ -20,6 +20,10 @@
     width: 30px;
   }
 
+  .seeMore {
+    color: blue;
+  }
+
   .timeline {
     position: relative;
     width: 90%;
@@ -112,6 +116,23 @@
       &:hover {
         transform: translateY(-6px);
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      }
+
+      .lieu-row {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .external-link {
+        color: #3498db;
+        text-decoration: none;
+        font-size: 0.95rem;
+      }
+
+      .external-link:hover {
+        color: #1d6fa5;
+        text-decoration: underline;
       }
 
       .date {

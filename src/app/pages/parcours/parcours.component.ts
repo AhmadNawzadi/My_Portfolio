@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CustomButtonComponent } from '../../components/custom-button/custom-button.component';
 
 @Component({
@@ -9,6 +10,7 @@ import { CustomButtonComponent } from '../../components/custom-button/custom-but
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     CustomButtonComponent
   ]
 })

@@ -24,7 +24,7 @@ export class ProjectDetailsComponent {
   stpps : boolean = false
   ocr : boolean = false
 
-  constructor(private data: ProjectService, private route: ActivatedRoute) {
+  constructor(private route: ActivatedRoute) {
     const id = this.route.snapshot.paramMap.get('id');
     if (id === '1') {
       this.projectManagement = true;
