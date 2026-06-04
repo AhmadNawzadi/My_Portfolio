@@ -7,7 +7,8 @@ interface Skill {
     img?: string;
     level?: string;
     experiance: string;
-    projects: { [key: string]: string }[]
+    projects: { [key: string]: string }[];
+    category?: string;
 }
 
 export default Skill;

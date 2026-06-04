@@ -17,8 +17,15 @@
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/projects" (click)="closeMenu(navbarResponsive)">Projets</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/skills" (click)="closeMenu(navbarResponsive)">Compétences</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="skillsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Compétences
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="skillsDropdown">
+                        <li><a class="dropdown-item" routerLink="/skills" (click)="closeMenu(navbarResponsive)">Toutes</a></li>
+                        <li><a class="dropdown-item" routerLink="/skills/technique"  (click)="closeMenu(navbarResponsive)">Techniques</a></li>
+                        <li><a class="dropdown-item" routerLink="/skills/nontechnique"  (click)="closeMenu(navbarResponsive)">Non techniques</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" routerLink="/parcours" (click)="closeMenu(navbarResponsive)">Parcours</a>

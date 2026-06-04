@@ -20,17 +20,18 @@
     margin: 10px 20px;
     position: relative; 
 }
-.nav-item a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #00abf0;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-}
-.nav-item a:hover::after {
+// .nav-item a::after {
+//     content: '';
+//     width: 0;
+//     height: 3px;
+//     background: #00abf0;
+//     position: absolute;
+//     left: 0;
+//     bottom: -6px;
+// }
+.nav-item:hover {
     width: 100%;
+    border-bottom: 5px solid #00abf0;
     transition: 0.5s;
 }
 .nav-link {

@@ -1,0 +1,47 @@
+
+<div class="container skills">
+    <div class="row text-center title">
+        <h2>Compétences non techniques</h2>
+        <hr />
+    </div>
+    <br>
+    <div class="skills-submenu text-center">
+        <a class="btn btn-outline-primary mx-2" routerLink="/skills/technique">Compétences techniques</a>
+    </div>
+    <br>
+    <div class="row">
+        
+        <br>
+        <div class="" id="non-techniques">
+            <hr>
+            <div class="humain">
+                <div class="col-lg-3 col-md-6 skill-content">
+                    <a [routerLink]="['/skills', 7]">
+                        <p class="text-center">Capacité d'autocritique</p>
+                        <app-circular-progress [finaleValue]="75"></app-circular-progress>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 skill-content">
+                    <a [routerLink]="['/skills', 8]">
+                        <p class="text-center">Rigueur</p>
+                        <app-circular-progress [finaleValue]="70"></app-circular-progress>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 skill-content">
+                    <a [routerLink]="['/skills', 9]">
+                        <p class="text-center">Communication</p>
+                        <app-circular-progress [finaleValue]="75"></app-circular-progress>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 skill-content">
+                    <a [routerLink]="['/skills', 10]">
+                        <p class="text-center">Autonomie</p>
+                        <app-circular-progress [finaleValue]="75"></app-circular-progress>
+                    </a>
+                </div> 
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+</div>
