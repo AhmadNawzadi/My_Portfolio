@@ -14,18 +14,90 @@
         <div>
             <h5>Objectif / Contexte / Enjeux et Risques</h5>
             <p>L'objectif principal était de centraliser l'ensemble des informations clients dans une plateforme unique et de faciliter le suivi des interactions et des opportunités commerciales. L'entreprise rencontrait des difficultés liées à la dispersion des données et à l'absence d'un outil unifié permettant de suivre le cycle de vie client. Le projet visait donc à structurer ces informations, à améliorer la collaboration entre les équipes et à automatiser certains processus chronophages, notamment les demandes de prêts.</p>
-
             <p>Les enjeux étaient à la fois fonctionnels et techniques. Il fallait améliorer la traçabilité des échanges avec les clients, garantir la fiabilité et la sécurité des données sensibles, et offrir une application performante capable de gérer un volume croissant de clients. Les principaux risques concernaient la synchronisation entre le frontend en Vue.js et le backend en Spring Boot, ainsi que la gestion fine des rôles et des autorisations via Spring Security, notamment pour distinguer les accès administrateurs, commerciaux et clients.</p>
         </div>
         <br>
         <!-- Les étapes -->
         <div>
-            <h5>Les étapes</h5>
+            <h5>Étapes de réalisation</h5>
+            <p><strong> 1. Analyse du besoin et conception</strong></p>
             <p>
-                Le projet a débuté par la conception du modèle de données et de l'architecture globale de l'application, en tenant compte des besoins métiers exprimés par les équipes. J'ai ensuite développé des API REST sécurisées avec Spring Boot, permettant la gestion complète des clients, incluant la création, la mise à jour, la suppression, le blocage de comptes, l'ajustement des plafonds clients et l'envoi d'emails. J'ai également participé à l'automatisation du processus de demande de prêts, afin de fluidifier le traitement côté commercial.
+                Le projet a débuté par l'analyse des besoins des équipes commerciales et de gestion. Plusieurs échanges avec les utilisateurs ont permis d'identifier les fonctionnalités prioritaires : gestion des clients, suivi des demandes de prêts, gestion des plafonds de crédit, traçabilité des actions et automatisation de certaines tâches métier.   
             </p>
             <p>
-                En parallèle, j'ai conçu le frontend avec Vue.js et Bootstrap, en veillant à proposer une interface claire, responsive et adaptée à un usage quotidien. La base de données PostgreSQL a été intégrée et structurée pour assurer la cohérence des données et le bon fonctionnement des relations entre les entités. Une attention particulière a été portée aux performances et à la sécurité, avec des phases de tests, de débogage et de corrections suite aux retours des utilisateurs et aux revues de code effectuées avec le développeur senior.
+                À partir de ces besoins, j'ai participé à la modélisation des données et à la conception de l'architecture applicative. Cette phase comprenait la création du schéma de base de données, la définition des relations entre les entités (clients, utilisateurs, demandes de prêts, rôles, historiques d'actions) ainsi que la conception des API REST nécessaires aux échanges entre le frontend et le backend.
+            </p>
+
+            <p>
+                <strong>2. Développement du backend</strong>
+            </p>
+            <p>
+                J'ai développé plusieurs API REST avec Spring Boot afin de gérer les principales fonctionnalités du CRM :
+            </p>
+            <ul>
+                <li>Création, modification, consultation et suppression des clients.</li>
+                <li>Gestion des comptes utilisateurs.</li>
+                <li>Blocage et déblocage de clients.</li>
+                <li>Gestion des plafonds de crédit.</li>
+                <li>Création et suivi des demandes de prêts.</li>
+                <li>Historisation des actions réalisées dans l'application.</li>
+                <li>Envoi automatique d'emails lors de certaines opérations métier.</li>
+            </ul>
+            <p>
+                J'ai également mis en place Spring Security afin de gérer l'authentification et les autorisations selon les profils utilisateurs (administrateur, commercial et client).
+            </p>
+            <p>
+                Une attention particulière a été portée à la validation des données, à la gestion des exceptions et à la sécurisation des endpoints exposés.
+            </p>
+
+            <p>
+                <strong>3. Développement du frontend</strong>
+            </p>
+            <p>
+                En parallèle du backend, j'ai développé plusieurs interfaces utilisateur avec Vue.js et Bootstrap :
+            </p>
+            <ul>
+                <li>Tableau de bord commercial.</li>
+                <li>Gestion des clients.</li>
+                <li>Gestion des utilisateurs.</li>
+                <li>Formulaires de demande de prêts.</li>
+                <li>Écrans d'administration.</li>
+                <li>Consultation des historiques d'actions.</li>
+            </ul>
+            <p>
+                L'objectif était de proposer une interface responsive et simple d'utilisation permettant aux équipes commerciales de travailler efficacement.
+            </p>
+
+            <p>
+                <strong>4. Intégration et communication frontend-backend</strong>
+            </p>
+            <p>
+                J'ai assuré l'intégration complète entre Vue.js et Spring Boot à travers les API REST développées.
+            </p>
+            <p>
+                Cette étape comprenait :
+            </p>
+            <ul>
+                <li>La gestion des appels API.</li>
+                <li>La sécurisation des requêtes via authentification.</li>
+                <li>La gestion des erreurs côté utilisateur.</li>
+                <li>La synchronisation des données entre les différents modules.</li>
+            </ul>
+
+            <p>
+                <strong>5. Tests, débogage et amélioration continue</strong>
+            </p>
+            <p>
+                Tout au long du projet, j'ai participé aux phases de validation et de correction :
+            </p>
+            <ul>
+                <li>Tests fonctionnels des nouvelles fonctionnalités.</li>
+                <li>Débogage des anomalies remontées par les utilisateurs.</li>
+                <li>Corrections suite aux revues de code réalisées avec le développeur senior.</li>
+                <li>Optimisation des performances de certaines requêtes SQL et traitements backend.</li>
+            </ul>
+            <p>
+                Ces validations ont permis d'améliorer progressivement la stabilité et la fiabilité du CRM.
             </p>
         </div>
         <br>
@@ -96,10 +168,109 @@
         <br>
         <!-- Les étapes -->
         <div>
-            <h5>Les étapes</h5>
-            <p>Le projet a débuté par la conception de la base de données et la modélisation des entités métier, incluant les utilisateurs, les clients, les sites médicaux, les dossiers de tiers payant et l'historique complet des opérations. J'ai ensuite participé au développement du backend en Java avec Spring Boot, en mettant en place des API REST sécurisées via Spring Security, ainsi qu'une gestion fine des rôles utilisateurs tels qu'administrateur, responsable de pôle et gestionnaire.</p>
-            <p>Sur le plan fonctionnel, j'ai travaillé sur la gestion complète des utilisateurs, l'authentification, l'envoi de relances pour les impayés et l'historisation détaillée de toutes les opérations. J'ai également contribué à la synchronisation des factures depuis les outils utilisés par les professionnels de santé, ainsi qu'à l'intégration d'un module OCR permettant d'analyser les cartes de mutuelle des patients et de vérifier la concordance des informations OCRisées avec les données issues des logiciels métiers des médecins.</p>
-            <p>En parallèle, le frontend a été développé en React.js avec Tailwind CSS afin de proposer une interface moderne, claire et performante. Des phases de tests d'intégration ont permis de valider l'ensemble des flux financiers et métier, ainsi que la synchronisation entre les différents modules. J'ai travaillé en étroite collaboration avec le Product Owner pour affiner les règles métier et corriger les anomalies identifiées lors des tests utilisateurs.</p>
+            <h5>Étapes de réalisation</h5>
+            <p>
+                <strong>1. Analyse des besoins métier et conception</strong>
+            </p>
+            <p>
+                Le projet a débuté par une phase d'analyse des processus métier utilisés par les équipes de recouvrement et de gestion du tiers payant. Des échanges réguliers avec le Product Owner et les utilisateurs métier ont permis d'identifier les principales problématiques : suivi des impayés, gestion des dossiers patients, centralisation des informations financières et automatisation des traitements.
+            </p>
+            <p>
+                À partir de ces besoins, j'ai participé à la modélisation des données et à la conception de l'architecture de l'application. Cette étape comprenait la définition des entités métier telles que les utilisateurs, les clients, les sites médicaux, les dossiers de tiers payant, les factures, les relances et les historiques d'opérations.
+            </p>
+
+            <p>
+                <strong>2. Développement du backend</strong>
+            </p>
+            <p>
+                J'ai contribué au développement du backend en Java avec Spring Boot en réalisant plusieurs API REST destinées à gérer les fonctionnalités principales de l'application :
+            </p>
+            <ul>
+                <li>Gestion des utilisateurs (création, modification, désactivation et consultation).</li>
+                <li>Gestion des clients et de leurs différents sites médicaux.</li>
+                <li>Authentification et gestion des accès selon les rôles utilisateurs.</li>
+                <li>Historisation complète des actions réalisées dans l'application.</li>
+                <li>Gestion des dossiers de recouvrement.</li>
+                <li>Génération et envoi automatique de relances pour les impayés.</li>
+                <li>Création de rapports hebdomadaires destinés aux équipes de gestion.</li>
+                <li>Synchronisation des données financières provenant des logiciels utilisés par les professionnels de santé.</li>
+            </ul>
+            <p>
+                J'ai également mis en place Spring Security afin de sécuriser l'accès aux différentes fonctionnalités selon les profils administrateur, responsable de pôle et gestionnaire.
+            </p>
+            <p>
+                Une attention particulière a été portée à la gestion des erreurs, à la validation des données et à la protection des informations sensibles.
+            </p>
+
+            <p>
+                <strong>3. Intégration du module OCR</strong>
+            </p>
+            <p>
+                L'une des fonctionnalités importantes du projet consistait à automatiser le contrôle des informations relatives aux patients.
+            </p>
+            <p>
+                J'ai participé à l'intégration d'un module OCR permettant de lire les informations présentes sur les cartes de mutuelle. Les données extraites étaient ensuite comparées automatiquement avec les informations enregistrées dans les logiciels métiers des centres de santé afin de détecter les incohérences et limiter les erreurs de traitement.
+            </p>
+            <p>
+                Cette fonctionnalité a nécessité un travail important sur la validation des données, la gestion des exceptions et la fiabilité des contrôles.
+            </p>
+
+            <p>
+                <strong>4. Développement du frontend</strong>
+            </p>
+            <p>
+                En parallèle, j'ai développé plusieurs interfaces utilisateur avec React.js et Tailwind CSS.
+            </p>
+            <p>
+                Les écrans réalisés comprenaient notamment :
+            </p>
+            <ul>
+                <li>Gestion des utilisateurs.</li>
+                <li>Gestion des clients et des sites médicaux.</li>
+                <li>Consultation et suivi des dossiers.</li>
+                <li>Tableaux de bord de suivi des impayés.</li>
+                <li>Historique des opérations.</li>
+                <li>Interfaces d'administration.</li>
+            </ul>
+            <p>
+                L'objectif était de proposer une interface moderne, intuitive et performante permettant aux équipes de traiter rapidement un volume important de dossiers.
+            </p>
+
+            <p>
+                <strong>5. Intégration et synchronisation des systèmes</strong>
+            </p>
+            <p>
+                Une partie importante du projet concernait la communication entre l'application STPPS et les outils métiers utilisés par les professionnels de santé.
+            </p>
+            <p>
+                J'ai participé à la mise en place des mécanismes de synchronisation permettant :
+            </p>
+            <ul>
+                <li>L'import automatique des factures.</li>
+                <li>La mise à jour des dossiers.</li>
+                <li>Le rapprochement des informations financières.</li>
+                <li>La cohérence des données entre les différents systèmes.</li>
+            </ul>
+            <p>
+                Cette phase a nécessité de nombreuses validations afin de garantir l'intégrité des données échangées.
+            </p>
+
+            <p>
+                <strong>6. Tests et validation fonctionnelle</strong>
+            </p>
+            <p>
+                Afin de garantir la fiabilité de l'application, plusieurs phases de tests ont été réalisées :
+            </p>
+            <ul>
+                <li>Tests d'intégration des API.</li>
+                <li>Validation des flux financiers.</li>
+                <li>Contrôle des règles métier.</li>
+                <li>Vérification des synchronisations entre modules.</li>
+                <li>Recette fonctionnelle avec le Product Owner et les utilisateurs métier.</li>
+            </ul>
+            <p>
+                Les anomalies identifiées ont été corrigées progressivement afin d'améliorer la stabilité et les performances de l'application.
+            </p>
         </div>
         <br>
         <!-- Les acteurs -->
@@ -172,13 +343,70 @@
         <br>
         <!-- Les étapes -->
         <div>
-            <h5>Les étapes</h5>
+            <h5>Étapes de réalisation</h5>
             <p>
-                La première phase du projet a consisté à préparer un jeu de données composé de différentes images de cartes bancaires, issues de formats variés tels que des photos prises par smartphone ou des images numériques. Un travail de prétraitement des images a été réalisé afin d'améliorer la qualité des résultats, notamment par la correction de l'orientation, la conversion en niveaux de gris et la réduction du bruit visuel.
+                <strong>1. Constitution et préparation du dataset</strong>
             </p>
             <p>
-                La librairie EasyOCR a ensuite été intégrée pour la détection et la lecture des textes présents sur les images. L'extraction des informations a été conçue de manière séparée pour chaque champ, ce qui a permis d'améliorer la lisibilité et la précision des résultats. Le backend a été développé avec Flask afin de gérer l'analyse des images, le traitement des données et leur enregistrement après validation. Une interface web simple et ergonomique a été créée à l'aide de HTML, CSS et Bootstrap pour permettre aux utilisateurs de tester facilement l'outil. Les données extraites étaient d'abord affichées pour validation, puis stockées en base de données après chiffrement par hachage, tandis que les images étaient automatiquement supprimées après traitement.
+                Le projet a débuté par la constitution d’un jeu de données composé d’images de cartes bancaires simulées ou issues de différents formats visuels. Ces images présentaient une grande variabilité en termes de qualité, d’orientation, de luminosité et de bruit visuel.
             </p>
+            <p>
+                Afin d’améliorer la performance de l’extraction, une phase de prétraitement des images a été mise en place. Cette étape comprenait :
+            </p>
+            <ul>
+                <li>La correction de l’orientation des images.</li>
+                <li>La conversion en niveaux de gris.</li>
+                <li>La normalisation des contrastes.</li>
+                <li>La réduction du bruit visuel.</li>
+                <li>L’amélioration de la netteté pour optimiser la reconnaissance des caractères.</li>
+            </ul>
+
+            <p>
+                <strong>2. Mise en place du moteur OCR</strong>
+            </p>
+            <p>
+                La librairie EasyOCR a été intégrée pour assurer la reconnaissance optique des caractères présents sur les images.
+            </p>
+            <p>
+                L’extraction des informations a été structurée de manière segmentée afin de traiter séparément les différents champs (nom, numéro de carte, date d’expiration). Cette approche a permis d’améliorer la précision des résultats et de limiter les erreurs d’interprétation du modèle.
+            </p>
+            <p>
+                Des règles de filtrage et de nettoyage des résultats OCR ont également été mises en place pour uniformiser les données extraites.
+            </p>
+
+            <p><strong>3. Développement du backend avec Flask</strong></p>
+            <p>Un backend a été développé avec Flask afin de gérer l’ensemble du flux de traitement :</p>
+            <ul>
+                <li>Réception des images envoyées par l’utilisateur.</li>
+                <li>Lancement du processus d’analyse OCR.</li>
+                <li>Extraction et structuration des données.</li>
+                <li>Gestion des validations utilisateur.</li>
+                <li>Stockage sécurisé des informations.</li>
+            </ul>
+            <p>Une séparation claire des responsabilités a été appliquée entre les différentes étapes du traitement afin de garantir la maintenabilité du code.</p>
+
+            <p><strong>4. Interface utilisateur web</strong></p>
+            <p>Une interface web simple et ergonomique a été développée à l’aide de HTML, CSS et Bootstrap.</p>
+            <p>Cette interface permettait :</p>
+            <ul>
+                <li>Le dépôt d’images de cartes bancaires.</li>
+                <li>L’affichage des données extraites par l’OCR.</li>
+                <li>La validation ou la correction des informations par l’utilisateur.</li>
+            </ul>
+            <p>L’objectif était de rendre l’outil accessible et facilement testable sans complexité technique.</p>
+
+            <p><strong>5. Sécurisation et gestion des données</strong></p>
+            <p>Une attention particulière a été portée à la sécurité et à la confidentialité des données :</p>
+            <ul>
+                <li>Les informations sensibles étaient hachées avant stockage en base de données.</li>
+                <li>Les images traitées étaient supprimées automatiquement après analyse.</li>
+                <li>Seules les données validées étaient conservées.</li>
+                <li>Des mécanismes de contrôle ont été mis en place pour éviter le stockage inutile de données sensibles.</li>
+            </ul>
+
+            <p><strong>6. Validation et amélioration du modèle</strong></p>
+            <p>Des tests ont été réalisés sur différents types d’images afin d’évaluer la robustesse du système face à des conditions réelles (images floues, décolorées ou mal cadrées).</p>
+            <p>Ces tests ont permis d’ajuster les paramètres de prétraitement et d’améliorer progressivement la qualité des résultats OCR.</p>
         </div>
         <br>
         <!-- Les acteurs -->
@@ -247,13 +475,91 @@
         <br>
         <!-- Les étapes -->
         <div>
-            <h5>Les étapes</h5>
-            <p>
-                J'ai d'abord commencé par modéliser les entités principales afin de définir clairement la structure du système. J'ai ensuite développé le backend sous Spring Boot, en implémentant notamment le système d'authentification ainsi que la fonctionnalité d'envoi d'emails pour inviter de nouveaux utilisateurs à rejoindre un projet. En parallèle, j'ai construit le frontend en Angular, en gérant l'intégration avec l'API backend, ce qui a été l'un des aspects les plus techniques du projet.
-            </p>
-            <p>
-                La base de données PostgreSQL a été configurée pour assurer un stockage fiable. Une fois les fonctionnalités principales en place, j'ai réalisé les tests unitaires et d'intégration, avant de dockeriser l'application et de mettre en place un pipeline CI/CD automatisant les tests, le build et le déploiement. Ce pipeline publiait automatiquement les images sur Docker Hub. Pour finaliser le projet, j'ai rédigé la documentation et le guide d'installation.
-            </p>
+            <h5>Étapes de réalisation</h5>
+            <p><strong>1. Analyse des besoins et conception de l'architecture</strong></p>
+            <p>Le projet a débuté par l'analyse des fonctionnalités attendues pour un outil de gestion de projet collaboratif. L'objectif était de permettre à plusieurs utilisateurs de créer des projets, gérer des tâches, suivre leur avancement et collaborer au sein d'un espace centralisé.</p>
+            <p>J'ai commencé par modéliser les principales entités métier telles que les utilisateurs, les projets, les tâches, les colonnes du Kanban, les invitations et les rôles. Cette phase a permis de définir les relations entre les différentes entités ainsi que les règles de gestion nécessaires au bon fonctionnement de l'application.</p>
+            <p>Une architecture client-serveur a ensuite été définie afin de séparer clairement les responsabilités entre le frontend Angular, le backend Spring Boot et la base de données PostgreSQL.</p>
+
+            <p><strong>2. Développement du backend</strong></p>
+            <p>Le backend a été développé avec Spring Boot en suivant les principes REST et une architecture en couches favorisant la maintenabilité du code.</p>
+            <p>Plusieurs fonctionnalités ont été implémentées :</p>
+            <ul>
+                <li>Authentification et gestion des utilisateurs.</li>
+                <li>Gestion des rôles et des autorisations.</li>
+                <li>Création et gestion des projets.</li>
+                <li>Gestion des tâches et de leur cycle de vie.</li>
+                <li>Gestion des tableaux Kanban.</li>
+                <li>Invitation de nouveaux collaborateurs à rejoindre un projet.</li>
+                <li>Envoi automatique d'emails lors des invitations.</li>
+                <li>Gestion des accès aux projets selon les droits utilisateurs.</li>
+            </ul>
+            <p>Une attention particulière a été portée à la sécurisation des API et à la validation des données échangées.</p>
+
+            <p><strong>3. Développement du frontend</strong></p>
+            <p>Le frontend a été développé avec Angular afin de proposer une interface moderne et interactive.</p>
+            <p>Les principales interfaces réalisées comprenaient :</p>
+            <ul>
+                <li>Authentification et inscription.</li>
+                <li>Tableau de bord utilisateur.</li>
+                <li>Gestion des projets.</li>
+                <li>Gestion des tâches.</li>
+                <li>Visualisation Kanban de type Trello.</li>
+                <li>Gestion des invitations et des membres.</li>
+            </ul>
+            <p>L'un des principaux défis techniques a été l'intégration complète entre Angular et les API Spring Boot, notamment pour la gestion de l'authentification, des permissions et de la synchronisation des données en temps réel.</p>
+            
+            <p><strong>4. Mise en place de la base de données</strong></p>
+            <p>Une base PostgreSQL a été conçue et configurée afin d'assurer la persistance des données.</p>
+            <p>Le modèle relationnel a été optimisé pour gérer efficacement :</p>
+            <ul>
+                <li>Les utilisateurs.</li>
+                <li>Les projets.</li>
+                <li>Les tâches.</li>
+                <li>Les colonnes Kanban.</li>
+                <li>Les invitations.</li>
+                <li>Les relations entre collaborateurs.</li>
+            </ul>
+            <p>Cette structure garantissait la cohérence des données et facilitait les évolutions futures du projet.</p>
+
+            <p><strong>5. Tests et validation</strong></p>
+            <p>Une fois les fonctionnalités principales développées, plusieurs phases de validation ont été réalisées :</p>
+            <ul>
+                <li>Tests unitaires des composants backend.</li>
+                <li>Tests d'intégration des API.</li>
+                <li>Validation des scénarios fonctionnels.</li>
+                <li>Vérification des flux d'authentification.</li>
+                <li>Contrôle des échanges frontend-backend.</li>
+            </ul>
+            <p>Ces tests ont permis d'identifier et de corriger différentes anomalies avant la phase de déploiement.</p>
+
+            <p><strong>6. Industrialisation et déploiement</strong></p>
+            <p>Afin de garantir la reproductibilité des environnements et de faciliter le déploiement, l'application a été conteneurisée avec Docker.</p>
+            <p>J'ai créé :</p>
+            <ul>
+                <li>Les Dockerfiles des différents services.</li>
+                <li>La configuration Docker Compose pour orchestrer l'application.</li>
+                <li>Un pipeline CI/CD automatisé.</li>
+            </ul>
+            <p>Le pipeline réalisait automatiquement :</p>
+            <ul>
+                <li>L'exécution des tests.</li>
+                <li>La phase de build.</li>
+                <li>La création des images Docker.</li>
+                <li>La publication des images sur Docker Hub.</li>
+            </ul>
+            <p>Cette automatisation a permis de fiabiliser les déploiements et de réduire les interventions manuelles.</p>
+
+            <p><strong>7. Documentation et livraison</strong></p>
+            <p>Pour finaliser le projet, j'ai rédigé la documentation technique et le guide d'installation.</p>
+            <p>Ces documents décrivaient :</p>
+            <ul>
+                <li>L'architecture de l'application.</li>
+                <li>Les prérequis techniques.</li>
+                <li>Les étapes de déploiement.</li>
+                <li>L'utilisation des différents modules.</li>
+            </ul>
+            <p>Cette documentation facilitait la prise en main du projet et garantissait sa maintenabilité.</p>
         </div>
         <br>
         <!-- Les acteurs -->
@@ -324,16 +630,64 @@
         <br>
         <!-- Les étapes -->
         <div>
-            <h5>Les étapes</h5>
-            <p>
-                La première étape a été l'analyse détaillée du backend existant afin d'identifier les failles, les incohérences et les zones critiques du code. Sur cette base, j'ai entrepris une refonte complète de l'API en utilisant Spring Boot, en adoptant une architecture REST claire et en appliquant les principes SOLID afin de rendre le système plus lisible, plus modulaire et plus facile à maintenir.
-            </p>
-            <p>
-                J'ai ensuite intégré Spring Security pour gérer l'authentification et les rôles utilisateurs, permettant de distinguer les actions réservées aux clients de celles destinées aux administrateurs. Parallèlement, j'ai développé une API FastAPI en Python dédiée au système de recommandation, utilisant l'algorithme KNN pour proposer des jeux similaires aux utilisateurs. L'intégration entre les deux APIs a demandé une attention particulière afin d'assurer une communication fluide et performante.
-            </p>
-            <p>
-                Une fois l'architecture stabilisée, j'ai conçu une série de tests unitaires avec JUnit pour garantir la fiabilité du backend. Pour finaliser le projet, j'ai produit une documentation technique complète incluant des diagrammes d'architecture, de classes et de composants afin de faciliter la compréhension et la maintenance future.
-            </p>
+            <h5>Étapes de réalisation</h5>
+            <p><strong>1. Analyse et diagnostic du système existant</strong></p>
+            <p>Le projet a débuté par une phase d'analyse approfondie du backend existant afin d'identifier les problèmes techniques et architecturaux. Cette étape a permis de mettre en évidence plusieurs faiblesses : code non structuré, manque de séparation des responsabilités, absence de standardisation des API et difficultés de maintenance.</p>
+            <p>Sur la base de ce diagnostic, j'ai défini une stratégie de refonte complète de l'application afin d'améliorer sa robustesse, sa lisibilité et sa scalabilité.</p>
+
+            <p><strong>2. Refonte de l'architecture backend</strong></p>
+            <p>J'ai procédé à la réécriture de l'API en utilisant Spring Boot en adoptant une architecture REST structurée et en appliquant les principes SOLID.</p>
+            <p>Cette refonte a inclus :</p>
+            <ul>
+                <li>La séparation claire des couches (controller, service, repository).</li>
+                <li>La standardisation des endpoints REST.</li>
+                <li>L'amélioration de la gestion des exceptions.</li>
+                <li>La structuration du code pour faciliter les évolutions futures.</li>
+            </ul>
+            <p>L'objectif principal était de transformer un code legacy difficile à maintenir en une architecture modulaire et évolutive.</p>
+
+            <p><strong>3. Mise en place de la sécurité applicative</strong></p>
+            <p>J'ai intégré Spring Security afin de sécuriser l'application et de gérer les droits d'accès.</p>
+            <p>Cette étape comprenait :</p>
+            <ul>
+                <li>La mise en place de l'authentification des utilisateurs.</li>
+                <li>La gestion des rôles (client et administrateur).</li>
+                <li>La sécurisation des endpoints sensibles.</li>
+                <li>La protection des données utilisateur.</li>
+            </ul>
+            <p>Cette implémentation a permis de garantir un contrôle strict des accès aux différentes fonctionnalités de l'application.</p>
+
+            <p><strong>4. Développement du système de recommandation</strong></p>
+            <p>En parallèle du backend principal, j'ai développé une API distincte en Python avec FastAPI.</p>
+            <p>Cette API avait pour objectif de fournir un système de recommandation de jeux basé sur un algorithme KNN (k-nearest neighbors).</p>
+            <p>Les principales étapes comprenaient :</p>
+            <ul>
+                <li>Préparation et structuration des données.</li>
+                <li>Implémentation de l'algorithme de recommandation.</li>
+                <li>Exposition des résultats via une API REST.</li>
+                <li>Intégration de cette API avec le backend Spring Boot.</li>
+            </ul>
+            <p>Une attention particulière a été portée à la communication entre les deux services afin d'assurer une interaction fluide et performante.</p>
+
+            <p><strong>5. Tests et validation du système</strong></p>
+            <p>Afin de garantir la fiabilité de la nouvelle architecture, j'ai mis en place une série de tests unitaires avec JUnit.</p>
+            <p>Ces tests couvraient :</p>
+            <ul>
+                <li>Les services métier.</li>
+                <li>Les contrôleurs REST.</li>
+                <li>Les règles de gestion principales.</li>
+            </ul>
+            <p>Les tests ont permis de valider le bon fonctionnement du système après la refonte et de sécuriser les évolutions futures.</p>
+
+            <p><strong>6. Documentation technique et modélisation</strong></p>
+            <p>Pour finaliser le projet, j'ai réalisé une documentation technique complète comprenant :</p>
+            <ul>
+                <li>Des diagrammes d'architecture.</li>
+                <li>Des diagrammes de classes.</li>
+                <li>La description des composants du système.</li>
+                <li>Les explications sur l'intégration des deux APIs.</li>
+            </ul>
+            <p>Cette documentation facilite la compréhension du système et permet d'assurer sa maintenabilité sur le long terme.</p>
         </div>
         <br>
         <div>
